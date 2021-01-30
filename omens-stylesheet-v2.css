@@ -5043,7 +5043,7 @@ height:300px;
   #abilities-freeform
   .abilities-proper
   vampire:after {
-  content: "Ã®Â¦Â¡";
+  content: "";
   font-size: 170px;
   position: absolute;
   width: 200px;
