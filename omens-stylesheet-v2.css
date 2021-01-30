@@ -3274,30 +3274,7 @@ body::-webkit-scrollbar-track {
   z-index: 0;
   opacity: 0.66;
 }
-.groupid-werewolf {
-  --group: #f85931;
-  --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);
-}
-.groupid-vampire {
-  --group: #ce1836;
-}
-.groupid-witch {
-  --group: #009989;
-  --group-gradient: linear-gradient(110deg, #4e54c8, #8f94fb);
-}
-.groupid-human {
-  --group: #a3a948;
-  --group-gradient: linear-gradient(110deg, #00b09b, #96c93d);
-}
-.groupid-staff {
-  --group: #83af9b;
-}
-.groupid-10 {
-  --group: #f9cdad;
-}
-.groupid-pending {
-  --group: var(--aaa);
-}
+
 #group-witch .omens-subboard {
   --main-gradient: linear-gradient(110deg, #4e54c8, #8f94fb);
 }
@@ -3638,32 +3615,7 @@ fieldset.search {
 fieldset.search legend {
   margin-bottom: 10px;
 }
-.groupid-werewolf {
-  --group: #f85931;
-  --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);
-  --custom: #ce1836;
-}
-.groupid-vampire {
-  --group: #cb356b;
-  --group-gradient: linear-gradient(110deg, #cb356b, #bd3f32);
-}
-.groupid-witch {
-  --group: #009989;
-  --group-gradient: linear-gradient(110deg, #4e54c8, #8f94fb);
-}
-.groupid-human {
-  --group: #a3a948;
-  --group-gradient: linear-gradient(110deg, #00b09b, #96c93d);
-}
-.groupid-staff {
-  --group: #83af9b;
-}
-.groupid-10 {
-  --group: #b06ab3;
-}
-.groupid-pending {
-  --group: var(--aaa);
-}
+
 #omens-thread {
   margin: 10px;
   border-radius: 5px;
@@ -3769,14 +3721,34 @@ fieldset.search legend {
   opacity: 5%;
   pointer-events: none;
 }
-#thread-post .user-name .name.groupid-werewolf:before {
-  content: "Ã®Â©Ëœ";
+#thread-post .user-name .name.groupid-14 .avi:before {
+  content: "";
+  font-family: RPGAwesome;
 }
-#thread-post .user-name .name.groupid-vampire:before {
-  content: "Ã®Â¦Â¡";
+#thread-post .user-name .name.groupid-9 .avi:before {
+  content: "";
+  font-family: RPGAwesome;
 }
-#thread-post .user-name .name.groupid-10:before {
-  content: "Ã®Â©â€”";
+#thread-post .user-name .name.groupid-8 .avi:before {
+  content: "";
+  font-family: RPGAwesome;
+}
+#thread-post .user-name .name.groupid-7 .avi:before {
+  content: "";
+  font-family: RPGAwesome;
+}
+#thread-post .user-name .name.groupid-4 .avi:before, #thread-post .user-name .name.groupid-12 .avi:before, #thread-post .user-name .name.groupid-6 .avi:before {
+  content: "";
+  font-family: RPGAwesome;
+}
+#thread-post .user-name .name.groupid-10 .avi:before {
+  content: "";
+  font-family: RPGAwesome;
+}
+
+#thread-post .user-name .name.groupid-3 .avi:before, #thread-post .user-name .name.groupid-15 .avi:before {
+  content: "";
+  font-family: RPGAwesome; 
 }
 #thread-post .user-name #groupdeco {
   position: absolute;
