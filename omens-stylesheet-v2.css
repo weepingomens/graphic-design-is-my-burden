@@ -4769,6 +4769,7 @@ height:300px;
   text-align: justify;
   position: relative;
   overflow: auto;
+  overflow-x:hidden;
 height:230px;
 }
 #omens-profile #abilities-container #abilities-freeform:after {
