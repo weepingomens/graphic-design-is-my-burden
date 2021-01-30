@@ -4991,7 +4991,7 @@ height:230px;
   #abilities-freeform
   .abilities-proper
   werewolf:after {
-  content: "Ã®Â©Ëœ";
+  content: "";
   font-size: 200px;
   position: absolute;
   width: 200px;
