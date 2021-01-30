@@ -5191,11 +5191,12 @@ height:300px;
   .abilities-proper
   superbia
   h1:before {
-  position: absolute;
-  bottom: -15px;
-  font: 900 11px roboto;
-  text-transform: uppercase;
-  color: var(--666);
+    position: absolute;
+    bottom: -13px;
+    font: 900 10px roboto;
+    text-transform: uppercase;
+    color: var(--666);
+    width: 111%;
 }
 #omens-profile
   #abilities-container
@@ -5239,14 +5240,14 @@ height:300px;
   .abilities-proper
   superbia
   h2 {
-  font: 800 12px/100% raleway;
-  width: 75%;
-  margin: -1px 0 0 0;
-  color: var(--aaa);
-  z-index: 1;
-  position: relative;
-  display: block;
-  text-transform: none;
+    font: 800 12px/100% raleway;
+    width: 75%;
+    margin: -1px 0 0 0;
+    color: var(--aaa);
+    z-index: 1;
+    position: relative;
+    display: block;
+    text-transform: none;
 }
 #omens-profile
   #abilities-container
