@@ -4769,8 +4769,7 @@ height:300px;
   text-align: justify;
   position: relative;
   overflow: auto;
-  overflow-x:hidden;
-height:230px;
+  overflow-x: hidden;
 }
 #omens-profile #abilities-container #abilities-freeform:after {
   position: absolute;
@@ -5447,6 +5446,7 @@ height:230px;
   position: relative;
   z-index: 1;
   font: 500 13px/130% roboto;
+  min-height:230px;
 }
 #omens-profile #misc-container {
   position: absolute;
