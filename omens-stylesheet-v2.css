@@ -5733,7 +5733,7 @@ height:300px;
   z-index: 1;
 }
 #omens-profile #misc-container #romantic-status:before {
-  content: "î«š";
+  content: "";
   position: absolute;
   font-family: RPGAwesome;
   -moz-osx-font-smoothing: grayscale;
