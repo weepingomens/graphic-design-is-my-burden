@@ -3529,7 +3529,7 @@ body::-webkit-scrollbar-track {
   border-radius: 0 5px 5px 0;
   place-items: center;
   background-image: url(https://i.ibb.co/ftYm3Wr/image.png);
-  background-color: rgba(0, 0%, 0%, 94%);
+  background-color: rgba(0, 0, 0, 94%);
   background-blend-mode: overlay;
 }
 .topic-container .deets .detail {
