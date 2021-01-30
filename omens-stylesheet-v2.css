@@ -5447,7 +5447,7 @@ height:300px;
   position: relative;
   z-index: 1;
   font: 500 13px/130% roboto;
-  min-height:230px;
+  height:230px;
 }
 #omens-profile #misc-container {
   position: absolute;
