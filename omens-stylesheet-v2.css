@@ -3098,27 +3098,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background: var(--222);
 }
-#groupid-werewolf {
-  --group: #f85931;
-}
-#groupid-vampire {
-  --group: #ce1836;
-}
-.groupid-6 {
-  --group: #009989;
-}
-#groupid-human {
-  --group: #a3a948;
-}
-#groupid-staff {
-  --group: #83af9b;
-}
-#groupid-10 {
-  --group: #f9cdad;
-}
-#groupid-pending {
-  --group: var(--aaa);
-}
+
 #omens-body #omens-member-nav {
   background: var(--222);
 }
@@ -3226,45 +3206,47 @@ body::-webkit-scrollbar-track {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px var(--group);
 }
-#omens-memberlist #groupid-werewolf .avi:after {
-  content: "Ã®Â©Ëœ";
+#omens-memberlist #groupid-14 .avi:after {
+  content: "";
   font-family: RPGAwesome;
-  color: var(--group);
+  color:var(--member-group);
+  
 }
-#omens-memberlist #groupid-vampire .avi:after {
-  content: "Ã®Â¦Â¡";
+#omens-memberlist #groupid-9 .avi:after {
+  content: "";
   font-family: RPGAwesome;
-  color: var(--group);
+  color:var(--member-group);
+  
 }
-#omens-memberlist .groupid-6 .avi:after {
-  content: "î¦¶";
+#omens-memberlist #groupid-8 .avi:after {
+  content: "";
   font-family: RPGAwesome;
-  color: var(--group);
+  color:var(--member-group);
 }
-#omens-memberlist #groupid-human .avi:after {
-  content: "Ã®Â¦â€°";
+#omens-memberlist #groupid-7 .avi:after {
+  content: "";
   font-family: RPGAwesome;
-  color: var(--group);
+  color:var(--member-group);
+  
 }
-#omens-memberlist #groupid-staff .avi:after {
-  content: "Ã®Â©Â´";
+#omens-memberlist #groupid-4 .avi:after, #omens-memberlist #groupid-12 .avi:after, #omens-memberlist #groupid-6 .avi:after {
+  content: "";
   font-family: RPGAwesome;
-  color: var(--group);
+  color:var(--member-group);
+  
 }
 #omens-memberlist #groupid-10 .avi:after {
-  content: "Ã®Â©â€”";
+  content: "";
   font-family: RPGAwesome;
-  color: var(--group);
+  color:var(--member-group);
+  
 }
-#omens-memberlist #groupid-member .avi:after {
-  content: "Ã®Â©Â";
+
+#omens-memberlist #groupid-3 .avi:after, #omens-memberlist #groupid-15 .avi:after {
+  content: "";
   font-family: RPGAwesome;
-  color: var(--group);
-}
-#omens-memberlist #groupid-pending .avi:after {
-  content: "Ã®Â©Âº";
-  font-family: RPGAwesome;
-  color: var(--group);
+  color:var(--member-group);
+  
 }
 #omens-member .recent-button {
   font-size: 30px;
