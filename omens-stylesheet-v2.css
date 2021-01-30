@@ -5446,7 +5446,7 @@ height:300px;
 #omens-profile #abilities-container #abilities-freeform .abilities-proper {
   position: relative;
   z-index: 1;
-  font: 500 13px/130% roboto;
+  font: 400 13px/130% roboto;
   height:230px;
 }
 #omens-profile #misc-container {
