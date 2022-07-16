@@ -10690,6 +10690,430 @@ fieldset.search.active-topics legend {
 }
 
 /* END POST 11 TEMPLATE */
+/* START POST 12 TEMPLATE */
+
+.omens-post-12 {
+  margin: 40px;
+  background-image:url(https://i.ibb.co/j4zSdj5/light-spots2.png);
+  display: grid;
+  grid: min-content auto / min-content auto;
+  grid-template-areas:
+    "post-14-image post-14-lyricpost"
+    "post-14-lyricpost post-14-image";
+  place-items: start;
+  place-content: start;
+  position: relative;
+  padding: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.omens-post-12 .post-image-1 {
+  grid-area: post-14-image;
+  position: absolute;
+  right: -250px;
+  top: 30px;
+  outline: 5px solid #222;
+  outline-offset: 15px;
+  margin: 5px 15px 5px 0px;
+  background: var(--custom);
+}
+.omens-post-12 .post-image-1 img {
+  filter: grayscale(100%);
+  mix-blend-mode: hard-light;
+  transition: 0.7s;
+}
+.omens-post-12 .post-contain {
+  grid-area: post-14-lyricpost;
+  display: flex;
+  flex-flow: column nowrap;
+  place-items: start;
+  place-content: start;
+  height: 530px;
+}
+.omens-post-12 .lyric-1 {
+    grid-area: post-14-lyric-1;
+  width: 250px;
+  font: 800 20px 'montserrat';
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--custom);
+  margin: -5px 0px 5px 5px;
+  z-index: 1;
+  border-top: 1px solid #fff;
+  padding-top: 5px;
+position: relative;
+top: -30px;
+}
+.omens-post-12 .lyric-2 {
+  width: 250px;
+  font: 400 20px 'montserrat';
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+position: relative;
+top: 0px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin: 0px 0px -20px -0px;
+  z-index: 1;
+  border-bottom: solid 1px var(--custom);
+}
+.omens-post-12 .post-body {
+  grid-area: post-14-body;
+  border: 15px solid #202020;
+  border-radius: 3px;
+  width: 250px;
+  height: 550px;
+  background: #202020;
+  font: 400 13px/18px roboto, arial, sans-serif;
+  text-align: justify;
+  color: #aaa;
+  overflow: auto;
+  z-index: 1;
+  margin-top: -30px;
+  margin-left: -15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+.omens-post-12 .post-body::-webkit-scrollbar {
+  width: 3px;
+}
+
+.omens-post-12 .post-body::-webkit-scrollbar-thumb {
+  background: var(--custom);
+}
+
+.omens-post-12 .post-body::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+.omens-post-12 .post-body b {
+  color: var(--custom);
+  font-weight: 800;
+}
+
+.omens-post-12 .post-body b i,
+.omens-post-12 .post-body u i,
+.omens-post-12 .post-body span i {
+  color: revert;
+  font-weight: revert;
+}
+
+.omens-post-12 .post-body i {
+  font: 500 12px/18px roboto;
+  font-style: italic;
+  color: #ddd;
+}
+
+.omens-post-12 .post-body span {
+  color: var(--custom);
+}
+
+.omens-post-12 .post-body u {
+  text-decoration: none;
+  background: var(--custom);
+  color: #222;
+  padding: 0px 3px;
+}
+.omens-post-12 .post-body tagged {
+  gap:10px;
+  font:300 15px/100% 'Montserrat';
+  color:#ddd;
+  margin-top: 10px;
+  text-align:center;
+  float: right;
+}
+.omens-post-12 .post-body tagged a {
+  padding:2px;
+  background:var(--custom);
+  color:#eee;
+  text-decoration:none;
+}
+
+/* END POST 12 TEMPLATE */
+/* START POST 13 TEMPLATE */
+
+.omens-post-13 {
+  position: relative;
+  width: 500px;
+  height: auto;
+  background: #212121;
+  margin: 0 auto;
+  border-radius: 3px;  
+}
+.omens-post-13 .post-image-2 {
+  position: relative;
+  height: 150px;
+  width: 500px;
+  background: var(--custom);
+  border-bottom: 15px solid var(--custom);
+}
+.omens-post-13 .post-image-2 img {
+  display: block;
+ filter:grayscale(100%)brightness(115%);
+  mix-blend-mode: soft-light;
+}
+.omens-post-13 .post-icon {
+    border: 10px solid var(--custom);
+  shape-outside: 100%;
+  border-radius: 100px;
+  top: -150px;
+  right: -370px;
+  position: relative;
+  z-index: 2;
+  height: 100px;
+  width: 100px;
+}
+.omens-post-13 .post-icon img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  filter:brightness(125%);
+}
+.omens-post-13 .lyric-1 {
+  display: block;
+  position: relative;
+top: -130px;
+right: -20px;
+  padding: 10px;
+  width: 320px;
+  margin-top: -30px;
+  margin-right: 100px;
+    font:700 26px/100% 'Roboto';
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing:1px;
+  color:#fff;
+  z-index:1;
+  opacity: 1;
+    border-top: 2px solid white;
+  mix-blend-mode: overlay;
+}
+.omens-post-13 .lyric-2 {
+  display: block;
+  position: relative;
+top: -160px;
+right: -20px;
+    padding: 10px;
+  width: 320px;
+    font:700 10px/100% 'Roboto';
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing:1px;
+  color:#fff;
+  z-index:1;
+  opacity: 1;
+}
+.omens-post-13 .post-body {
+  border-top: 15px solid #333;
+  position: relative;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  width: 400px;
+  height: auto;
+  margin-top: -120px;
+  color: #999;
+  font: 13px 'Roboto', arial, sans-serif;
+  line-height: 20px;
+  text-align: justify;
+}
+.omens-post-13 .post-body b {
+  color: var(--custom);
+  font-weight: 800;
+}
+
+.omens-post-13 .post-body b i,
+.omens-post-13 .post-body u i,
+.omens-post-13 .post-body span i {
+  color: revert;
+  font-weight: revert;
+}
+
+.omens-post-13 .post-body i {
+  font: 500 12px/18px montserrat;
+  font-style: italic;
+  color: #ddd;
+}
+.omens-post-13 .post-body c {
+  color: var(--custom);
+}
+.omens-post-13 .post-body span {
+  color: var(--custom);
+}
+.omens-post-13 .post-body u {
+  text-decoration: none;
+  background: var(--custom);
+  color: #222;
+  padding: 0px 3px;
+}
+.omens-post-13 .post-body tagged {
+  gap:10px;
+  font: italic 300 15px/100% 'Roboto';
+  text-transform: uppercase;
+  color:#ddd;
+  height: 25px;
+  width: 500;
+  margin-top:30px;
+  margin-left: -10px;
+    background-color: var(--custom);
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+   gap:0px 10px;
+}
+.omens-post-13 .post-body tagged a {
+  float: center;
+  padding:5px;
+  color:#fff;;
+}
+.omens-post-13 .post-body a {
+  text-decoration: none;
+  color: white;
+}
+
+/* END POST 13 TEMPLATE */
+/* START POST 14 TEMPLATE */
+
+.omens-post-14 {
+  border-radius: 3px;
+	width: 410px;
+	height: 550px;
+	margin: 20px auto;
+	position: relative;
+  display: flex;
+    background-size: cover;
+  background-image: url('https://i.ibb.co/HNPFgw5/a-U0-KSA-4.png');
+  background-position: center;
+	color: #dfdfdf;
+  outline: 1px solid #888;
+  outline-offset: 10px;
+}
+.omens-post-14 .post-body {
+	width: 430px;
+	border: 1px solid rgba(var(--custom),0.5);
+	position: relative;
+	padding: 25px;
+}
+.omens-post-14 .post-text {
+	border-radius: 3px;
+	box-sizing: border-box;
+	width: 350px;
+	height:330px;
+	font: 300 13px 'roboto', arial, sans-serif;
+	text-align: justify;
+  padding: 20px;
+  padding-bottom: 20px;
+	padding-top: 10px;
+	position: relative;
+  right: -5px;
+	background-color: #333;
+	z-index: 20;
+	overflow: auto;
+}
+.omens-post-14 .post-text::-webkit-scrollbar{
+width: 6px;
+height: 6px;
+}
+.omens-post-14 .post-text::-webkit-scrollbar-thumb{
+background: #000000;
+border-radius: 0px;
+}
+.omens-post-14 .post-text::-webkit-scrollbar-thumb:hover{
+background: #B3AFB300;
+}
+.omens-post-14 .post-text::-webkit-scrollbar-track{
+background: transparent;
+border-radius: 0px;
+box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+.omens-post-14 .post-text b {
+  font:300 15px roboto;
+  color:var(--custom);
+}
+
+.omens-post-14 .post-text i {
+  color:#eee;
+}
+
+.omens-post-14 .post-text span {
+  color:var(--custom);
+}
+
+.omens-post-14 .post-text u {
+  text-decoration:none;
+  border-bottom:1px solid var(--custom);
+  background:#2f2f2f;
+  color:#888;
+}
+
+.omens-post-14 .post-text u i, .omens-post-14 .post-text span i, .omens-post-14 .post-text b i {
+  color:revert;
+}
+
+.omens-post-14 .post-text tagged {
+  display:flex;
+  flex-flow:row wrap;
+  place-content:flex-end;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font:italic 300 15px/100% montserrat;
+  color:#ddd;
+  text-align:center;
+}
+
+.omens-post-14 .post-text tagged a {
+  display:inline-block;
+    padding:5px;
+  background:var(--custom);
+  color:#eee;
+  text-decoration:none;
+}
+.omens-post-14 .post-icon {
+  position: absolute;
+  top: 400px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  border: 5px solid var(--custom);
+  background: var(--custom);
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+}
+.omens-post-14 .post-icon img {
+  width: 100px;
+  height: 100px;
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.omens-post-14 .lyric-1 {
+  position: relative;
+  top: -15px;
+  right: -5px;
+  width: 250px;
+  color:var(--custom);
+  font: 400 20px 'montserrat';
+  text-transform: uppercase;
+}
+.omens-post-14 .lyric-2 {
+  position: relative;
+margin-top: 20px;
+top: -20px;
+  right: -5px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 5px;
+  font: 100 11px 'montserrat';
+  color: #fff;
+  background: var(--custom);
+  text-align: center;
+}
+
+/* END POST 14 TEMPLATE */
 /* START WANTED 1 TEMPLATE */
 
 .omens-wanted-1 {
