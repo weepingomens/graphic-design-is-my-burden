@@ -1,5 +1,19 @@
-				html { overflow-x: auto; scroll-behavior: smooth; } 
-form { display:inline; }
+/* -
+WEEPING OMENS SKIN V1 aka GRAPHIC DESIGN IS MY BURDEN
+
+i'd rather you didn't ctrl-c ctrl-v,
+but i'm a sign, not a cop.
+
+- */
+
+html {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+} 
+
+form {
+  display:inline;
+}
 
 /* START MEMBER GROUP COLORING & MEMBER GROUP ICONS */
 
@@ -11,8 +25,7 @@ form { display:inline; }
   --staff-member:#e3b550;
   --ooc-member:#e2cab8;
   --pending:#aaa;
-
---main-accent:#ddd; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
+  --main-accent:#ddd; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
 }
 
 /* human */
