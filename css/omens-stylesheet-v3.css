@@ -555,6 +555,144 @@ img.attach {
   margin: -1px 0;
 }
 
+.maintitle {
+  padding: 50px;
+  display: grid;
+  place-items: center start;
+  justify-content: space-between;
+  background-image: url(https://files.jcink.net/uploads2/weepingomens/city_dark.png);
+  background-color: var(--main-accent);
+  background-blend-mode: overlay;
+  font: 300 30px/100% raleway;
+  text-transform: uppercase;
+  color: #ffffff;
+  overflow: hidden;
+  margin-top: -65px;
+}
+.indexpage {
+margin-top:-12px;
+justify-content:center;
+}
+.maintitle .topic-desc {
+  font: 600 10px/100% roboto;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: 25px;
+  color: #eee;
+  position: relative;
+  pointer-events: none;
+}
+
+#posting-form.tableborder,
+#posting-form.tableborder td,
+#posting-form.tableborder tr {
+  display: revert;
+  color: #333;
+}
+#posting-form {
+  margin-top: -32px;
+}
+#posting-form .pformleft {
+  width: 14%;
+  text-transform: uppercase;
+  font: 700 10px roboto;
+}
+#posting-form .maintitle {
+  color: #eee !important;
+}
+#bbcode-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+#bbcode-buttons input[type="button"] {
+  margin: 0;
+  cursor: pointer;
+}
+#bbcode-buttons .codebuttons {
+  margin: 0;
+}
+#code-buttons-header,
+#enter-your-post-header {
+  display: none !important;
+}
+#enter-your-post .pformright textarea {
+  width: 747px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+#enter-your-post .pformleft .desc {
+  display: none;
+}
+.show-table,
+.show-table td,
+.show-table tr {
+  display: revert;
+}
+.show-table {
+  position: absolute;
+  width: 928px;
+  margin-top: -10px;
+  margin-left: 13px;
+}
+.show-table .goto-firstunread a {
+  color: #eee;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: -10px;
+  font: 600 10px/100% roboto;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#smilies-table {
+  display: none;
+}
+:focus {
+  outline: 0;
+}
+#active-topics a {
+  font: 700 12px roboto;
+  color: var(--main-accent);
+  text-transform: uppercase;
+}
+#topic-desc .forminput {
+  margin: 10px;
+}
+#posting-form td {
+  padding-left: 25px;
+}
+#topic-settings-header {
+  padding-top: 25px;
+}
+.subforums-macro {
+  display: none;
+}
+#active-topics {
+  position: relative;
+  top: -12px;
+}
+
+#modcp-content .maintitle, #modcp-menu .maintitle { margin:0; }
+
+#modcp-menu, #modcp-content {    position: relative;
+    top: -13px;}
+
+.titlemedium a:link {
+  color: #eee;
+}
+#post-preview.tableborder {
+  background: #222;
+  padding: 25px;
+  width: 880px;
+  margin: -2px 10px 14px 10px;
+  border-radius: 5px;
+  color: #aaa;
+}
+
+/* END JCINK STYLING */
 /* START CUSTOM STYLING */
 
 /* START VARIABLES */
@@ -698,7 +836,7 @@ img.attach {
     background: #ef3339;
   }
 }
-
+/* START BODY */
 body {
   margin: 0;
   padding: 0;
@@ -728,6 +866,19 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   background: #222;
+}
+
+#s-m-t-tooltip {
+  max-width: 300px;
+  text-align: justify;
+  z-index: 999999;
+  margin: 15px 0 0 15px;
+  padding: 7px;
+  background: #eee;
+  color: #111;
+  font: 700 10px/100% roboto;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 
 #omens-main {
@@ -828,6 +979,7 @@ z-index:999;
   animation: none;
 }
 
+/* END NAVTREE */
 /* START HEADER */
 
 #omens-header {
@@ -1538,6 +1690,7 @@ will-change:transform;
   width: 560px;
 }
 
+/* END HEADER */
 /* START MAIN CONTENT */
 
 #omens-content {
@@ -1624,6 +1777,7 @@ will-change:transform;
   color: #eee;
 }
 
+/* END MAIN CONTENT */
 /* START CATEGORY HEADERS */
 
 .omens-category {
@@ -1696,6 +1850,7 @@ will-change:transform;
   background-size: contain;
 }
 
+/* END CATEGORY HEADERS */
 /* START CUSTOM BOARD STRUCTURE */
 
 #omens-beginning {
@@ -2393,6 +2548,7 @@ font:700 22px/100% crimson text;
   display: none;
 }
 
+/* END CUSTOM FORUM STRUCTURE */
 /* START SIDEBAR */
 
 #omens-sidebar {
@@ -3450,7 +3606,7 @@ width: 100%;
   z-index: 0;
   opacity: 0.66;
 }
-
+/* START SUBFORUM HEADERS */
 .group-witch .omens-subboard {
   --main-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%);
 }
@@ -3583,6 +3739,9 @@ margin:0px;
 #omens-subforums {
   margin: -12px 0 28px 0;
 }
+
+/* START TOPIC LIST */
+
 .omens-topic-list {
   padding: 50px;
   display: grid;
@@ -3814,6 +3973,8 @@ fieldset.search.active-topics {
 fieldset.search.active-topics legend {
   margin-bottom: 10px;
 }
+
+/* START POST ROW */
 
 #omens-thread {
   margin: 10px;
@@ -4490,6 +4651,26 @@ color: revert!important;
   background: #111;
   color: #111;
 }
+
+.thread-timestamp {
+  margin-left: 50px;
+  padding: 5px;
+  background: #eee;
+  font: 700 10px roboto;
+  color: #222;
+  border-radius: 5px;
+  text-transform: uppercase;
+  z-index: 1;
+  position: absolute;
+  margin-top: 85px;
+}
+.thread-timestamp a {
+  color: #222;
+}
+
+/* END POST ROW */
+/* START MAIN PROFILE */
+
 #omens-profile {
   margin: -2px 10px 10px;
   padding: 15px;
@@ -6334,168 +6515,6 @@ display:none;
   display: flex;
 }
 
-.maintitle {
-  padding: 50px;
-  display: grid;
-  place-items: center start;
-  justify-content: space-between;
-  background-image: url(https://files.jcink.net/uploads2/weepingomens/city_dark.png);
-  background-color: var(--main-accent);
-  background-blend-mode: overlay;
-  font: 300 30px/100% raleway;
-  text-transform: uppercase;
-  color: #ffffff;
-  overflow: hidden;
-  margin-top: -65px;
-}
-.indexpage {
-margin-top:-12px;
-justify-content:center;
-}
-.maintitle .topic-desc {
-  font: 600 10px/100% roboto;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-left: 25px;
-  color: #eee;
-  position: relative;
-  pointer-events: none;
-}
-.thread-timestamp {
-  margin-left: 50px;
-  padding: 5px;
-  background: #eee;
-  font: 700 10px roboto;
-  color: #222;
-  border-radius: 5px;
-  text-transform: uppercase;
-  z-index: 1;
-  position: absolute;
-  margin-top: 85px;
-}
-.thread-timestamp a {
-  color: #222;
-}
-#posting-form.tableborder,
-#posting-form.tableborder td,
-#posting-form.tableborder tr {
-  display: revert;
-  color: #333;
-}
-#posting-form {
-  margin-top: -32px;
-}
-#posting-form .pformleft {
-  width: 14%;
-  text-transform: uppercase;
-  font: 700 10px roboto;
-}
-#posting-form .maintitle {
-  color: #eee !important;
-}
-#bbcode-buttons {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-top: 10px;
-}
-#bbcode-buttons input[type="button"] {
-  margin: 0;
-  cursor: pointer;
-}
-#bbcode-buttons .codebuttons {
-  margin: 0;
-}
-#code-buttons-header,
-#enter-your-post-header {
-  display: none !important;
-}
-#enter-your-post .pformright textarea {
-  width: 747px;
-  margin: 0;
-  margin-bottom: 25px;
-}
-#enter-your-post .pformleft .desc {
-  display: none;
-}
-.show-table,
-.show-table td,
-.show-table tr {
-  display: revert;
-}
-.show-table {
-  position: absolute;
-  width: 928px;
-  margin-top: -10px;
-  margin-left: 13px;
-}
-.show-table .goto-firstunread a {
-  color: #eee;
-  padding: 2px 5px;
-  border-radius: 3px;
-  margin-left: -10px;
-  font: 600 10px/100% roboto;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-#smilies-table {
-  display: none;
-}
-:focus {
-  outline: 0;
-}
-#active-topics a {
-  font: 700 12px roboto;
-  color: var(--main-accent);
-  text-transform: uppercase;
-}
-#topic-desc .forminput {
-  margin: 10px;
-}
-#posting-form td {
-  padding-left: 25px;
-}
-#topic-settings-header {
-  padding-top: 25px;
-}
-.subforums-macro {
-  display: none;
-}
-#active-topics {
-  position: relative;
-  top: -12px;
-}
-
-#modcp-content .maintitle, #modcp-menu .maintitle { margin:0; }
-
-#modcp-menu, #modcp-content {    position: relative;
-    top: -13px;}
-
-#s-m-t-tooltip {
-  max-width: 300px;
-  text-align: justify;
-  z-index: 999999;
-  margin: 15px 0 0 15px;
-  padding: 7px;
-  background: #eee;
-  color: #111;
-  font: 700 10px/100% roboto;
-  text-transform: uppercase;
-  border-radius: 3px;
-}
-.titlemedium a:link {
-  color: #eee;
-}
-#post-preview.tableborder {
-  background: #222;
-  padding: 25px;
-  width: 880px;
-  margin: -2px 10px 14px 10px;
-  border-radius: 5px;
-  color: #aaa;
-}
 #CODE {
   white-space: normal;
   font: 400 12px roboto;
