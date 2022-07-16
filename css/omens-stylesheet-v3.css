@@ -1844,7 +1844,7 @@ header input[type="radio"]:checked+label {
   position: absolute;
   bottom: 25px;
   right: 25px;
-  grid: 100%/1fr 1fr 1fr 1fr 1fr;
+  grid: 100%/1fr 1fr 1fr 1fr;
   gap: 10px;
   opacity: 0;
   transform: scale(0.9);
@@ -1868,6 +1868,7 @@ header input[type="radio"]:checked+label {
 }
 
 .omens-h-staffer-container section img {
+  width: inherit;
   filter: grayscale(100%) contrast(33%);
   position: absolute;
 }
@@ -3234,6 +3235,9 @@ header input[type="radio"]:checked+label {
 #omens-residential.omens-cat- {
   display: none;
 }
+
+#omens-outside.omens-cat-8 { width: calc(50% - 15px); }
+.omens-forum-66 .subboard-list { display:none; }
 
 /* END CUSTOM FORUM STRUCTURE */
 /* START SIDEBAR */
