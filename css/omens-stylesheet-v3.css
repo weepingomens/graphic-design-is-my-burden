@@ -1841,7 +1841,7 @@ header input[type="radio"]:checked+label {
   position: absolute;
   bottom: 25px;
   right: 25px;
-  grid: 100%/1fr 1fr 1fr 1fr;
+  grid: 100%/1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
   opacity: 0;
   transform: scale(0.9);
@@ -9184,6 +9184,12 @@ fieldset.search.active-topics legend {
 }
 
 /* END PHONE 1 TEMPLATE */
+/* START UNIVERSAL POST STYLES */
+.post-image-1 img, .post-image-1-override img {
+  width:200px;
+  height:400px;
+} 
+/* END UNIVERSAL POST STYLES */
 /* START POST 1 TEMPLATE */
 
 .omens-post-1 {
