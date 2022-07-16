@@ -748,6 +748,10 @@ justify-content:center;
 #omens-main.user-groupid-3 { --main-accent:#ddd!important; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab)!important; }
 #omens-main.user-groupid-15 { --main-accent:#ddd; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab); }
 
+.group-fallback {
+  --main-accent: #ccc !important;
+  --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab) !important;
+}
 @font-face {
   font-family: "Urban Jungle";
   src: url(https://files.jcink.net/uploads/derse/Urbanjungledemo_ymAm.otf)
@@ -5490,6 +5494,7 @@ display:none;
   top: 37px;
   margin-left: -120px;
 }
+
 #omens-profile
   #abilities-container
   #abilities-freeform
@@ -6515,6 +6520,9 @@ display:none;
   display: flex;
 }
 
+/* END MAIN PROFILE */
+/* START CUSTOM CODE STYLING */
+
 #CODE {
   white-space: normal;
   font: 400 12px roboto;
@@ -6574,13 +6582,10 @@ display:none;
   border-radius: 5px;
   overflow: hidden;
 }
-.group-fallback {
-  --main-accent: #ccc !important;
-  --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab) !important;
-}
-#group-witch {
-  color: var(--witch);
-}
+
+/* END CUSTOM CODE STYLING */
+/* START CLAIMS TEMPLATE */
+
 .omens-claims-template {
   margin: 0;
   padding: 25px;
@@ -6782,6 +6787,10 @@ text-transform:lowercase;
     position: revert;
   }
 }
+
+/* END CLAIMS TEMPLATE */
+/* START STAFF TEMPLATE */
+
 .omens-basic-template {
   margin: 0;
   border-radius: 5px;
@@ -6893,6 +6902,10 @@ display: flex;
 .omens-claims-content #CODE {
   background: #1f1f1f;
 }
+
+/* END STAFF TEMPLATE */
+/* START MEMBER DIRECTORY */
+
 .omens-member-directory {
   margin: 0;
   border-radius: 5px;
@@ -6977,7 +6990,9 @@ display: flex;
   border-radius: 5px;
 }
 
-/* start phone template */
+/* END MEMBER DIRECTORY */
+/* START PHONE 1 TEMPLATE */
+
 .omens-phone1-phone {
     width: 270px;
     height: 530px;
@@ -7390,145 +7405,9 @@ color:#eee;
 	transform:rotate(75deg);	
 }
 
-.android {
-  background: #3f3f3f;
-  margin: 50px 210px;
-  padding: 5px;
-  border-radius: 5px;
-  overflow: hidden;
-}
+/* END PHONE 1 TEMPLATE */
+/* START DEVELOPMENT 1 TEMPLATES */
 
-.android .and-topbar {
-  background: #333;
-  margin: -5px -5px 5px -5px;
-  padding: 10px;
-  font-size: 12px;
-  display: flex;
-  place-content: flex-end;
-  place-items: center;
-  color: #aaa;
-  font: 700 10px roboto;
-  text-transform: uppercase;
-}
-
-.android.and-text .and-topbar i {
-  justify-self: flex-start;
-}
-.android.and-text br {
-display:none;
-}
-.android.and-text h4 {
-  margin: -5px -5px 10px -5px;
-  background: #555;
-  padding: 10px;
-  font: 700 12px montserrat;
-  color: #aaa;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
-}
-
-.android.and-text .commcontent {
-  display: grid;
-  gap: 10px;
-  place-content: start end;
-  height: 300px;
-  overflow: auto;
-}
-
-.android.and-text .commcontent br {
-  display: none;
-}
-.android.and-text .commcontent p {
-  margin: 0px 5px 0px 0px;
-  padding: 10px;
-  background: #555;
-  border-radius: 5px;
-  font: 500 12px roboto;
-  color: #eee;
-justify-self:end;
-text-align:justify;
-text-align-last:right;
-}
-.android.and-text .commcontent p br {
-  display: revert;
-}
-
-.android.and-dial .commcontent,
-.android.and-call .commcontent {
-  display: grid;
-  gap: 10px;
-  place-items: center;
-  place-content: center;
-  height: 335px;
-  overflow: auto;
-}
-
-.android.and-dial .commcontent img,
-.android.and-call .commcontent img {
-  border-radius: 100%;
-  height: 125px;
-  width: 125px;
-  box-shadow: 0px 0px 15px rgb(0 0 0 / 25%);
-}
-.android.and-dial .commcontent h5,
-.android.and-call .commcontent h5 {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
-  font: 500 12px roboto;
-  color: #aaa;
-  text-transform: uppercase;
-}
-.android.and-dial .commcontent br,
-.android.and-call .commcontent br {
-  display: none;
-}
-.android.and-dial .commcontent .flex-c {
-  width: 125px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-.android.and-dial .commcontent .ellipsis {
-  display: none;
-}
-.android.and-dial .commcontent .flex-c span {
-  background: #aaa;
-  color: #eee;
-  padding: 10px;
-  border-radius: 100%;
-  margin-top: 10px;
-}
-.android.and-call .commcontent p {
-  margin: 0px 5px 0px 5px;
-  padding: 10px;
-  background: #555;
-  border-radius: 5px;
-  font: 500 12px roboto;
-  color: #eee;
-  text-align: justify;
-  text-align-last: center;
-}
-.android.and-call .commcontent p br {
-  display: revert;
-}
-
-.android.and-dial .commcontent .flex-c span {
-    background: #aaa;
-    color: #eee;
-    padding: 10px;
-    border-radius: 100%;
-    margin-top: 10px;
-    width: 20px;
-    height: 20px;
-    display: grid;
-    place-items: center;
-    place-content: center;
-}
-
-/* start dev threads */
 .omens-development-1 {
   margin: 60px;
 border-radius:10px;
@@ -7757,7 +7636,9 @@ text-align:center;
   content: "view this playlist";
 }
 
-/* start technology templates */
+/* END DEVELOPMENT 1 TEMPLATES */
+/* START SOCIAL MEDIA TEMPLATES */
+/* START INSTAGRAM 1 TEMPLATE */
 
 .omens-insta-1 {
   margin:50px;
@@ -7880,6 +7761,9 @@ position:absolute;
 .omens-insta-1 .insta-body .insta-image span i {
   display:inline;
 }
+
+/* END INSTAGRAM 1 TEMPLATE */
+/* START INSTAGRAM 2 TEMPLATE */
 
 .omens-insta-2 {
   margin: 50px;
@@ -8016,6 +7900,9 @@ position:absolute;
   color: var(--custom);
   margin-right: 10px;
 }
+
+/* END INSTAGRAM 2 TEMPLATE */
+/* START TWITTER 1 TEMPLATE */
 
 .omens-twit-1 {
     margin: 35px;
@@ -8164,6 +8051,10 @@ position: absolute;
 .omens-twit-1 #retweet.tweet .twit-retweet i {
   margin-right:10px;
 }
+
+/* END TWITTER 1 TEMPLATE */
+/* START TWITTER 2 TEMPLATE */
+
 .omens-twit-2 {
   margin: 35px;
     padding:25px;
@@ -8229,7 +8120,8 @@ display:flex;
   font-size:250px;
 }
 
-/* start tracker templates */
+/* END TWITTER 2 TEMPLATE */
+/* START TRACKER 1 TEMPLATE */
 
 .omens-tracker-1-contain {
 	width: 500px;
@@ -8378,6 +8270,9 @@ background: var(--custom);
 	margin: 0px 0px 0px 25px;
 }
 
+/* END TRACKER 1 TEMPLATE */
+/* START TRACKER 2 TEMPLATE */
+
 .omens-tracker-2 {
   margin:60px;
   background:#eee;
@@ -8427,15 +8322,6 @@ background: var(--custom);
   font:700 10px/100% roboto;
   text-transform:uppercase;
   color:#eee;
-}
-
-
-#omens-profile
-  #abilities-container
-  #abilities-freeform
-  .abilities-proper
-  werewolf:after {
-  content: "";
 }
 
 #omens-profile #abilities-container #abilities-freeform { overflow-x:hidden; }
