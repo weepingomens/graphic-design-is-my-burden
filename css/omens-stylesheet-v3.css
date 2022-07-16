@@ -5059,6 +5059,17 @@ fieldset.search.active-topics legend {
   font-family: RPGAwesome;
 }
 
+#thread-post .user-name .name.groupid-19::before {
+  content: "\E111";
+  font-family: "game-icons";
+  margin-top: 10px;
+}
+
+#thread-post .user-name .name.groupid-20::before {
+  font-family: "game-icons" !important;
+  content: "\E157" !important;
+}
+
 #thread-post .user-name .name.groupid-12:before, #thread-post .user-name .name.groupid-16:before, #thread-post .user-name .name.groupid-6:before {
   content: "";
   font-family: RPGAwesome;
@@ -5721,6 +5732,11 @@ fieldset.search.active-topics legend {
 
 #thread-post.authorid-126 .quote-controls .quote .th {
   display: none !important;
+}
+
+#thread-post.authorid-126 .name:before {
+  font-family: "game-icons" !important;
+  content: "\E157" !important;
 }
 
 /* END POST ROW USER OVERRIDES */
