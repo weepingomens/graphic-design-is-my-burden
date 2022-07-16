@@ -972,8 +972,13 @@ img.attach {
   display: revert;
 }
 
-#field_70 { display: none!important; }
-.user-groupid-8 #field_70 { display: revert!important; }
+#field_70 {
+  display: none !important;
+}
+
+.user-groupid-8 #field_70 {
+  display: revert !important;
+}
 
 /* END USER CP HIDE/SHOW */
 
@@ -1048,9 +1053,9 @@ img.attach {
   --pending: #aaa;
   --pending-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
   --rip: #6B6C72;
-  --rip-gradient: linear-gradient(306deg, rgba(101,112,131,1) 0%, rgba(107,108,114,1) 100%);
+  --rip-gradient: linear-gradient(306deg, rgba(101, 112, 131, 1) 0%, rgba(107, 108, 114, 1) 100%);
   --npc: #51A1C4;
-  --npc-gradient:linear-gradient(306deg, rgba(81,161,196,1) 0%, rgba(81,129,196,1) 100%); 
+  --npc-gradient: linear-gradient(306deg, rgba(81, 161, 196, 1) 0%, rgba(81, 129, 196, 1) 100%);
   --main-accent: #ddd;
   --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
 }
@@ -1122,16 +1127,42 @@ img.attach {
 }
 
 /* deceased */
-.groupid-19, .user-groupid-19 { --group:#6B6C72; --group-gradient: linear-gradient(306deg, rgba(101,112,131,1) 0%, rgba(107,108,114,1) 100%); }
-#omens-main.user-groupid-19 { --main-accent:#6B6C72; --main-gradient: linear-gradient(306deg, rgba(101,112,131,1) 0%, rgba(107,108,114,1) 100%); }
-.online-users a .group-rip, .online-history a .group-rip { color:var(--rip); }
-.group-rip .omens-subboard { --main-gradient:var(--rip-gradient); }
+.groupid-19, .user-groupid-19 {
+  --group: #6B6C72;
+  --group-gradient: linear-gradient(306deg, rgba(101, 112, 131, 1) 0%, rgba(107, 108, 114, 1) 100%);
+}
+
+#omens-main.user-groupid-19 {
+  --main-accent: #6B6C72;
+  --main-gradient: linear-gradient(306deg, rgba(101, 112, 131, 1) 0%, rgba(107, 108, 114, 1) 100%);
+}
+
+.online-users a .group-rip, .online-history a .group-rip {
+  color: var(--rip);
+}
+
+.group-rip .omens-subboard {
+  --main-gradient: var(--rip-gradient);
+}
 
 /* npc */
-.groupid-20, .user-groupid-20 { --group:#51A1C4; --group-gradient: linear-gradient(306deg, rgba(81,161,196,1) 0%, rgba(81,129,196,1) 100%); }
-#omens-main.user-groupid-20 { --main-accent:#51A1C4; --main-gradient: linear-gradient(306deg, rgba(81,161,196,1) 0%, rgba(81,129,196,1) 100%); }
-.online-users a .group-npc, .online-history a .group-npc { color:var(--npc); }
-.group-npc .omens-subboard { --main-gradient:var(--npc-gradient); }
+.groupid-20, .user-groupid-20 {
+  --group: #51A1C4;
+  --group-gradient: linear-gradient(306deg, rgba(81, 161, 196, 1) 0%, rgba(81, 129, 196, 1) 100%);
+}
+
+#omens-main.user-groupid-20 {
+  --main-accent: #51A1C4;
+  --main-gradient: linear-gradient(306deg, rgba(81, 161, 196, 1) 0%, rgba(81, 129, 196, 1) 100%);
+}
+
+.online-users a .group-npc, .online-history a .group-npc {
+  color: var(--npc);
+}
+
+.group-npc .omens-subboard {
+  --main-gradient: var(--npc-gradient);
+}
 
 /* unregistered, validating, guest, archived member */
 .groupid-3, .user-groupid-3 {
@@ -2373,7 +2404,8 @@ header input[type="radio"]:checked+label {
 
 .omens-category .category-title {
   font: 900 45px/100% montserrat;
-  text-shadow: #5a5a5a 2px 0px 0px, #5a5a5a 1.75517px 0.958851px 0px, #5a5a5a 1.0806px 1.68294px 0px, #5a5a5a 0.141474px 1.99499px 0px, #5a5a5a -0.832294px 1.81859px 0px, #5a5a5a -1.60229px 1.19694px 0px, #5a5a5a -1.97998px 0.28224px 0px, #5a5a5a -1.87291px -0.701566px 0px, #5a5a5a -1.30729px -1.5136px 0px, #5a5a5a -0.421592px -1.95506px 0px, #5a5a5a 0.567324px -1.91785px 0px, #5a5a5a 1.41734px -1.41108px 0px, #5a5a5a 1.92034px -0.558831px 0px; color:#333;
+  text-shadow: #5a5a5a 2px 0px 0px, #5a5a5a 1.75517px 0.958851px 0px, #5a5a5a 1.0806px 1.68294px 0px, #5a5a5a 0.141474px 1.99499px 0px, #5a5a5a -0.832294px 1.81859px 0px, #5a5a5a -1.60229px 1.19694px 0px, #5a5a5a -1.97998px 0.28224px 0px, #5a5a5a -1.87291px -0.701566px 0px, #5a5a5a -1.30729px -1.5136px 0px, #5a5a5a -0.421592px -1.95506px 0px, #5a5a5a 0.567324px -1.91785px 0px, #5a5a5a 1.41734px -1.41108px 0px, #5a5a5a 1.92034px -0.558831px 0px;
+  color: #333;
 
   text-transform: uppercase;
   z-index: 1;
@@ -3242,8 +3274,13 @@ header input[type="radio"]:checked+label {
   display: none;
 }
 
-#omens-outside.omens-cat-8 { width: calc(50% - 15px); }
-.omens-forum-66 .subboard-list { display:none; }
+#omens-outside.omens-cat-8 {
+  width: calc(50% - 15px);
+}
+
+.omens-forum-66 .subboard-list {
+  display: none;
+}
 
 /* END CUSTOM FORUM STRUCTURE */
 /* START SIDEBAR */
@@ -3896,7 +3933,8 @@ header input[type="radio"]:checked+label {
 #omens-footer #footer-title .header-text {
   font: 900 60px/100% montserrat alternates;
   letter-spacing: -4px;
-  text-shadow: rgb(65, 65, 65) 2px 0px 0px, rgb(65, 65, 65) 1.75517px 0.958851px 0px, rgb(65, 65, 65) 1.0806px 1.68294px 0px, rgb(65, 65, 65) 0.141474px 1.99499px 0px, rgb(65, 65, 65) -0.832294px 1.81859px 0px, rgb(65, 65, 65) -1.60229px 1.19694px 0px, rgb(65, 65, 65) -1.97998px 0.28224px 0px, rgb(65, 65, 65) -1.87291px -0.701566px 0px, rgb(65, 65, 65) -1.30729px -1.5136px 0px, rgb(65, 65, 65) -0.421592px -1.95506px 0px, rgb(65, 65, 65) 0.567324px -1.91785px 0px, rgb(65, 65, 65) 1.41734px -1.41108px 0px, rgb(65, 65, 65) 1.92034px -0.558831px 0px; color:#2f2f2f;
+  text-shadow: rgb(65, 65, 65) 2px 0px 0px, rgb(65, 65, 65) 1.75517px 0.958851px 0px, rgb(65, 65, 65) 1.0806px 1.68294px 0px, rgb(65, 65, 65) 0.141474px 1.99499px 0px, rgb(65, 65, 65) -0.832294px 1.81859px 0px, rgb(65, 65, 65) -1.60229px 1.19694px 0px, rgb(65, 65, 65) -1.97998px 0.28224px 0px, rgb(65, 65, 65) -1.87291px -0.701566px 0px, rgb(65, 65, 65) -1.30729px -1.5136px 0px, rgb(65, 65, 65) -0.421592px -1.95506px 0px, rgb(65, 65, 65) 0.567324px -1.91785px 0px, rgb(65, 65, 65) 1.41734px -1.41108px 0px, rgb(65, 65, 65) 1.92034px -0.558831px 0px;
+  color: #2f2f2f;
   grid-area: footer-title-header;
   align-self: end;
 }
@@ -4592,7 +4630,8 @@ header input[type="radio"]:checked+label {
   font: 900 50px/80% montserrat;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color:#eee; text-shadow: 2px 1px 0px rgb(0 0 0);
+  color: #eee;
+  text-shadow: 2px 1px 0px rgb(0 0 0);
   align-self: end;
   justify-self: start;
   margin-bottom: 10px;
@@ -5672,11 +5711,17 @@ fieldset.search.active-topics legend {
 /* END POST ROW */
 /* START POST ROW USER OVERRIDES */
 
-.authorid-126 .user-name #groupdeco .ooc:before { content:'NPC'!important; }
+.authorid-126 .user-name #groupdeco .ooc:before {
+  content: 'NPC' !important;
+}
 
-.authorid-126 .button.pm { display:none!important }
+.authorid-126 .button.pm {
+  display: none !important
+}
 
-#thread-post.authorid-126 .quote-controls .quote .th { display:none!important; }
+#thread-post.authorid-126 .quote-controls .quote .th {
+  display: none !important;
+}
 
 /* END POST ROW USER OVERRIDES */
 /* START MAIN PROFILE */
@@ -5822,7 +5867,9 @@ fieldset.search.active-topics legend {
 #omens-profile #profile-header .character-name {
   font: 900 50px/80% montserrat;
   text-transform: uppercase;
-  color:#eee; text-shadow: 1px 1px rgb(0 0 0 / 25%); letter-spacing: -1px;
+  color: #eee;
+  text-shadow: 1px 1px rgb(0 0 0 / 25%);
+  letter-spacing: -1px;
   margin: 0 0 0 25px;
   grid-area: prof-header-name;
   pointer-events: none;
@@ -6277,7 +6324,8 @@ fieldset.search.active-topics legend {
   text-transform: uppercase;
   font-style: italic;
   letter-spacing: -3px;
-  text-shadow: rgb(42, 42, 42) 2px 0px 0px, rgb(42, 42, 42) 1.75517px 0.958851px 0px, rgb(42, 42, 42) 1.0806px 1.68294px 0px, rgb(42, 42, 42) 0.141474px 1.99499px 0px, rgb(42, 42, 42) -0.832294px 1.81859px 0px, rgb(42, 42, 42) -1.60229px 1.19694px 0px, rgb(42, 42, 42) -1.97998px 0.28224px 0px, rgb(42, 42, 42) -1.87291px -0.701566px 0px, rgb(42, 42, 42) -1.30729px -1.5136px 0px, rgb(42, 42, 42) -0.421592px -1.95506px 0px, rgb(42, 42, 42) 0.567324px -1.91785px 0px, rgb(42, 42, 42) 1.41734px -1.41108px 0px, rgb(42, 42, 42) 1.92034px -0.558831px 0px; color:#1a1a1a;
+  text-shadow: rgb(42, 42, 42) 2px 0px 0px, rgb(42, 42, 42) 1.75517px 0.958851px 0px, rgb(42, 42, 42) 1.0806px 1.68294px 0px, rgb(42, 42, 42) 0.141474px 1.99499px 0px, rgb(42, 42, 42) -0.832294px 1.81859px 0px, rgb(42, 42, 42) -1.60229px 1.19694px 0px, rgb(42, 42, 42) -1.97998px 0.28224px 0px, rgb(42, 42, 42) -1.87291px -0.701566px 0px, rgb(42, 42, 42) -1.30729px -1.5136px 0px, rgb(42, 42, 42) -0.421592px -1.95506px 0px, rgb(42, 42, 42) 0.567324px -1.91785px 0px, rgb(42, 42, 42) 1.41734px -1.41108px 0px, rgb(42, 42, 42) 1.92034px -0.558831px 0px;
+  color: #1a1a1a;
 }
 
 #omens-profile #abilities-container #abilities-freeform {
@@ -7297,13 +7345,13 @@ fieldset.search.active-topics legend {
 #omens-profile #abilities-container.witch-profile {
   display: grid;
   grid-template-areas:
-  "prof-abilities-freeform"
-  "prof-abilities-spells"
-  "prof-abilities-threat";
-  height: 400px; 
+    "prof-abilities-freeform"
+    "prof-abilities-spells"
+    "prof-abilities-threat";
+  height: 400px;
 }
 
-#omens-profile #abilities-container.witch-profile #abilities-freeform { 
+#omens-profile #abilities-container.witch-profile #abilities-freeform {
   border: 35px solid #333;
 }
 
@@ -7322,7 +7370,7 @@ fieldset.search.active-topics legend {
   justify-content: flex-end;
 }
 
-#omens-profile #abilities-container .witch-spells .scroll { 
+#omens-profile #abilities-container .witch-spells .scroll {
   padding: 15px;
   padding-right: 5px;
   display: flex;
@@ -7331,7 +7379,9 @@ fieldset.search.active-topics legend {
   align-items: center;
 }
 
-#omens-profile #abilities-container .witch-spells .scroll br { display: none; }
+#omens-profile #abilities-container .witch-spells .scroll br {
+  display: none;
+}
 
 #omens-profile #abilities-container.witch-profile .witch-spell-deco {
   position: absolute;
@@ -7345,7 +7395,7 @@ fieldset.search.active-topics legend {
   pointer-events: none;
 }
 
-#omens-profile #abilities-container .witch-spells spell { 
+#omens-profile #abilities-container .witch-spells spell {
   font: 800 11px raleway;
   text-transform: uppercase;
   color: #777;
@@ -7356,7 +7406,7 @@ fieldset.search.active-topics legend {
   border-radius: 3px;
 }
 
-#omens-profile #abilities-container .witch-spells spell:nth-child(odd) { 
+#omens-profile #abilities-container .witch-spells spell:nth-child(odd) {
   background-color: var(--custom);
   color: #222;
   position: relative;
@@ -7368,7 +7418,7 @@ fieldset.search.active-topics legend {
   font-size: 75px;
 }
 
-#omens-profile #abilities-container .witch-spells .scroll::-webkit-scrollbar { 
+#omens-profile #abilities-container .witch-spells .scroll::-webkit-scrollbar {
   height: 10px;
   z-index: 1;
 }
@@ -7382,6 +7432,7 @@ fieldset.search.active-topics legend {
   background: #444;
   border: 5px solid #333;
 }
+
 /* END MAIN PROFILE */
 /* START CUSTOM CODE STYLING */
 
@@ -7710,6 +7761,7 @@ fieldset.search.active-topics legend {
   text-align: center;
   grid-area: sitetemplate1-header;
 }
+
 .omens-grimoire-template label {
   display: grid;
   place-items: center;
@@ -7726,11 +7778,13 @@ fieldset.search.active-topics legend {
   transition: 0.25s;
   cursor: pointer;
 }
+
 .omens-grimoire-template input[type="radio"] {
-  display: none; /* DON'T EDIT */
+  display: none;
+  /* DON'T EDIT */
 }
 
-.omens-grimoire-template input[type="radio"]:checked + label {
+.omens-grimoire-template input[type="radio"]:checked+label {
   border: 2px solid var(--main-accent);
 }
 
@@ -7768,7 +7822,7 @@ fieldset.search.active-topics legend {
 
 #omens-grimoire-tabs-receipt {
   top: 325px;
-} 
+}
 
 #omens-history,
 #omens-t1,
@@ -7788,16 +7842,16 @@ fieldset.search.active-topics legend {
 }
 
 
-#omens-grimoire-tabs-grimoire:checked ~ #omens-grimoire,
-#omens-grimoire-tabs-history:checked ~ #omens-history,
-#omens-grimoire-tabs-t1:checked ~ #omens-t1,
-#omens-grimoire-tabs-t1:checked ~ #omens-t1,
-#omens-grimoire-tabs-t2:checked ~ #omens-t2,
-#omens-grimoire-tabs-t3:checked ~ #omens-t3,
-#omens-grimoire-tabs-t4:checked ~ #omens-t4,
-#omens-grimoire-tabs-charms:checked ~ #omens-charms,
-#omens-grimoire-tabs-receipt:checked ~ #omens-receipt,
-#omens-grimoire-tabs-other:checked ~ #omens-other {
+#omens-grimoire-tabs-grimoire:checked~#omens-grimoire,
+#omens-grimoire-tabs-history:checked~#omens-history,
+#omens-grimoire-tabs-t1:checked~#omens-t1,
+#omens-grimoire-tabs-t1:checked~#omens-t1,
+#omens-grimoire-tabs-t2:checked~#omens-t2,
+#omens-grimoire-tabs-t3:checked~#omens-t3,
+#omens-grimoire-tabs-t4:checked~#omens-t4,
+#omens-grimoire-tabs-charms:checked~#omens-charms,
+#omens-grimoire-tabs-receipt:checked~#omens-receipt,
+#omens-grimoire-tabs-other:checked~#omens-other {
   opacity: 1;
   pointer-events: auto;
   transition: 0.25s;
@@ -7828,7 +7882,7 @@ fieldset.search.active-topics legend {
 .omens-grimoire-template.omens-grimoire label:nth-of-type(6),
 .omens-grimoire-template.omens-grimoire label:nth-of-type(8),
 .omens-grimoire-template.omens-grimoire label:nth-of-type(10),
-.omens-grimoire-template.omens-grimoire label:nth-of-type(12){
+.omens-grimoire-template.omens-grimoire label:nth-of-type(12) {
   transform: translateX(60px);
   margin: -15px 0px;
 }
@@ -7850,6 +7904,7 @@ fieldset.search.active-topics legend {
   margin-top: 56px;
   margin-left: 180px;
 }
+
 .omens-grimoire-content h2 {
   margin: 0px 25px 25px 0px;
   font: 700 45px montserrat;
@@ -7861,6 +7916,7 @@ fieldset.search.active-topics legend {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .omens-grimoire-content h2 span {
   display: block;
   margin-top: -20px;
@@ -7893,6 +7949,7 @@ fieldset.search.active-topics legend {
   font-weight: 500;
   font-style: italic;
 }
+
 @media (max-height: 425px) and (min-width: 600px) {
   .omens-grimoire-template.omens-grimoire label {
     position: revert;
@@ -8031,22 +8088,49 @@ fieldset.search.active-topics legend {
   background: #1f1f1f;
 }
 
-#eventCountdown { width:100%; display:grid; }
-#eventCountdown .countdown_row { display: flex; flex-flow:row nowrap; align-items:center; justify-content:space-evenly }
-#eventCountdown .countdown_row .countdown_section { text-align:center; font:700 10px/100% montserrat, sans-serif; text-transform:uppercase; color:#666; width:33% }
-#eventCountdown .countdown_row .countdown_amount { font:800 36px/100% montserrat, sans-serif; letter-spacing:-4px; color:var(--main-accent); }
-blockquote #eventCountdown .countdown_row.countdown_descr { margin-top:0; }
-#eventCountdown .countdown_row.countdown_descr { 
-  margin: 50px 0 10px 0;
-font: 800 11px/100% roboto;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-color:#888;
-  text-align:center;
-order:-1;
+#eventCountdown {
+  width: 100%;
+  display: grid;
 }
 
-#eventCountdown .countdown_row.countdown_descr.countdown_expiry { margin:50px 0 0 0; font: italic 500 27px/100% montserrat;
+#eventCountdown .countdown_row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+#eventCountdown .countdown_row .countdown_section {
+  text-align: center;
+  font: 700 10px/100% montserrat, sans-serif;
+  text-transform: uppercase;
+  color: #666;
+  width: 33%
+}
+
+#eventCountdown .countdown_row .countdown_amount {
+  font: 800 36px/100% montserrat, sans-serif;
+  letter-spacing: -4px;
+  color: var(--main-accent);
+}
+
+blockquote #eventCountdown .countdown_row.countdown_descr {
+  margin-top: 0;
+}
+
+#eventCountdown .countdown_row.countdown_descr {
+  margin: 50px 0 10px 0;
+  font: 800 11px/100% roboto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  text-align: center;
+  order: -1;
+}
+
+#eventCountdown .countdown_row.countdown_descr.countdown_expiry {
+  margin: 50px 0 0 0;
+  font: italic 500 27px/100% montserrat;
   text-transform: lowercase;
   letter-spacing: -1px;
   color: #666;
@@ -8054,7 +8138,10 @@ order:-1;
   order: -1;
 }
 
-.omens-basic-template.tabbed { text-align:center; }
+.omens-basic-template.tabbed {
+  text-align: center;
+}
+
 .omens-basic-template.tabbed label {
   display: inline-grid;
   place-items: center;
@@ -8084,7 +8171,7 @@ order:-1;
   display: none;
 }
 
-.omens-basic-template.tabbed input[type="radio"]:checked + label {
+.omens-basic-template.tabbed input[type="radio"]:checked+label {
   border: 2px solid var(--main-accent);
 }
 
@@ -8107,18 +8194,19 @@ order:-1;
   display: none;
 }
 
-#omens-basic-tab-1:checked ~ #omens-basic-tab-1-content,
-#omens-basic-tab-2:checked ~ #omens-basic-tab-2-content,
-#omens-basic-tab-3:checked ~ #omens-basic-tab-3-content,
-#omens-basic-tab-4:checked ~ #omens-basic-tab-4-content,
-#omens-basic-tab-5:checked ~ #omens-basic-tab-5-content,
-#omens-basic-tab-6:checked ~ #omens-basic-tab-6-content,
-#omens-basic-tab-7:checked ~ #omens-basic-tab-7-content,
-#omens-basic-tab-8:checked ~ #omens-basic-tab-8-content,
-#omens-basic-tab-9:checked ~ #omens-basic-tab-9-content,
-#omens-basic-tab-10:checked ~ #omens-basic-tab-10-content {
+#omens-basic-tab-1:checked~#omens-basic-tab-1-content,
+#omens-basic-tab-2:checked~#omens-basic-tab-2-content,
+#omens-basic-tab-3:checked~#omens-basic-tab-3-content,
+#omens-basic-tab-4:checked~#omens-basic-tab-4-content,
+#omens-basic-tab-5:checked~#omens-basic-tab-5-content,
+#omens-basic-tab-6:checked~#omens-basic-tab-6-content,
+#omens-basic-tab-7:checked~#omens-basic-tab-7-content,
+#omens-basic-tab-8:checked~#omens-basic-tab-8-content,
+#omens-basic-tab-9:checked~#omens-basic-tab-9-content,
+#omens-basic-tab-10:checked~#omens-basic-tab-10-content {
   display: block;
 }
+
 /* END STAFF TEMPLATE */
 /* START MEMBER DIRECTORY */
 
@@ -8451,328 +8539,360 @@ order:-1;
 .weepingomensrel {
   margin: 50px auto;
   background: #eee;
-      display: flex;
-      flex-flow: row wrap;
-      gap: 5px;
-      justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px;
+  justify-content: center;
   border-radius: 10px;
   width: 630px;
   --accent2: #999;
-  }
-  .weepingomensrelboxtop {
-    border-bottom: 5px solid var(--custom);
-      background: #333;
-      width: calc(100% - 100px);
-      padding: 50px;
-      display: flex;
-      flex-flow: row wrap;
-      place-items: center;
-      place-content: start;
-      column-gap: 10px;
-      row-gap: 5px;
-      border-radius: 5px 5px 0px 0px;
-  }
-  .weepingomensrelboxtop b {
-    font: 300 40px/100% raleway;
-      color: #eee;
-      text-transform: uppercase;
-      text-align: left;
-  }
-  .weepingomensrelboxtop span {
-    font: 700 10px/100% roboto;
-      text-transform: uppercase;
-      color: #eee;
-      padding: 10px;
-      background: #222;
-      border-radius: 5px;
-      text-align: justify;
-  }
-  .weepingomensrelbox {
-    max-width: 270px;
-    height: 290px;
-    border-radius: 6px;
-    position: relative;
-    overflow: hidden;
+}
+
+.weepingomensrelboxtop {
+  border-bottom: 5px solid var(--custom);
+  background: #333;
+  width: calc(100% - 100px);
+  padding: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  place-items: center;
+  place-content: start;
+  column-gap: 10px;
+  row-gap: 5px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.weepingomensrelboxtop b {
+  font: 300 40px/100% raleway;
+  color: #eee;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.weepingomensrelboxtop span {
+  font: 700 10px/100% roboto;
+  text-transform: uppercase;
+  color: #eee;
+  padding: 10px;
+  background: #222;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.weepingomensrelbox {
+  max-width: 270px;
+  height: 290px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
   margin: 10px;
-  }
-  .weepingomensrelbox .top {
-      overflow: hidden;
-    background-color: #333333;
-    padding: 10px;
-    border-radius: 5px 5px 0px 0px;
-    position: relative;
-    z-index: 5;
-  }
-  .weepingomensrelbox .top:before {
-    content: "trust";
-    position: absolute;
-    top: 5px;
-    font-family: montserrat;
-    font-size: 35px;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-style: italic;
-    color: #fff;
-    opacity: 20%;
-    letter-spacing: 10px;
-  }
-  .weepingomensrelbox .top div {
-      position: relative;
-    opacity: 85%;
-  }
-  .weepingomensrelbox .top div span {
-    display: block;
-    width: 0%;
-    border-radius: 15px;
-    height: 6px;
-    background: linear-gradient(to left, var(--accent1), var(--accent2));
-  }
-  .weepingomensrelbox .icon {
-    height: 80px;
-    width: 80px;
-    padding: 35px;
-    background: radial-gradient(
-      rgba(255, 255, 255, 0.2) 50%,
-      rgba(237, 237, 237, 0) 95%
-    );
-    border-radius: 100%;
-    margin: -25px;
-    position: absolute;
-  }
-  .weepingomensrelbox .icon img {
-    height: 80px;
-    width: 80px;
-    border-radius: 100%;
-    transform: rotate(10deg);
-  }
-  .weepingomensrelbox .name {
-    padding: 20px 20px 20px 100px;
-    text-align: right;
-    font: bold 10px montserrat;
-    line-height: 10px;
-    color: #eeeeee;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 5px rgba(33, 33, 33, 0.15);
-    height: 70px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    letter-spacing: 0.5px;
-    position: relative;
-    z-index: 1;
-  }
-  .weepingomensrelbox .name a {
-    text-decoration: none;
-    font: bold 17px montserrat;
-    line-height: 15px;
-    color: #eeeeee;
-    display: block;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    letter-spacing: -0.5px;
-  }
-  .weepingomensrelbox .blurb {
-      padding: 50px;
-    background-color: #333;
-    border: solid 1px #333;
-    border-top: none;
-    border-radius: 0px 0px 5px 5px;
-  }
-  .weepingomensrelbox .blurb div {
-    height: 140px;
-    width: 230px;
-    overflow: auto;
+}
+
+.weepingomensrelbox .top {
+  overflow: hidden;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+  z-index: 5;
+}
+
+.weepingomensrelbox .top:before {
+  content: "trust";
+  position: absolute;
+  top: 5px;
+  font-family: montserrat;
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #fff;
+  opacity: 20%;
+  letter-spacing: 10px;
+}
+
+.weepingomensrelbox .top div {
+  position: relative;
+  opacity: 85%;
+}
+
+.weepingomensrelbox .top div span {
+  display: block;
+  width: 0%;
+  border-radius: 15px;
+  height: 6px;
+  background: linear-gradient(to left, var(--accent1), var(--accent2));
+}
+
+.weepingomensrelbox .icon {
+  height: 80px;
+  width: 80px;
+  padding: 35px;
+  background: radial-gradient(rgba(255, 255, 255, 0.2) 50%,
+      rgba(237, 237, 237, 0) 95%);
+  border-radius: 100%;
+  margin: -25px;
+  position: absolute;
+}
+
+.weepingomensrelbox .icon img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  transform: rotate(10deg);
+}
+
+.weepingomensrelbox .name {
+  padding: 20px 20px 20px 100px;
+  text-align: right;
+  font: bold 10px montserrat;
+  line-height: 10px;
+  color: #eeeeee;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(33, 33, 33, 0.15);
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.weepingomensrelbox .name a {
+  text-decoration: none;
+  font: bold 17px montserrat;
+  line-height: 15px;
+  color: #eeeeee;
+  display: block;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.weepingomensrelbox .blurb {
+  padding: 50px;
+  background-color: #333;
+  border: solid 1px #333;
+  border-top: none;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.weepingomensrelbox .blurb div {
+  height: 140px;
+  width: 230px;
+  overflow: auto;
   padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-    font: 12px roboto;
-    line-height: 17px;
-    text-align: justify;
-    letter-spacing: 0.25px;
-    color: #afafaf;
-    background: #333;
-    position: relative;
-    top: -50px;
-    right: 45px;
-  }
-  .weepingomensrelbox .blurb div a {
-    text-decoration: none;
-    font-weight: 700 !important;
-    background: linear-gradient(to top left, var(--accent1), var(--accent2));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  .weepingomensrelbox .blurb div::-webkit-scrollbar {
-    width: 10px;
-    border-radius: 5px;
-    border: none;
-    background: transparent;
-  }
-  .weepingomensrelbox .blurb div::-webkit-scrollbar-thumb {
-    border: solid 1px #333;
-    border-radius: 5px;
-    background: #aaa;
-  }
-  .weepingomensrelboxfoot {
+  padding-right: 15px;
+  padding-left: 15px;
+  font: 12px roboto;
+  line-height: 17px;
+  text-align: justify;
+  letter-spacing: 0.25px;
+  color: #afafaf;
+  background: #333;
+  position: relative;
+  top: -50px;
+  right: 45px;
+}
+
+.weepingomensrelbox .blurb div a {
+  text-decoration: none;
+  font-weight: 700 !important;
+  background: linear-gradient(to top left, var(--accent1), var(--accent2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.weepingomensrelbox .blurb div::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+  border: none;
+  background: transparent;
+}
+
+.weepingomensrelbox .blurb div::-webkit-scrollbar-thumb {
+  border: solid 1px #333;
+  border-radius: 5px;
+  background: #aaa;
+}
+
+.weepingomensrelboxfoot {
   border-top: 5px solid var(--custom);
-      width: calc(100% - 50px);
-      background: #333;
-      overflow: hidden;
-      padding: 10px 25px;
-      text-align: center;
-      border-radius: 0px 0px 5px 5px;
-  }
-  .weepingomensrelboxfoot img {
+  width: calc(100% - 50px);
+  background: #333;
+  overflow: hidden;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.weepingomensrelboxfoot img {
   width: 75px;
-      height: 75px;
-      margin: -15px 0px;
-      border-radius: 100%;
-      grid-area: dev-icon;
-      padding: 10px;
-      border: 4px solid #444;
-  }
-  
-  
-  /* relationship template v2 */
-  
-  
-  #omens-rel-tracker {
-    margin: auto;
-    width: 500px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  #omens-rel-tracker .tracker-top {
-    width: 500px;
-    height: 75px;
-    background: #333;
-    overflow: hidden;
-    border-bottom: 3px solid var(--custom);
-  }
-  #omens-rel-tracker .tracker-top span {
-    font: 900 55px/60% "poppins";
-    text-transform: uppercase;
-    font-style: italic;
-    color: #fff;
-    opacity: 5%;
-  }
-  #omens-rel-tracker .tracker-in {
-    margin: auto;
-    width: 400px;
-    padding: 50px;
-    background: #292929;
-      display: flex;
-    flex-flow: column;
-    gap: 50px;
-  }
-  #omens-rel-tracker .tracker-char {
-    display: flex;
-    flex-flow: row wrap;
-  }
-  #omens-rel-tracker .tracker-char .char-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    margin-top: -15px;
-  }
-  #omens-rel-tracker .tracker-char .char-img img {
-    width: 150px;
-    height: 150px;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    margin-left: -19px;
-    margin-top: 1px;
-  }
-  #omens-rel-tracker .tracker-char .char-img:after {
-    content: "";
-    display: block;
-    width: 370px;
-    height: 150px;
-    border-top: 1px solid var(--custom);
-    margin-top: -130px;
-    margin-left: 50px;
-  }
-  #omens-rel-tracker .tracker-char .char-img:before {
-    content: "";
-    display: block;
-    width: 115px;
-    height: 115px;
-    position: absolute;
-    margin-top: 17px;
-    margin-left: -10px;
-    border: 1px solid var(--custom);
-    transform: rotate(-45deg);
-  }
-  #omens-rel-tracker .tracker-char .char-name {
-    width: 380px;
-    font: 900 11px/100% "montserrat";
-    font-style: italic;
-    margin-top: -140px;
-    margin-left: 30px;
-    text-transform: uppercase;
-    color: #e9e9e9;
-    text-align: right;
-  }
-  #omens-rel-tracker .tracker-char .char-quote {
-    width: 300px;
-    margin-top: -120px;
-    margin-left: 140px;
-    color: #b5b5b5;
-    padding-top: 15px;
-    padding-left: 25px;
-    text-align: justify;
-    font-family: roboto;
-    font-size: 12px;
-    line-height: 190%;
-  }
-  
-  #omens-rel-tracker .tracker-char .rel-tags {
-    width: 100%;
-    height: 30px;
-    margin-top: -10px;
-    margin-left: 130px;
-    padding: 10px;
-    text-align: right;
-    display: flex;
-    gap: 10px;
-  }
-  #omens-rel-tracker .tracker-char .rel-tags span {
-    font-size: 8px;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    font-family: roboto;
-    padding: 5px;
-    background-color: var(--custom);
-    border-radius: 3px;
-    color: #eee;
-    font-weight: 700;
-  }
-  
-  #omens-rel-tracker .tracker-char .rel-bars {
-    padding-top: 20px;
-  }
-  #omens-rel-tracker .tracker-char .rel-bar1 {
-    width: 100%;
-  }
-  #omens-rel-tracker .tracker-char .rel-bar1 i {
-    font-size: 30px;
-    padding-left: 10px;
-    padding-right: 5px;
-    color: #aaa;
-  }
-  #omens-rel-tracker .tracker-char .rel-bar2 {
-    display: inline-block;
-    width: 280px;
-    border: 1px solid var(--custom);
-    border-radius: 5px;
-    padding: 5px;
-  }
-  #omens-rel-tracker .tracker-char .rel-bar2-inside {
-      width: 100%;
-    height: 5px;
-    background-color: #d7d7d7;
-    border-radius: 5px;
-  }
+  height: 75px;
+  margin: -15px 0px;
+  border-radius: 100%;
+  grid-area: dev-icon;
+  padding: 10px;
+  border: 4px solid #444;
+}
+
+
+/* relationship template v2 */
+
+
+#omens-rel-tracker {
+  margin: auto;
+  width: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#omens-rel-tracker .tracker-top {
+  width: 500px;
+  height: 75px;
+  background: #333;
+  overflow: hidden;
+  border-bottom: 3px solid var(--custom);
+}
+
+#omens-rel-tracker .tracker-top span {
+  font: 900 55px/60% "poppins";
+  text-transform: uppercase;
+  font-style: italic;
+  color: #fff;
+  opacity: 5%;
+}
+
+#omens-rel-tracker .tracker-in {
+  margin: auto;
+  width: 400px;
+  padding: 50px;
+  background: #292929;
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+}
+
+#omens-rel-tracker .tracker-char {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#omens-rel-tracker .tracker-char .char-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+
+#omens-rel-tracker .tracker-char .char-img img {
+  width: 150px;
+  height: 150px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-left: -19px;
+  margin-top: 1px;
+}
+
+#omens-rel-tracker .tracker-char .char-img:after {
+  content: "";
+  display: block;
+  width: 370px;
+  height: 150px;
+  border-top: 1px solid var(--custom);
+  margin-top: -130px;
+  margin-left: 50px;
+}
+
+#omens-rel-tracker .tracker-char .char-img:before {
+  content: "";
+  display: block;
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  margin-top: 17px;
+  margin-left: -10px;
+  border: 1px solid var(--custom);
+  transform: rotate(-45deg);
+}
+
+#omens-rel-tracker .tracker-char .char-name {
+  width: 380px;
+  font: 900 11px/100% "montserrat";
+  font-style: italic;
+  margin-top: -140px;
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: #e9e9e9;
+  text-align: right;
+}
+
+#omens-rel-tracker .tracker-char .char-quote {
+  width: 300px;
+  margin-top: -120px;
+  margin-left: 140px;
+  color: #b5b5b5;
+  padding-top: 15px;
+  padding-left: 25px;
+  text-align: justify;
+  font-family: roboto;
+  font-size: 12px;
+  line-height: 190%;
+}
+
+#omens-rel-tracker .tracker-char .rel-tags {
+  width: 100%;
+  height: 30px;
+  margin-top: -10px;
+  margin-left: 130px;
+  padding: 10px;
+  text-align: right;
+  display: flex;
+  gap: 10px;
+}
+
+#omens-rel-tracker .tracker-char .rel-tags span {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-family: roboto;
+  padding: 5px;
+  background-color: var(--custom);
+  border-radius: 3px;
+  color: #eee;
+  font-weight: 700;
+}
+
+#omens-rel-tracker .tracker-char .rel-bars {
+  padding-top: 20px;
+}
+
+#omens-rel-tracker .tracker-char .rel-bar1 {
+  width: 100%;
+}
+
+#omens-rel-tracker .tracker-char .rel-bar1 i {
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 5px;
+  color: #aaa;
+}
+
+#omens-rel-tracker .tracker-char .rel-bar2 {
+  display: inline-block;
+  width: 280px;
+  border: 1px solid var(--custom);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#omens-rel-tracker .tracker-char .rel-bar2-inside {
+  width: 100%;
+  height: 5px;
+  background-color: #d7d7d7;
+  border-radius: 5px;
+}
 
 /* END RELATIONSHIP TRACKER 1 TEMPLATE */
 /* START TIMELINE 1 TEMPLATE */
@@ -8780,12 +8900,14 @@ order:-1;
 .omens-timeline-cont::-webkit-scrollbar {
   width: 0px;
 }
+
 .omens-timeline-cont {
   margin: auto;
   width: 500px;
   max-height: 550px;
   overflow: auto;
 }
+
 .omens-timeline-part-subtitle {
   font: 900 10px/100% roboto;
   text-transform: uppercase;
@@ -8793,23 +8915,25 @@ order:-1;
   padding: 10px;
   border-radius: 5px;
   text-align: justify;
-      margin-left: 20px;
+  margin-left: 20px;
   margin-top: 0px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .omens-timeline-part span {
-    display: inline-block;
+  display: inline-block;
   color: #eee;
   font: italic 500 35px montserrat;
   text-transform: uppercase;
-    background: #272727;
-    border-radius: 5px;
-    margin-left: 20px;
+  background: #272727;
+  border-radius: 5px;
+  margin-left: 20px;
   margin-top: 20px;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .omens-timeline-middle {
   margin-left: 25px;
   padding: 20px;
@@ -8818,33 +8942,40 @@ order:-1;
   display: flex;
   flex-flow: column nowrap;
 }
+
 .omens-timeline-middle .title a {
   font: 900 15px roboto;
   text-decoration: none;
   color: var(--custom);
   border-bottom: 1px solid var(--custom);
 }
+
 .omens-timeline-middle .title a:hover {
   opacity: 70%;
   transition: .5s ease;
 }
+
 .omens-timeline-middle .partner:before {
   content: "ft. ";
   font: 900 13px 'montserrat';
   color: var(--custom);
 }
+
 .omens-timeline-middle .partner {
   padding: 5px;
   text-transform: lowercase;
   font: 400 12px roboto;
   color: #121212;
 }
+
 .omens-timeline-middle .blurb b {
   color: var(--custom);
 }
+
 .omens-timeline-middle .blurb::-webkit-scrollbar {
   width: 0px;
 }
+
 .omens-timeline-middle .blurb {
   font: 400 12px/140% roboto;
   width: 350px;
@@ -8859,11 +8990,13 @@ order:-1;
   border-radius: 5px;
   text-align: justify;
 }
+
 .omens-timeline-divider {
   margin-left: 20px;
   margin-bottom: 10px;
   border-bottom: 3px dotted var(--custom);
 }
+
 .omens-development-1.omens-development-1-timeline {
   background: #eee;
 }
@@ -9846,65 +9979,70 @@ order:-1;
 .omens-wanted-1-multi .want-character .want-char-desc::-webkit-scrollbar-thumb {
   background-color: var(--custom);
 }
+
 /* END WANTED 1 TEMPLATE */
 /* START ALL FORUM GAME TEMPLATES */
 /* START FMK TEMPLATE */
 
 .fmk {
   border-radius: 5px;
-margin: auto;
-overflow: hidden;
- width:430px; 
-background-color:#222; 
-height:180px; 
-opacity: 1;
+  margin: auto;
+  overflow: hidden;
+  width: 430px;
+  background-color: #222;
+  height: 180px;
+  opacity: 1;
 }
+
 .fmk .post-icon {
-position: relative;
-width: 90px;
-height: 90px;
-top: -120px;
-right: -10px;
-background: #191919;
-padding: 30px;
-border-radius: 100%;
-border: 2px dotted var(--custom);
+  position: relative;
+  width: 90px;
+  height: 90px;
+  top: -120px;
+  right: -10px;
+  background: #191919;
+  padding: 30px;
+  border-radius: 100%;
+  border: 2px dotted var(--custom);
 }
+
 .fmk .post-icon img {
   width: 90px;
-height: 90px;
-border-radius: 100%;
-filter: contrast(50%);
+  height: 90px;
+  border-radius: 100%;
+  filter: contrast(50%);
 }
+
 .fmk-ask {
-color: var(--custom);
-font: 18px 'montserrat';
-font-weight: 900;
-position: relative;
-top: 0px;
-right: -70px;
-text-transform: uppercase;
-      display:flex;
-flex-flow:row wrap;
-justify-content:center;
+  color: var(--custom);
+  font: 18px 'montserrat';
+  font-weight: 900;
+  position: relative;
+  top: 0px;
+  right: -70px;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
+
 .fmk-answer {
- position: relative;
-z-index: 1;
-top: 0px;
-right: -190px;
- width: 180px;
- height: 40px;
-padding-bottom: 10px;
- padding: 18px;
-overflow: auto;
- background: #191919;
- -webkit-border-radius: 10px;
- -moz-border-radius: 10px;
- border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  top: 0px;
+  right: -190px;
+  width: 180px;
+  height: 40px;
+  padding-bottom: 10px;
+  padding: 18px;
+  overflow: auto;
+  background: #191919;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
-.fmk-answer:after
-{
+
+.fmk-answer:after {
   content: '';
   position: absolute;
   border-style: solid;
@@ -9916,71 +10054,76 @@ overflow: auto;
   left: -20px;
   top: 20px;
 }
+
 .fmk-answer div {
-color: #fff;
-font-family: roboto;
-position: relative;
-font-size: 12px;
-font-weight: 200;
-text-align: justify;
+  color: #fff;
+  font-family: roboto;
+  position: relative;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: justify;
 }
 
 
 .fmk1 {
   border-radius: 5px;
-margin: auto;
-overflow:hidden;
- width:430px; 
-background-color:#222; 
-height:180px; 
-opacity: 1;
+  margin: auto;
+  overflow: hidden;
+  width: 430px;
+  background-color: #222;
+  height: 180px;
+  opacity: 1;
 }
+
 .fmk-img1 {
-position: relative;
-width: 90px;
-height: 90px;
-top: -85px;
-right: -10px;
-background: #191919;
-padding: 30px;
-border-radius: 100%;
-border: 2px dotted var(--custom);
+  position: relative;
+  width: 90px;
+  height: 90px;
+  top: -85px;
+  right: -10px;
+  background: #191919;
+  padding: 30px;
+  border-radius: 100%;
+  border: 2px dotted var(--custom);
 }
+
 .fmk-img1 img {
   width: 90px;
-height: 90px;
-border-radius: 100%;
-filter: contrast(50%);
+  height: 90px;
+  border-radius: 100%;
+  filter: contrast(50%);
 }
+
 .fmk-ask1 {
-color: var(--custom);
-font: 18px 'montserrat';
-font-weight: 900;
-position: relative;
-top: 30px;
-right: -70px;
-text-transform: uppercase;
-      display:flex;
-flex-flow:row wrap;
-justify-content:center;
+  color: var(--custom);
+  font: 18px 'montserrat';
+  font-weight: 900;
+  position: relative;
+  top: 30px;
+  right: -70px;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
+
 .fmk-answer1 {
- position: relative;
-z-index: 1;
-top: 50px;
-right: -190px;
- width: 180px;
- height: 40px;
-overflow: auto;
-padding-bottom: 10px;
- padding: 18px;
- background: #191919;
- -webkit-border-radius: 10px;
- -moz-border-radius: 10px;
- border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  right: -190px;
+  width: 180px;
+  height: 40px;
+  overflow: auto;
+  padding-bottom: 10px;
+  padding: 18px;
+  background: #191919;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
-.fmk-answer1:after
-{
+
+.fmk-answer1:after {
   content: '';
   position: absolute;
   border-style: solid;
@@ -9992,25 +10135,29 @@ padding-bottom: 10px;
   left: -20px;
   top: 20px;
 }
+
 .fmk-answer1 div {
-color: #fff;
-font-family: roboto;
-font-size: 12px;
-font-weight: 200;
-text-align: justify;
+  color: #fff;
+  font-family: roboto;
+  font-size: 12px;
+  font-weight: 200;
+  text-align: justify;
 }
 
 /* END FMK TEMPLATE */
 /* END ALL FORUM GAME TEMPLATES */
-/* START ALL PHONE TEMPLATES */ 
+/* START ALL PHONE TEMPLATES */
 /* START UNIVERSAL PHONE STYLING */
 
-.phone-icon-override { display:none; }
+.phone-icon-override {
+  display: none;
+}
+
 .phone-background img,
 .phone-background-override img {
-  width:100%;
-  object-fit:cover;
-  image-rendering:-webkit-optimize-contrast;
+  width: 100%;
+  object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 /* END UNIVERSAL PHONE STYLING */
@@ -10028,9 +10175,11 @@ text-align: justify;
   position: relative;
 }
 
-.omens-phone1-phone .phone-time { flex-grow:1; }
+.omens-phone1-phone .phone-time {
+  flex-grow: 1;
+}
 
-.omens-phone1-phone .phone-background { 
+.omens-phone1-phone .phone-background {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -10042,16 +10191,24 @@ text-align: justify;
   overflow: hidden;
 }
 
-.omens-phone1-phone .phone-background img { display:block; position:relative; }
+.omens-phone1-phone .phone-background img {
+  display: block;
+  position: relative;
+}
 
 
 .omens-phone1-phonecall.phone-callscreen .phone-icon {
-	width: 150px;
-	height: 150px;
-	margin-bottom: 50px; position:relative;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-.omens-phone1-phonecall.phone-callscreen .phone-icon img { display:block;max-width:100%;margin:0; }
+.omens-phone1-phonecall.phone-callscreen .phone-icon img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
 
 .omens-phone1-phone:after {
   content: "";
@@ -10184,7 +10341,7 @@ text-align: justify;
   background: var(--custom);
   color: #111;
   position: relative;
-  z-index:1;
+  z-index: 1;
 }
 
 .omens-phone1-phone-messages msg br, .omens-phone1-phone-messages received br {
@@ -10243,10 +10400,12 @@ text-align: justify;
 }
 
 @keyframes omens-phone1-typing-blink {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #ddd;
   }
@@ -10358,9 +10517,9 @@ text-align: justify;
 }
 
 .omens-phone-dial .omens-phone-call .phone-icon {
-	width:150px;
-	height:150px;
-	    z-index: 1;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
 }
 
 .omens-phone1-phonecall.omens-phone-convo speech br {
@@ -10481,6 +10640,7 @@ text-align: justify;
   width: 230px;
   margin: 0 auto;
 }
+
 .omens-phone-2 {
   padding: 10px;
   background: #111;
@@ -10499,6 +10659,7 @@ text-align: justify;
   right: -5px;
   border-radius: 0 5px 5px 0;
 }
+
 .omens-phone-2 .phone-power:after {
   content: "";
   position: absolute;
@@ -10509,6 +10670,7 @@ text-align: justify;
   right: -5px;
   border-radius: 0 5px 5px 0;
 }
+
 .omens-phone-2 .phone-contain {
   width: 230px;
   height: 450px;
@@ -10519,12 +10681,11 @@ text-align: justify;
   place-content: start;
   place-items: start center;
   background-color: var(--custom);
-  background-image: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 50%) 0%,
-    rgba(0, 0, 0, 50%) 100%
-  );
+  background-image: linear-gradient(135deg,
+      rgba(0, 0, 0, 50%) 0%,
+      rgba(0, 0, 0, 50%) 100%);
 }
+
 .omens-phone-2 .phone-background,
 .omens-phone-2 .phone-background-override {
   width: 230px;
@@ -10543,6 +10704,7 @@ text-align: justify;
   position: relative;
   z-index: 1;
 }
+
 .omens-phone-2 .phone-contain .phone-deco2 {
   display: flex;
   flex-flow: row wrap;
@@ -10573,6 +10735,7 @@ text-align: justify;
   place-items: center;
   place-content: center;
 }
+
 .omens-phone-2 .phone-contain .phone-deco:before {
   content: "";
   position: absolute;
@@ -10581,6 +10744,7 @@ text-align: justify;
   height: 2px;
   background: #1f1f1f;
 }
+
 .omens-phone-2 .phone-contain .phone-deco:after {
   content: "";
   position: absolute;
@@ -10590,6 +10754,7 @@ text-align: justify;
   border-radius: 100%;
   margin-left: 50%;
 }
+
 .omens-phone-2 .phone-contain .phone-messages {
   margin-top: 20px;
   margin-right: 10px;
@@ -10603,13 +10768,16 @@ text-align: justify;
   position: relative;
   z-index: 1;
 }
+
 .omens-phone-2 .phone-contain .phone-messages::-webkit-scrollbar {
   width: 10px;
 }
+
 .omens-phone-2 .phone-contain .phone-messages::-webkit-scrollbar-thumb {
   background: #ddd;
   border-radius: 5px;
 }
+
 .omens-phone-2 .phone-contain .phone-messages tagged {
   display: block;
   font: 400 20px montserrat;
@@ -10620,19 +10788,23 @@ text-align: justify;
   flex-grow: 1;
   max-width: 90%;
 }
+
 .phone-messages br {
-display:none;
+  display: none;
 }
+
 .phone-messages msg br,
 .phone-messages received br {
-display:block;
+  display: block;
 }
+
 .omens-phone-2 .phone-contain .phone-messages msg,
 .omens-phone-2 .phone-contain .phone-messages received {
   font: 500 11px montserrat;
   max-width: 75%;
   text-align: justify;
 }
+
 .omens-phone-2 .phone-contain .phone-messages msg {
   background: var(--custom);
   padding: 10px;
@@ -10643,6 +10815,7 @@ display:block;
   position: relative;
   text-align-last: right;
 }
+
 .omens-phone-2 .phone-contain .phone-messages received {
   background: rgba(0, 0, 0, 25%);
   padding: 8px;
@@ -10652,12 +10825,14 @@ display:block;
   margin-left: 5px;
   position: relative;
 }
+
 .omens-phone-2 .phone-contain .phone-messages msg img,
 .omens-phone-2 .phone-contain .phone-messages received img {
   display: block;
   max-width: 100%;
   border-radius: 0px;
 }
+
 .omens-phone-2 .phone-contain .phone-messages received react {
   font-size: 0;
   position: absolute;
@@ -10671,13 +10846,14 @@ display:block;
 .omens-phone-2 .phone-contain .phone-messages received react:before {
   color: #eee;
   font-size: 25px;
-  display:block;
+  display: block;
 }
 
 .omens-phone-2 .phone-contain .phone-messages msg:not(.no-user-icon):last-of-type {
   margin-right: 40px;
   max-width: calc(75% - 40px);
 }
+
 .omens-phone-2 .phone-contain .phone-messages .phone-icon,
 .omens-phone-2 .phone-contain .phone-messages .phone-icon-override {
   position: absolute;
@@ -10689,10 +10865,12 @@ display:block;
   border-radius: 100%;
   border: 0;
 }
+
 .omens-phone-2 .phone-contain .phone-messages .phone-icon img,
 .omens-phone-2 .phone-contain .phone-messages .phone-icon-override img {
-  border-radius:100%;
+  border-radius: 100%;
 }
+
 .omens-phone-2 .phone-contain .phone-deco3 {
   display: flex;
   flex-flow: row nowrap;
@@ -10700,6 +10878,7 @@ display:block;
   position: relative;
   margin-top: 10px;
 }
+
 .omens-phone-2 .phone-contain .phone-deco3 .phone-messagebox {
   background: rgba(0, 0, 0, 25%);
   padding: 8px 25px;
@@ -10713,13 +10892,16 @@ display:block;
   display: grid;
   align-items: center;
 }
+
 .omens-phone-2 .phone-contain .phone-deco3 .phone-messagebox div {
   border-right: 2px solid #ddd;
   animation: omens-phone1-typing-blink 1.5s 1.5s step-end infinite;
 }
+
 .omens-phone-2:hover .phone-contain .phone-deco3 .phone-messagebox div {
   animation-play-state: paused;
 }
+
 .omens-phone-2 .phone-contain .phone-deco3 .phone-messagesend {
   background: rgba(255, 255, 255, 10%);
   width: 10px;
@@ -10746,9 +10928,11 @@ display:block;
   gap: 10px;
   position: relative;
 }
+
 .omens-phone-2 .phone-contain .phone-dialscreen br {
-display:none;
+  display: none;
 }
+
 .omens-phone-2 .phone-contain .phone-dialscreen tagged:before {
   content: "now calling...";
   font: 700 8px/8px montserrat;
@@ -10758,6 +10942,7 @@ display:none;
   top: -10px;
   opacity: 50%;
 }
+
 .omens-phone-2 .phone-contain .phone-dialscreen tagged, .omens-phone-2 .phone-contain .phone-dialscreen tagged2 {
   font: 400 20px montserrat;
   font-style: italic;
@@ -10767,11 +10952,13 @@ display:none;
   margin-top: 10px;
   min-width: 75%;
 }
+
 .omens-phone-2 .phone-contain .phone-dialdeco {
   display: grid;
   grid: min-content min-content / min-content min-content min-content;
   gap: 10px;
 }
+
 .omens-phone-2 .phone-contain .phone-dialdeco ion-icon {
   padding: 10px;
   background: rgba(255, 255, 255, 20%);
@@ -10779,6 +10966,7 @@ display:none;
   color: #eee;
   font-size: 30px;
 }
+
 .omens-phone-2 .phone-contain .phone-dialdeco2 {
   font-size: 40px;
   color: #eee;
@@ -10798,15 +10986,19 @@ display:none;
   gap: 10px;
   position: relative;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen br {
-display:none;
+  display: none;
 }
-.omens-phone-2 .phone-contain .phone-callscreen speech { 
-display:block;
+
+.omens-phone-2 .phone-contain .phone-callscreen speech {
+  display: block;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen speech br {
-display:block;
+  display: block;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen tagged:before {
   content: "speaking to...";
   font: 700 8px/8px montserrat;
@@ -10816,6 +11008,7 @@ display:block;
   top: -10px;
   opacity: 50%;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen tagged {
   font: 400 20px montserrat;
   font-style: italic;
@@ -10823,13 +11016,15 @@ display:block;
   text-align: right;
   position: relative;
   margin-top: 10px;
-  order:1;
-  min-width:75%;
+  order: 1;
+  min-width: 75%;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen .phone-icon,
 .omens-phone-2 .phone-contain .phone-callscreen .phone-icon-override {
-  order:2;
+  order: 2;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen .phone-icon img,
 .omens-phone-2 .phone-contain .phone-callscreen .phone-icon-override img {
   display: block;
@@ -10839,13 +11034,15 @@ display:block;
   border-radius: 100%;
   z-index: 2;
 }
+
 .omens-phone-2 .phone-contain .phone-calldeco {
   align-self: end;
   font-size: 40px;
   color: #eee;
   transform: rotate(135deg);
-  order:4;
+  order: 4;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen speech {
   background: rgba(0, 0, 0, 33%);
   border: 10px solid transparent;
@@ -10858,19 +11055,19 @@ display:block;
   overflow: auto;
   position: relative;
   z-index: 2;
-  order:3;
+  order: 3;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen speech::-webkit-scrollbar {
   width: 7px;
 }
+
 .omens-phone-2 .phone-contain .phone-callscreen speech i {
   color: #fff;
   font-weight: 600;
 }
-.omens-phone-2
-  .phone-contain
-  .phone-callscreen
-  speech::-webkit-scrollbar-thumb {
+
+.omens-phone-2 .phone-contain .phone-callscreen speech::-webkit-scrollbar-thumb {
   background: #eee;
   border-radius: 5px;
 }
@@ -10926,6 +11123,7 @@ display:block;
   border-radius: 20px;
   overflow: hidden;
 }
+
 .omens-phone-3 .phone-contain .phone-callscreen {
   display: grid;
   width: 100%;
@@ -10964,6 +11162,7 @@ display:block;
   font: 500 10px poppins;
   letter-spacing: 0px;
 }
+
 .omens-phone-3 .phone-contain .phone-callscreen tagged2 {
   grid-area: phone3call-tag;
   margin-bottom: 25px;
@@ -10985,6 +11184,7 @@ display:block;
   justify-content: center;
   width: calc(100% - 20px);
 }
+
 .omens-phone-3 .phone-contain .phone-callscreen speech2 {
   width: 100%;
   display: block;
@@ -11017,6 +11217,7 @@ display:block;
   mix-blend-mode: multiply;
   opacity: 100%;
 }
+
 .omens-phone-3.omens-phone-text .phone-contain .phone-background,
 .omens-phone-3.omens-phone-text .phone-contain .phone-background-override {
   width: 100%;
@@ -11026,6 +11227,7 @@ display:block;
   filter: brightness(150%) contrast(33%);
   overflow: hidden;
 }
+
 .omens-phone-3.omens-phone-call .phone-contain .phone-background,
 .omens-phone-3.omens-phone-call .phone-contain .phone-background-override {
   width: 100%;
@@ -11035,6 +11237,7 @@ display:block;
   border-radius: 20px;
   filter: brightness(150%) contrast(33%);
 }
+
 .omens-phone-3.omens-phone-call .phone-contain .phone-background:after,
 .omens-phone-3.omens-phone-dial .phone-contain .phone-background:after,
 .omens-phone-3.omens-phone-call .phone-contain .phone-background-override:after,
@@ -11056,14 +11259,16 @@ display:block;
   position: absolute;
   filter: brightness(150%) contrast(33%);
 }
+
 .omens-phone-3.omens-phone-call .phone-contain .phone-background img,
 .omens-phone-3.omens-phone-dial .phone-contain .phone-background img,
 .omens-phone-3.omens-phone-text .phone-contain .phone-background img,
 .omens-phone-3.omens-phone-call .phone-contain .phone-background-override img,
 .omens-phone-3.omens-phone-dial .phone-contain .phone-background-override img,
 .omens-phone-3.omens-phone-text .phone-contain .phone-background-override img {
-	position: absolute;
+  position: absolute;
 }
+
 .omens-phone-3 .phone-contain .phone-icons {
   position: absolute;
   height: 125px;
@@ -11079,10 +11284,12 @@ display:block;
   gap: 20px;
   place-items: center;
 }
+
 .omens-phone-3.omens-phone-call .phone-contain .phone-icons {
   font-size: 50px;
   transform: rotate(130deg);
 }
+
 .omens-phone-3 .phone-contain .phone-messages {
   width: calc(100% - 20px);
   height: calc(75% - 20px);
@@ -11108,28 +11315,19 @@ display:block;
 .omens-phone-3 .phone-contain .phone-callscreen speech2::-webkit-scrollbar {
   width: 17px;
 }
-.omens-phone-3
-  .phone-contain
-  .phone-messages
-  .phone-scroll::-webkit-scrollbar-track,
-.omens-phone-3
-  .phone-contain
-  .phone-callscreen
-  speech2::-webkit-scrollbar-track {
+
+.omens-phone-3 .phone-contain .phone-messages .phone-scroll::-webkit-scrollbar-track,
+.omens-phone-3 .phone-contain .phone-callscreen speech2::-webkit-scrollbar-track {
   background: #333;
 }
-.omens-phone-3
-  .phone-contain
-  .phone-messages
-  .phone-scroll::-webkit-scrollbar-thumb,
-.omens-phone-3
-  .phone-contain
-  .phone-callscreen
-  speech2::-webkit-scrollbar-thumb {
+
+.omens-phone-3 .phone-contain .phone-messages .phone-scroll::-webkit-scrollbar-thumb,
+.omens-phone-3 .phone-contain .phone-callscreen speech2::-webkit-scrollbar-thumb {
   border: 8px solid #333;
   border-style: solid;
   background: #2a2a2a;
 }
+
 .omens-phone-3 .phone-contain .phone-messages received,
 .omens-phone-3 .phone-contain .phone-messages msg {
   padding: 10px 15px;
@@ -11138,6 +11336,7 @@ display:block;
   max-width: 75%;
   position: relative;
 }
+
 .omens-phone-3 .phone-contain .phone-messages received {
   background: #2a2a2a;
   color: #666;
@@ -11172,6 +11371,7 @@ display:block;
   align-self: flex-end;
   border-radius: 20px 10px 20px 20px;
 }
+
 .omens-phone-3 .phone-contain .phone-messages msg img,
 .omens-phone-3 .phone-contain .phone-messages received img {
   max-width: 100%;
@@ -11190,10 +11390,12 @@ display:block;
   top: 0;
   right: -40px;
 }
+
 .omens-phone-3 .phone-contain .phone-messages msg .phone-icon img,
 .omens-phone-3 .phone-contain .phone-messages msg .phone-icon-override img {
   border-radius: 100%;
 }
+
 .omens-phone-3 .phone-contain .phone-messages msg:not(.no-user-icon):first-of-type {
   margin-right: 40px;
   max-width: calc(75% - 40px);
@@ -11214,7 +11416,7 @@ display:block;
 
 .omens-phone-3.omens-phone-call .phone-contain tagged2 {
   max-width: 80%;
-  min-width:50%;
+  min-width: 50%;
   font: 300 30px/100% poppins;
   margin-top: 25px;
   mix-blend-mode: overlay;
@@ -11228,11 +11430,13 @@ display:block;
   place-content: center;
   margin-top: 10px;
 }
+
 .omens-phone-3 .phone-contain .phone-deco .phone-deco1 {
   color: #222;
   font-size: 20px;
   margin-right: 10px;
 }
+
 .omens-phone-3 .phone-contain .phone-deco .phone-deco2 {
   background: #2a2a2a;
   flex-grow: 1;
@@ -11243,14 +11447,17 @@ display:block;
   display: flex;
   align-items: center;
 }
+
 .omens-phone-3 .phone-contain .phone-deco .phone-deco3 {
   font-size: 15px;
   color: #444;
   margin-right: 10px;
 }
+
 .omens-phone-3 .phone-contain .phone-deco .phone-deco4 {
   flex-grow: 1;
 }
+
 .omens-phone-3 .phone-contain .phone-deco .phone-deco5 {
   color: #222;
   font-size: 20px;
@@ -11269,7 +11476,11 @@ display:block;
     "phone3dial-icon"
     "phone3dial-deco";
 }
-.omens-phone-3 .phone-contain .phone-dialscreen br { display:none; }
+
+.omens-phone-3 .phone-contain .phone-dialscreen br {
+  display: none;
+}
+
 .omens-phone-3 .phone-contain .phone-dialscreen .phone-icon,
 .omens-phone-3 .phone-contain .phone-dialscreen .phone-icon-override {
   grid-area: phone3dial-icon;
@@ -11279,12 +11490,14 @@ display:block;
   position: relative;
   background-size: cover;
 }
+
 .omens-phone-3 .phone-contain .phone-dialscreen .phone-icon img,
 .omens-phone-3 .phone-contain .phone-dialscreen .phone-icon-override img {
   width: 100%;
   height: 100%;
   border-radius: 100%;
 }
+
 .omens-phone-3 .phone-contain .phone-dialscreen tagged,
 .omens-phone-3 .phone-contain .phone-dialscreen tagged2 {
   grid-area: phone3dial-tag;
@@ -11351,6 +11564,7 @@ display:block;
   justify-content: center;
   margin: 20px 0 20px;
 }
+
 .omens-phone-4 .phone-deco1 .phone-speaker div {
   width: 5px;
   height: 5px;
@@ -11360,11 +11574,13 @@ display:block;
   margin: auto;
   background: #0b0b0b;
 }
+
 .omens-phone-4 .phone-deco1 .phone-speaker {
   width: 20%;
   height: 7px;
   position: relative;
 }
+
 .omens-phone-4 .phone-deco1 .phone-speaker:after {
   content: "";
   height: 7px;
@@ -11375,6 +11591,7 @@ display:block;
   top: 0;
   left: 0;
 }
+
 .omens-phone-4 .phone-deco1 .phone-speaker:before {
   content: "";
   height: 7px;
@@ -11391,6 +11608,7 @@ display:block;
   width: 250px;
   height: 400px;
 }
+
 .omens-phone-4 .phone-contain .phone-background,
 .omens-phone-4 .phone-contain .phone-background-override {
   position: absolute;
@@ -11400,13 +11618,14 @@ display:block;
   filter: grayscale(25%) brightness(25%) contrast(66%);
   border-radius: 10px;
   overflow: hidden;
-  background:#222;
+  background: #222;
 }
 
 .omens-phone-4 .phone-deco2 {
   margin-bottom: 5px;
   margin-top: 15px;
 }
+
 .omens-phone-4 .phone-deco2:after {
   content: "";
   position: relative;
@@ -11415,6 +11634,7 @@ display:block;
   background: #131313;
   border-radius: 100%;
 }
+
 .omens-phone-4 .phone-l-buttons:after {
   content: "";
   position: absolute;
@@ -11426,6 +11646,7 @@ display:block;
   background: #0b0b0b;
   border-left: 0;
 }
+
 .omens-phone-4 .phone-l-buttons {
   position: absolute;
   height: 100%;
@@ -11433,22 +11654,26 @@ display:block;
   top: 0;
   left: -7px;
 }
+
 .omens-phone-4 .phone-l-buttons div {
   position: absolute;
   background: #0f0f0f;
   border-right: 0;
   border-radius: 5px 0 0 5px;
 }
+
 .omens-phone-4 .phone-l-buttons .button-1 {
   width: 100%;
   height: 5%;
   top: 15%;
 }
+
 .omens-phone-4 .phone-l-buttons .button-2 {
   width: 100%;
   height: 10%;
   top: 25%;
 }
+
 .omens-phone-4 .phone-l-buttons .button-3 {
   width: 100%;
   height: 10%;
@@ -11471,11 +11696,11 @@ display:block;
 }
 
 .omens-phone-4.omens-phone-text .phone-contain .phone-input br {
-  display:none;
+  display: none;
 }
 
 .omens-phone-4.omens-phone-text .phone-contain .phone-input msg br, .omens-phone-4.omens-phone-text .phone-contain .phone-input received br {
-  display:block;
+  display: block;
 }
 
 .omens-phone-4 .phone-input .phone-banner {
@@ -11491,14 +11716,17 @@ display:block;
   top: 0;
   z-index: 2;
 }
+
 .omens-phone-4 .phone-input .phone-banner .phone-accent {
   position: absolute;
   font-size: 50px;
   z-index: 1;
 }
+
 .omens-phone-4 .phone-input .phone-banner .phone-time {
   flex-grow: 1;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-input tagged {
   display: block;
   width: calc(100% - 40px);
@@ -11515,6 +11743,7 @@ display:block;
   top: 20px;
   z-index: 2;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-input tagged img {
   width: 30px;
   height: 30px;
@@ -11525,6 +11754,7 @@ display:block;
   filter: grayscale(100%);
   margin-right: 5px;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-input tagged:before {
   content: "NOW MESSAGING...";
   font: 700 8px montserrat;
@@ -11535,21 +11765,20 @@ display:block;
   position: relative;
   display: block;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-input msg,
 .omens-phone-4.omens-phone-text .phone-contain .phone-input received {
   max-width: calc(80% - 50px);
   padding: 25px;
   position: relative;
 }
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input
-  msg
-  img:not(.phone-icon img, .phone-icon-override img),
+
+.omens-phone-4.omens-phone-text .phone-contain .phone-input msg img:not(.phone-icon img, .phone-icon-override img),
 .omens-phone-4.omens-phone-text .phone-contain .phone-input received img {
   max-width: 100%;
   border-radius: 5px;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-input msg {
   border-radius: 25px 25px 5px 25px;
   background: rgba(0, 0, 0, 33%);
@@ -11561,45 +11790,28 @@ display:block;
   text-align: justify;
   text-align-last: right;
 }
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input
-  msg:first-of-type {
+
+.omens-phone-4.omens-phone-text .phone-contain .phone-input msg:first-of-type {
   max-width: calc(80% - 50px - 45px);
   position: relative;
   left: -45px;
 }
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input
-  msg
-  .phone-icon,
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input
-  msg
-  .phone-icon-override {
+
+.omens-phone-4.omens-phone-text .phone-contain .phone-input msg .phone-icon,
+.omens-phone-4.omens-phone-text .phone-contain .phone-input msg .phone-icon-override {
   width: 35px;
   position: absolute;
   bottom: 0;
   right: -45px;
 }
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input
-  msg
-  .phone-icon
-  img,
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input
-  msg
-  .phone-icon-override
-  img {
+
+.omens-phone-4.omens-phone-text .phone-contain .phone-input msg .phone-icon img,
+.omens-phone-4.omens-phone-text .phone-contain .phone-input msg .phone-icon-override img {
   width: 100%;
   display: block;
   border-radius: 100%;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-input received {
   background: var(--custom);
   font: 500 13px roboto;
@@ -11608,6 +11820,7 @@ display:block;
   margin-left: 10px;
   align-self: flex-start;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-input received react {
   display: block;
   color: transparent;
@@ -11616,11 +11829,8 @@ display:block;
   right: 20px;
   z-index: 1;
 }
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input
-  received
-  react:before {
+
+.omens-phone-4.omens-phone-text .phone-contain .phone-input received react:before {
   position: absolute;
   color: #fff;
   border-radius: 5px;
@@ -11629,12 +11839,12 @@ display:block;
   opacity: 15%;
   pointer-events: none;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-input::-webkit-scrollbar {
   width: 15px;
 }
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input::-webkit-scrollbar-thumb {
+
+.omens-phone-4.omens-phone-text .phone-contain .phone-input::-webkit-scrollbar-thumb {
   background: #eee;
   border-top: 10px solid #222;
   border-bottom: 10px solid #222;
@@ -11643,12 +11853,12 @@ display:block;
   border-right: 7px solid #222;
   border-radius: 0 10px 10px 10px;
 }
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-input::-webkit-scrollbar-track {
+
+.omens-phone-4.omens-phone-text .phone-contain .phone-input::-webkit-scrollbar-track {
   background: #222;
   border-radius: 0 10px 10px 10px;
 }
+
 .omens-phone-4.omens-phone-text .phone-contain .phone-messagebar {
   position: absolute;
   margin: 10px;
@@ -11661,10 +11871,8 @@ display:block;
   color: #eee;
   text-align: center;
 }
-.omens-phone-4.omens-phone-text
-  .phone-contain
-  .phone-messagebar
-  .fa-paper-plane {
+
+.omens-phone-4.omens-phone-text .phone-contain .phone-messagebar .fa-paper-plane {
   background: #eee;
   padding: 10px;
   font-size: 15px;
@@ -11689,6 +11897,7 @@ display:block;
   font: 700 8px montserrat;
   color: #fff;
 }
+
 .omens-phone-4.omens-phone-dial .phone-contain .phone-input tagged2 {
   display: block;
   width: calc(100% - 40px);
@@ -11705,9 +11914,11 @@ display:block;
   top: 20px;
   z-index: 2;
 }
+
 .omens-phone-4.omens-phone-dial .phone-contain .phone-input tagged2 br {
-  display:none;
+  display: none;
 }
+
 .omens-phone-4.omens-phone-dial .phone-contain .phone-input tagged2 img {
   width: 30px;
   height: 30px;
@@ -11718,6 +11929,7 @@ display:block;
   filter: grayscale(100%);
   margin-right: 5px;
 }
+
 .omens-phone-4.omens-phone-dial .phone-contain .phone-input tagged2:before {
   content: "NOW DIALING...";
   font: 700 8px montserrat;
@@ -11734,6 +11946,7 @@ display:block;
   grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
   gap: 5px;
 }
+
 .omens-phone-4.omens-phone-dial .phone-keypad div {
   padding: 20px;
   height: 15px;
@@ -11747,6 +11960,7 @@ display:block;
   font: 300 20px montserrat;
   color: #eee;
 }
+
 .omens-phone-4.omens-phone-dial .phone-keypad .keypad-0 {
   grid-column: 2;
 }
@@ -11765,6 +11979,7 @@ display:block;
   font: 700 8px montserrat;
   color: #fff;
 }
+
 .omens-phone-4.omens-phone-call .phone-contain .phone-input tagged {
   display: block;
   width: calc(100% - 40px);
@@ -11780,6 +11995,7 @@ display:block;
   position: absolute;
   top: 20px;
 }
+
 .omens-phone-4.omens-phone-call .phone-contain .phone-input tagged img {
   width: 30px;
   height: 30px;
@@ -11790,6 +12006,7 @@ display:block;
   filter: grayscale(100%);
   margin-right: 5px;
 }
+
 .omens-phone-4.omens-phone-call .phone-contain .phone-input tagged:before {
   content: "NOW CALLING...";
   font: 700 8px montserrat;
@@ -11809,9 +12026,11 @@ display:block;
   place-items: center;
   place-content: end center;
 }
+
 .omens-phone-4.omens-phone-call .phone-callscreen br {
-  display:none;
+  display: none;
 }
+
 .omens-phone-4.omens-phone-call .phone-callscreen .phone-icon,
 .omens-phone-4.omens-phone-call .phone-callscreen .phone-icon-override {
   position: relative;
@@ -11844,27 +12063,31 @@ display:block;
   overflow-x: hidden;
   text-align: center;
 }
+
 .omens-phone-4.omens-phone-call .phone-callscreen speech i {
   color: #fff;
 }
+
 .omens-phone-4.omens-phone-call .phone-callscreen speech u {
   text-decoration: none;
   border-bottom: 1px solid var(--custom);
   color: #fff;
 }
+
 .omens-phone-4.omens-phone-call .phone-callscreen speech b {
   color: var(--custom);
   font: 600 13px montserrat;
 }
+
 .omens-phone-4.omens-phone-call .phone-callscreen speech br {
-  display:block;
+  display: block;
 }
+
 .omens-phone-4.omens-phone-call .phone-callscreen speech::-webkit-scrollbar {
   width: 15px;
 }
-.omens-phone-4.omens-phone-call
-  .phone-callscreen
-  speech::-webkit-scrollbar-thumb {
+
+.omens-phone-4.omens-phone-call .phone-callscreen speech::-webkit-scrollbar-thumb {
   background: #eee;
   border-top: 10px solid #222;
   border-bottom: 10px solid #222;
@@ -11872,9 +12095,8 @@ display:block;
   border-left: 7px solid #222;
   border-right: 7px solid #222;
 }
-.omens-phone-4.omens-phone-call
-  .phone-callscreen
-  speech::-webkit-scrollbar-track {
+
+.omens-phone-4.omens-phone-call .phone-callscreen speech::-webkit-scrollbar-track {
   background: #222;
   border-radius: 10px 10px 10px 10px;
 }
@@ -11884,16 +12106,24 @@ display:block;
 /* START ALL POST TEMPLATES */
 /* START UNIVERSAL POST STYLES */
 
-.postcolor .omens-post-template { max-width: 670px; }
+.postcolor .omens-post-template {
+  max-width: 670px;
+}
+
 .post-image-1 img, .post-image-1-override img {
-  max-width:200px;
+  max-width: 200px;
   height: inherit;
   image-rendering: -webkit-optimize-contrast;
-} 
-.post-image-2, .post-image-2-override { max-height: 150px; }
-.post-image-2 img, .post-image-2-override img {
-  max-height:100%;
 }
+
+.post-image-2, .post-image-2-override {
+  max-height: 150px;
+}
+
+.post-image-2 img, .post-image-2-override img {
+  max-height: 100%;
+}
+
 /* END UNIVERSAL POST STYLES */
 /* START POST 1 TEMPLATE */
 
@@ -13398,7 +13628,7 @@ display:block;
 
 .omens-post-12 {
   margin: 40px;
-  background-image:url(https://i.ibb.co/j4zSdj5/light-spots2.png);
+  background-image: url(https://i.ibb.co/j4zSdj5/light-spots2.png);
   display: grid;
   grid: min-content auto / min-content auto;
   grid-template-areas:
@@ -13411,6 +13641,7 @@ display:block;
   border-radius: 5px;
   overflow: hidden;
 }
+
 .omens-post-12 .post-image-1 {
   grid-area: post-14-image;
   position: absolute;
@@ -13421,11 +13652,13 @@ display:block;
   margin: 5px 15px 5px 0px;
   background: var(--custom);
 }
+
 .omens-post-12 .post-image-1 img {
   filter: grayscale(100%);
   mix-blend-mode: hard-light;
   transition: 0.7s;
 }
+
 .omens-post-12 .post-contain {
   grid-area: post-14-lyricpost;
   display: flex;
@@ -13434,8 +13667,9 @@ display:block;
   place-content: start;
   height: 530px;
 }
+
 .omens-post-12 .lyric-1 {
-    grid-area: post-14-lyric-1;
+  grid-area: post-14-lyric-1;
   width: 250px;
   font: 800 20px 'montserrat';
   text-align: center;
@@ -13445,17 +13679,18 @@ display:block;
   z-index: 1;
   border-top: 1px solid #fff;
   padding-top: 5px;
-position: relative;
-top: -30px;
+  position: relative;
+  top: -30px;
 }
+
 .omens-post-12 .lyric-2 {
   width: 250px;
   font: 400 20px 'montserrat';
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-position: relative;
-top: 0px;
+  position: relative;
+  top: 0px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -13463,6 +13698,7 @@ top: 0px;
   z-index: 1;
   border-bottom: solid 1px var(--custom);
 }
+
 .omens-post-12 .post-body {
   grid-area: post-14-body;
   border: 15px solid #202020;
@@ -13481,6 +13717,7 @@ top: 0px;
   padding-left: 10px;
   position: relative;
 }
+
 .omens-post-12 .post-body::-webkit-scrollbar {
   width: 3px;
 }
@@ -13521,19 +13758,21 @@ top: 0px;
   color: #222;
   padding: 0px 3px;
 }
+
 .omens-post-12 .post-body tagged {
-  gap:10px;
-  font:300 15px/100% 'Montserrat';
-  color:#ddd;
+  gap: 10px;
+  font: 300 15px/100% 'Montserrat';
+  color: #ddd;
   margin-top: 10px;
-  text-align:center;
+  text-align: center;
   float: right;
 }
+
 .omens-post-12 .post-body tagged a {
-  padding:2px;
-  background:var(--custom);
-  color:#eee;
-  text-decoration:none;
+  padding: 2px;
+  background: var(--custom);
+  color: #eee;
+  text-decoration: none;
 }
 
 .omens-post-12-2 {
@@ -13541,7 +13780,7 @@ top: 0px;
   margin: auto;
   background: #191919;
   background-image: url(https://i.ibb.co/j4zSdj5/light-spots2.png);
-   display: grid;
+  display: grid;
   grid: min-content auto / auto min-content;
   grid-template-areas:
     "lyric-post post-image-1"
@@ -13550,8 +13789,9 @@ top: 0px;
   place-content: start;
   position: relative;
   padding: 25px;
-  border-radius:5px;
+  border-radius: 5px;
 }
+
 .omens-post-12-2 .post-image-1 {
   width: 200px;
   height: 400px;
@@ -13563,12 +13803,14 @@ top: 0px;
   margin: 5px 15px 5px 0px;
   background: var(--custom);
 }
+
 .omens-post-12-2 .post-image-1 img {
-width: 200px;
-height: 400px;
-mix-blend-mode: hard-light;
-filter: grayscale(100%);
+  width: 200px;
+  height: 400px;
+  mix-blend-mode: hard-light;
+  filter: grayscale(100%);
 }
+
 .omens-post-12-2 .lyric-post {
   grid-area: post-12-lyricpost;
   width: 300px;
@@ -13576,6 +13818,7 @@ filter: grayscale(100%);
   display: flex;
   flex-flow: column nowrap;
 }
+
 .omens-post-12-2 .lyric-post .lyric-1 {
   font: 800 19px/100% 'montserrat';
   text-transform: uppercase;
@@ -13584,9 +13827,10 @@ filter: grayscale(100%);
   width: 100%;
   text-align: center;
   border-top: 3px solid #efefef;
-  padding-top: 8px; 
+  padding-top: 8px;
   padding-bottom: 10px;
 }
+
 .omens-post-12-2 .lyric-post .post-body {
   border: 15px solid #202020;
   width: 250px;
@@ -13600,6 +13844,7 @@ filter: grayscale(100%);
   padding-right: 10px;
   padding-lefT: 10px;
 }
+
 .omens-post-12-2 .post-body::-webkit-scrollbar {
   width: 3px;
 }
@@ -13642,21 +13887,24 @@ filter: grayscale(100%);
   color: #222;
   padding: 0px 3px;
 }
+
 .omens-post-12-2 .post-body tagged {
-  gap:10px;
-  font:300 15px/100% 'Montserrat';
-  color:#ddd;
+  gap: 10px;
+  font: 300 15px/100% 'Montserrat';
+  color: #ddd;
   margin-top: 10px;
-  text-align:center;
+  text-align: center;
   float: right;
 }
+
 .omens-post-12-2 .post-body tagged a {
-  padding:2px;
-  background:var(--custom);
-  color:#eee;
-  text-decoration:none;
-  text-transform:uppercase;
+  padding: 2px;
+  background: var(--custom);
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
 .omens-post-12-2 .lyric-post .lyric-2 {
   font: 300 17px 'montserrat';
   text-align: center;
@@ -13676,8 +13924,9 @@ filter: grayscale(100%);
   height: auto;
   background: #212121;
   margin: 0 auto;
-  border-radius: 3px;  
+  border-radius: 3px;
 }
+
 .omens-post-13 .post-image-2 {
   position: relative;
   height: 150px;
@@ -13685,13 +13934,15 @@ filter: grayscale(100%);
   background: var(--custom);
   border-bottom: 15px solid var(--custom);
 }
+
 .omens-post-13 .post-image-2 img {
   display: block;
- filter:grayscale(100%)brightness(115%);
+  filter: grayscale(100%)brightness(115%);
   mix-blend-mode: soft-light;
 }
+
 .omens-post-13 .post-icon {
-    border: 10px solid var(--custom);
+  border: 10px solid var(--custom);
   shape-outside: 100%;
   border-radius: 100px;
   top: -150px;
@@ -13701,47 +13952,51 @@ filter: grayscale(100%);
   height: 100px;
   width: 100px;
 }
+
 .omens-post-13 .post-icon img {
   height: 100px;
   width: 100px;
   border-radius: 100px;
-  filter:brightness(125%);
+  filter: brightness(125%);
 }
+
 .omens-post-13 .lyric-1 {
   display: block;
   position: relative;
-top: -130px;
-right: -20px;
+  top: -130px;
+  right: -20px;
   padding: 10px;
   width: 320px;
   margin-top: -30px;
   margin-right: 100px;
-    font:700 26px/100% 'Roboto';
+  font: 700 26px/100% 'Roboto';
   text-transform: uppercase;
   text-align: center;
-  letter-spacing:1px;
-  color:#fff;
-  z-index:1;
+  letter-spacing: 1px;
+  color: #fff;
+  z-index: 1;
   opacity: 1;
-    border-top: 2px solid white;
+  border-top: 2px solid white;
   mix-blend-mode: overlay;
 }
+
 .omens-post-13 .lyric-2 {
   display: block;
   position: relative;
-top: -160px;
-right: -20px;
-    padding: 10px;
+  top: -160px;
+  right: -20px;
+  padding: 10px;
   width: 320px;
-    font:700 10px/100% 'Roboto';
+  font: 700 10px/100% 'Roboto';
   border-bottom: 2px solid white;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing:1px;
-  color:#fff;
-  z-index:1;
+  letter-spacing: 1px;
+  color: #fff;
+  z-index: 1;
   opacity: 1;
 }
+
 .omens-post-13 .post-body {
   border-top: 15px solid #333;
   position: relative;
@@ -13757,6 +14012,7 @@ right: -20px;
   line-height: 20px;
   text-align: justify;
 }
+
 .omens-post-13 .post-body b {
   color: var(--custom);
   font-weight: 800;
@@ -13774,38 +14030,45 @@ right: -20px;
   font-style: italic;
   color: #ddd;
 }
+
 .omens-post-13 .post-body c {
   color: var(--custom);
 }
+
 .omens-post-13 .post-body span {
   color: var(--custom);
 }
+
 .omens-post-13 .post-body u {
   text-decoration: none;
   background: var(--custom);
   color: #222;
   padding: 0px 3px;
 }
+
 .omens-post-13 .post-body tagged {
-  gap:10px;
+  gap: 10px;
   font: italic 300 15px/100% 'Roboto';
   text-transform: uppercase;
-  color:#ddd;
+  color: #ddd;
   height: 25px;
   width: 500;
-  margin-top:30px;
+  margin-top: 30px;
   margin-left: -10px;
-    background-color: var(--custom);
-  display:flex;
-  flex-flow:row wrap;
+  background-color: var(--custom);
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-   gap:0px 10px;
+  gap: 0px 10px;
 }
+
 .omens-post-13 .post-body tagged a {
   float: center;
-  padding:5px;
-  color:#fff;;
+  padding: 5px;
+  color: #fff;
+  ;
 }
+
 .omens-post-13 .post-body a {
   text-decoration: none;
   color: white;
@@ -13822,6 +14085,7 @@ right: -20px;
   position: relative;
   border-radius: 5px;
 }
+
 .omens-post-13-2 .post-image-2 {
   width: 500px;
   height: 150px;
@@ -13830,6 +14094,7 @@ right: -20px;
   margin: 20px auto;
   background: var(--custom);
 }
+
 .omens-post-13-2 .post-icon {
   width: 100px;
   height: 100px;
@@ -13839,10 +14104,12 @@ right: -20px;
   border: 10px solid #262626;
   outline: 5px solid #333;
 }
+
 .omens-post-13-2 .post-icon img {
   width: 100px;
   height: 100px;
 }
+
 .omens-post-13-2 .post-body {
   color: #aaa;
   padding-top: 15px;
@@ -13853,11 +14120,13 @@ right: -20px;
   border-left: 5px solid #333;
   padding-left: 15px;
 }
+
 .omens-post-13-2 .post-body b {
   font: 700 15px/18px roboto;
   letter-spacing: 0;
   color: var(--custom);
 }
+
 .omens-post-13-2 .post-body b i,
 .omens-post-13-2 .post-body b u,
 .omens-post-13-2 .post-body b i u,
@@ -13878,17 +14147,20 @@ right: -20px;
   text-decoration: none;
   border-bottom: 1px solid var(--custom);
 }
+
 .omens-post-13-2 .post-body tagged:before {
-  content:"written for ";
-    font: 500 10px montserrat;
+  content: "written for ";
+  font: 500 10px montserrat;
   color: #555;
   text-transform: uppercase;
 }
+
 .omens-post-13-2 .post-body tagged {
   font: 500 11px/100% "montserrat";
   color: #555;
   float: right;
 }
+
 .omens-post-13-2 .post-body tagged a {
   font: 700 10px montserrat;
   text-transform: uppercase;
@@ -13897,10 +14169,12 @@ right: -20px;
   margin: 15px;
   transition: .5s;
 }
+
 .omens-post-13-2 .post-body tagged a:hover {
   color: var(--custom);
-    text-shadow: 2px 0 30px #fff;
+  text-shadow: 2px 0 30px #fff;
 }
+
 .omens-post-13-2 .lyric-1 {
   font: 800 25px/100% playfair display;
   text-transform: uppercase;
@@ -13908,6 +14182,7 @@ right: -20px;
   text-align: center;
   padding-bottom: 5px;
 }
+
 .omens-post-13-2 .lyric-2 {
   width: 80%;
   font: 700 10px roboto;
@@ -13925,99 +14200,106 @@ right: -20px;
 
 .omens-post-14 {
   border-radius: 3px;
-	width: 410px;
-	height: 550px;
-	margin: 20px auto;
-	position: relative;
+  width: 410px;
+  height: 550px;
+  margin: 20px auto;
+  position: relative;
   display: flex;
-    background-size: cover;
+  background-size: cover;
   background-image: url('https://i.ibb.co/HNPFgw5/a-U0-KSA-4.png');
   background-position: center;
-	color: #dfdfdf;
+  color: #dfdfdf;
   outline: 1px solid #888;
   outline-offset: 10px;
 }
+
 .omens-post-14 .post-body {
-	width: 430px;
-	border: 1px solid rgba(var(--custom),0.5);
-	position: relative;
-	padding: 25px;
+  width: 430px;
+  border: 1px solid rgba(var(--custom), 0.5);
+  position: relative;
+  padding: 25px;
 }
+
 .omens-post-14 .post-text {
-	border-radius: 3px;
-	box-sizing: border-box;
-	width: 350px;
-	height:330px;
-	font: 300 13px 'roboto', arial, sans-serif;
-	text-align: justify;
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 350px;
+  height: 330px;
+  font: 300 13px 'roboto', arial, sans-serif;
+  text-align: justify;
   padding: 20px;
   padding-bottom: 20px;
-	padding-top: 10px;
-	position: relative;
+  padding-top: 10px;
+  position: relative;
   right: -5px;
-	background-color: #333;
-	z-index: 20;
-	overflow: auto;
+  background-color: #333;
+  z-index: 20;
+  overflow: auto;
 }
-.omens-post-14 .post-text::-webkit-scrollbar{
-width: 6px;
-height: 6px;
+
+.omens-post-14 .post-text::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
-.omens-post-14 .post-text::-webkit-scrollbar-thumb{
-background: #000000;
-border-radius: 0px;
+
+.omens-post-14 .post-text::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 0px;
 }
-.omens-post-14 .post-text::-webkit-scrollbar-thumb:hover{
-background: #B3AFB300;
+
+.omens-post-14 .post-text::-webkit-scrollbar-thumb:hover {
+  background: #B3AFB300;
 }
-.omens-post-14 .post-text::-webkit-scrollbar-track{
-background: transparent;
-border-radius: 0px;
-box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+
+.omens-post-14 .post-text::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
 
 .omens-post-14 .post-text b {
-  font:300 15px roboto;
-  color:var(--custom);
+  font: 300 15px roboto;
+  color: var(--custom);
 }
 
 .omens-post-14 .post-text i {
-  color:#eee;
+  color: #eee;
 }
 
 .omens-post-14 .post-text span {
-  color:var(--custom);
+  color: var(--custom);
 }
 
 .omens-post-14 .post-text u {
-  text-decoration:none;
-  border-bottom:1px solid var(--custom);
-  background:#2f2f2f;
-  color:#888;
+  text-decoration: none;
+  border-bottom: 1px solid var(--custom);
+  background: #2f2f2f;
+  color: #888;
 }
 
 .omens-post-14 .post-text u i, .omens-post-14 .post-text span i, .omens-post-14 .post-text b i {
-  color:revert;
+  color: revert;
 }
 
 .omens-post-14 .post-text tagged {
-  display:flex;
-  flex-flow:row wrap;
-  place-content:flex-end;
+  display: flex;
+  flex-flow: row wrap;
+  place-content: flex-end;
   padding-top: 10px;
   padding-bottom: 10px;
-  font:italic 300 15px/100% montserrat;
-  color:#ddd;
-  text-align:center;
+  font: italic 300 15px/100% montserrat;
+  color: #ddd;
+  text-align: center;
 }
 
 .omens-post-14 .post-text tagged a {
-  display:inline-block;
-    padding:5px;
-  background:var(--custom);
-  color:#eee;
-  text-decoration:none;
+  display: inline-block;
+  padding: 5px;
+  background: var(--custom);
+  color: #eee;
+  text-decoration: none;
 }
+
 .omens-post-14 .post-icon {
   position: absolute;
   top: 400px;
@@ -14026,27 +14308,30 @@ box-shadow: inset 0px 0px 0px 0px #F0F0F0;
   height: 100px;
   border: 5px solid var(--custom);
   background: var(--custom);
-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
 }
+
 .omens-post-14 .post-icon img {
   width: 100px;
   height: 100px;
-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
 .omens-post-14 .lyric-1 {
   position: relative;
   top: -15px;
   right: -5px;
   width: 250px;
-  color:var(--custom);
+  color: var(--custom);
   font: 400 20px 'montserrat';
   text-transform: uppercase;
 }
+
 .omens-post-14 .lyric-2 {
   position: relative;
-margin-top: 20px;
-top: -20px;
+  margin-top: 20px;
+  top: -20px;
   right: -5px;
   width: 200px;
   padding: 5px;
@@ -14063,60 +14348,65 @@ top: -20px;
 .omens-post-15 {
   position: relative;
   width: 550px;
-   margin: 0 auto;
- background: #212121;
- color: #6a6a6a;
-padding-bottom: 10px;
+  margin: 0 auto;
+  background: #212121;
+  color: #6a6a6a;
+  padding-bottom: 10px;
   padding-left: 20px;
   border-radius: 5px;
 }
+
 .omens-post-15 .post-image-1 {
   position: absolute;
   width: 200px;
   height: 400px;
   right: -310px;
-top: -20px;
+  top: -20px;
   position: relative;
   border: 15px solid var(--custom);
   outline: 10px solid #fff;
   outline-offset: -25px;
-  margin:10px 15px 5px 0px;
+  margin: 10px 15px 5px 0px;
   background: var(--custom);
 }
+
 .omens-post-15 .post-image-1 img {
   filter: grayscale(100%)brightness(120%);
-  mix-blend-mode:soft-light;
-  max-width:100%;
+  mix-blend-mode: soft-light;
+  max-width: 100%;
 }
+
 .omens-post-15 .lyric-1 {
-    font:italic 300 25px/100% 'montserrat';
-  letter-spacing:1px;
-  padding:7px;
-  text-transform:uppercase;
-  text-align:center;
-  position:relative;
-  z-index:1;
+  font: italic 300 25px/100% 'montserrat';
+  letter-spacing: 1px;
+  padding: 7px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1;
   position: relative;
   padding-bottom: 5px;
   border-bottom: 5px solid var(--custom);
-  line-height:35px;
-  color:var(--custom);
+  line-height: 35px;
+  color: var(--custom);
 }
+
 .omens-post-15 .lyric-2 {
-    font:bold 10px/100% roboto;
+  font: bold 10px/100% roboto;
   margin-left: -20px;
   margin-top: 0px;
-  letter-spacing:2px;
-  background:var(--custom);
-  padding:7px;
-  text-transform:uppercase;
-  color:#fff;
-  text-align:center;
-  position:relative;
-top: -30px;
-  z-index:1;
-  justify-self:center;
+  letter-spacing: 2px;
+  background: var(--custom);
+  padding: 7px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: -30px;
+  z-index: 1;
+  justify-self: center;
 }
+
 .omens-post-15 .post-icon {
   position: absolute;
   width: 100px;
@@ -14126,37 +14416,41 @@ top: -30px;
   outline-offset: -12px;
   background: var(--custom);
 }
+
 .omens-post-15 .post-icon img {
   width: 100px;
-  height: 100px; 
+  height: 100px;
   mix-blend-mode: soft-light;
 }
+
 .omens-post-15 .post-body {
-     font:400 14px/18px roboto, arial, sans-serif;
-  color:#aaa;
-  text-align:justify;
+  font: 400 14px/18px roboto, arial, sans-serif;
+  color: #aaa;
+  text-align: justify;
   margin-top: 10px;
   width: 270px;
-  height:435px;
-  overflow:auto;
-position: relative;
-top: -35px;
+  height: 435px;
+  overflow: auto;
+  position: relative;
+  top: -35px;
   padding-left: 10px;
-  padding-right:20px;
+  padding-right: 20px;
   margin-top: -440px;
 }
+
 .omens-post-15 .post-body::-webkit-scrollbar {
-  width:13px;
+  width: 13px;
 }
 
 .omens-post-15 .post-body::-webkit-scrollbar-thumb {
-  border:5px solid #2f2f2f;
-  background:var(--custom);
+  border: 5px solid #2f2f2f;
+  background: var(--custom);
 }
 
 .omens-post-15 .post-body::-webkit-scrollbar-track {
-  background:#2f2f2f;
+  background: #2f2f2f;
 }
+
 .omens-post-15 .post-body b {
   color: var(--custom);
   font: italic 300 15px 'montserrat';
@@ -14174,36 +14468,43 @@ top: -35px;
   font-style: italic;
   color: #ddd;
 }
+
 .omens-post-15 .post-body c {
-    color: var(--custom);
+  color: var(--custom);
   font: italic 300 15px 'montserrat';
 }
+
 .omens-post-15 .post-body span {
   color: var(--custom);
 }
+
 .omens-post-15 .post-body u {
   text-decoration: none;
   background: var(--custom);
   color: #222;
   padding: 0px 3px;
 }
+
 .omens-post-15 .post-body tagged {
-  gap:10px;
+  gap: 10px;
   font: bold 300 15px/100% 'Roboto';
   text-transform: uppercase;
-  color:#ddd;
+  color: #ddd;
   height: 25px;
   width: 30;
-   gap:0px 10px;
+  gap: 0px 10px;
 }
+
 .omens-post-15 .post-body tagged a {
   margin-top: 10px;
-      background-color: var(--custom);
-    border-radius:1px;
+  background-color: var(--custom);
+  border-radius: 1px;
   float: right;
-  padding:5px;
-  color:#fff;;
+  padding: 5px;
+  color: #fff;
+  ;
 }
+
 .omens-post-15 .post-body a {
   text-decoration: none;
   color: white;
@@ -14223,83 +14524,91 @@ top: -35px;
   border-radius: 3px;
   padding-bottom: 70px;
 }
+
 .omens-post-16 .post-border {
-  	width:512px;
-	border:1px solid #ccc;
-	margin:auto;
-	background:#e4e4e4;
-	padding:15px;
-	border-radius:3px;
+  width: 512px;
+  border: 1px solid #ccc;
+  margin: auto;
+  background: #e4e4e4;
+  padding: 15px;
+  border-radius: 3px;
 }
+
 .omens-post-16 .lyric-1 {
-position: relative;
-top:5px;
+  position: relative;
+  top: 5px;
   padding-top: 20px;
   padding-left: 20px;
-   font:700 23px/100% 'Roboto';
-  text-transform:uppercase;
-  text-align:right;
-  color:var(--custom);
+  font: 700 23px/100% 'Roboto';
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--custom);
 }
+
 .omens-post-16 .lyric-2 {
-position: relative;
-top: -5px;
+  position: relative;
+  top: -5px;
   width: 370px;
   padding-top: 5px;
   padding-bottom: 20px;
-  font:100 12px 'Montserrat';
-  text-transform:uppercase;
-  text-align:right;
+  font: 100 12px 'Montserrat';
+  text-transform: uppercase;
+  text-align: right;
   color: #999;
 }
+
 .omens-post-16 .post-image-2 {
-	width:500px;
-	height:150px;
-	background-color:var(--custom);
-	border-radius:2px;
+  width: 500px;
+  height: 150px;
+  background-color: var(--custom);
+  border-radius: 2px;
   padding: 3px;
-	overflow:hidden;
+  overflow: hidden;
 }
+
 .omens-post-16 .post-image-2 img {
   filter: grayscale(50%);
-  mix-blend-mode:soft-light;
+  mix-blend-mode: soft-light;
 }
+
 .omens-post-16 .post-image-2-override img {
   filter: grayscale(50%);
-  mix-blend-mode:lighten;
+  mix-blend-mode: lighten;
 }
+
 .omens-post-16 .post-icon {
-	float:right;
+  float: right;
   width: 100px;
   height: 100px;
   padding: -50px;
   border: solid 5px var(--custom);
   border-radius: 100%;
-  background:var(--custom);
-	shape-outside: circle(100px);
-	position:relative;
+  background: var(--custom);
+  shape-outside: circle(100px);
+  position: relative;
   margin-left: 25px;
-	margin-top:15px;
+  margin-top: 15px;
 }
 
 .omens-post-16 .post-icon img {
-	display:block;
-	width:100px;
-	height:100px;
-	border-radius:100%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
   filter: grayscale(50%);
-  mix-blend-mode:hard-light;
+  mix-blend-mode: hard-light;
 }
 
 .omens-post-16 .post-body {
   border-left: 10px solid var(--custom);
-	padding:20px;
-	text-align:justify;
+  padding: 20px;
+  text-align: justify;
   margin-left: -10px;
   margin-top: -55px;
-	font:200 13px/15px Montserrat, arial, sans-serif; 
-	color:#fff;
+  font: 200 13px/15px Montserrat, arial, sans-serif;
+  color: #fff;
 }
+
 .omens-post-16 .post-body b {
   color: var(--custom);
   font-weight: 800;
@@ -14318,29 +14627,33 @@ top: -5px;
   font-style: italic;
   color: #ddd;
 }
+
 .omens-post-16 .post-body span {
   color: var(--custom);
 }
+
 .omens-post-16 .post-body u {
   text-decoration: none;
   background: #7c7c7c;
   color: #fff;
   padding: 0px 3px;
 }
+
 .omens-post-16 .post-body tagged {
-  gap:10px;
-  font:300 15px/100% 'Montserrat';
-  color:#ddd;
+  gap: 10px;
+  font: 300 15px/100% 'Montserrat';
+  color: #ddd;
   padding: 50px;
-  text-align:center;
+  text-align: center;
   float: right;
 }
+
 .omens-post-16 .post-body tagged a {
-  padding:5px;
+  padding: 5px;
   border-radius: 3px;
-  background:var(--custom);
-  color:#eee;
-  text-decoration:none;
+  background: var(--custom);
+  color: #eee;
+  text-decoration: none;
 }
 
 /* END POST 16 TEMPLATE */
