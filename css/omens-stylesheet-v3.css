@@ -11068,8 +11068,10 @@ display:block;
 /* START ALL POST TEMPLATES */
 /* START UNIVERSAL POST STYLES */
 
+.postcolor .omens-post-template { max-width: 670px; }
 .post-image-1 img, .post-image-1-override img {
   max-width:200px;
+  height: inherit;
   image-rendering: -webkit-optimize-contrast;
 } 
 
@@ -11081,7 +11083,7 @@ display:block;
   margin: 50px;
   background: #222;
   border-radius: 5px;
-  font: 500 13px/17px roboto;
+  font: 500 13px/17px roboto, sans-serif;
   color: #ccc;
   text-align: justify;
 }
@@ -11212,7 +11214,7 @@ display:block;
   text-align: justify;
   padding: 25px 25px;
   background: #1a1a1a;
-  font: 400 13px/17px roboto;
+  font: 400 13px/17px roboto, arial, sans-serif;
   color: #aaa;
   min-height: 75px;
 }
@@ -11314,7 +11316,7 @@ display:block;
   grid-area: post-3-body;
   border: 20px solid #222;
   padding-right: 10px;
-  font: 400 13px/18px roboto;
+  font: 400 13px/18px roboto, arial, sans-serif;
   color: #aaa;
   background: #222;
   text-align: justify;
@@ -11677,7 +11679,7 @@ display:block;
   margin-right: 40px;
   margin-left: 40px;
   color: #aaa;
-  font: 400 13px/18px roboto;
+  font: 400 13px/18px roboto, arial, sans-serif;
   text-align: justify;
   border-radius: 5px;
   height: 360px;
@@ -11858,7 +11860,7 @@ display:block;
 .omens-post-7 .post-body {
   border: 50px solid #222;
   background: #222;
-  font: 400 13px/18px roboto;
+  font: 400 13px/18px roboto, arial, sans-serif;
   text-align: justify;
   color: #aaa;
   position: relative;
@@ -12031,7 +12033,7 @@ display:block;
 .omens-post-8 .post-body {
   grid-area: post-8-body;
   padding: 25px;
-  font: 400 13px/18px roboto;
+  font: 400 13px/18px roboto, arial, sans-serif;
   text-align: justify;
   color: #ccc;
 }
@@ -12176,13 +12178,12 @@ display:block;
   grid-area: post-9-body;
   border: 25px solid #222;
   background: #222;
-  font: 400 13px/18px roboto;
+  font: 400 13px/18px roboto, arial, sans-serif;
   color: #aaa;
   text-align: justify;
   height: 505px;
   overflow: auto;
   padding-right: 15px;
-  text-align-last: left;
   border-radius: 0px 0px 5px 5px;
 }
 
@@ -12346,7 +12347,7 @@ display:block;
   grid-area: post-10-post;
   padding: 25px;
   background: #222;
-  font: 400 13px/18px roboto;
+  font: 400 13px/18px roboto, arial, sans-serif;
   text-align: justify;
   color: #aaa;
   border-left: 10px solid var(--custom);
@@ -12469,7 +12470,7 @@ display:block;
 }
 
 .omens-post-11 .post-body {
-  font: 400 13px/18px roboto;
+  font: 400 13px/18px roboto, arial, sans-serif;
   color: #aaa;
   text-align: justify;
   height: 400px;
