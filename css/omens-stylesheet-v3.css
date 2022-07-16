@@ -5664,6 +5664,15 @@ fieldset.search.active-topics legend {
 }
 
 /* END POST ROW */
+/* START POST ROW USER OVERRIDES */
+
+.authorid-126 .user-name #groupdeco .ooc:before { content:'NPC'!important; }
+
+.authorid-126 .button.pm { display:none!important }
+
+#thread-post.authorid-126 .quote-controls .quote .th { display:none!important; }
+
+/* END POST ROW USER OVERRIDES */
 /* START MAIN PROFILE */
 
 #omens-profile {
@@ -9022,6 +9031,7 @@ fieldset.search.active-topics legend {
   background-color: var(--custom);
 }
 /* END WANTED 1 TEMPLATE */
+/* START ALL PHONE TEMPLATES */ 
 /* START UNIVERSAL PHONE STYLING */
 
 .phone-icon-override { display:none; }
@@ -10899,11 +10909,15 @@ display:block;
 }
 
 /* END PHONE 4 TEMPLATE */
+/* END ALL PHONE TEMPLATES */
+/* START ALL POST TEMPLATES */
 /* START UNIVERSAL POST STYLES */
+
 .post-image-1 img, .post-image-1-override img {
   max-width:200px;
   image-rendering: -webkit-optimize-contrast;
 } 
+
 /* END UNIVERSAL POST STYLES */
 /* START POST 1 TEMPLATE */
 
@@ -13115,9 +13129,8 @@ top: -5px;
 }
 
 /* END POST 16 TEMPLATE */
-
-
-/* user experience is my burden, aka light mode start */
+/* END ALL POST TEMPLATES */
+/* START LIGHT MODE STYLING */
 
 body.light {
   background-image: url(https://i.ibb.co/F4Z6CNZ/image.png);
