@@ -8137,7 +8137,6 @@ order:-1;
   content: "view this playlist";
 }
 
-/* END DEVELOPMENT 1 TEMPLATES */
 /* START RELATIONSHIP TRACKER 1 TEMPLATE */
 
 .weepingomensrel {
@@ -8467,6 +8466,101 @@ order:-1;
   }
 
 /* END RELATIONSHIP TRACKER 1 TEMPLATE */
+/* START TIMELINE 1 TEMPLATE */
+
+.omens-timeline-cont::-webkit-scrollbar {
+  width: 0px;
+}
+.omens-timeline-cont {
+  margin: auto;
+  width: 500px;
+  max-height: 550px;
+  overflow: auto;
+}
+.omens-timeline-part-subtitle {
+  font: 900 10px/100% roboto;
+  text-transform: uppercase;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: justify;
+      margin-left: 20px;
+  margin-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.omens-timeline-part span {
+    display: inline-block;
+  color: #eee;
+  font: italic 500 35px montserrat;
+  text-transform: uppercase;
+    background: #272727;
+    border-radius: 5px;
+    margin-left: 20px;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.omens-timeline-middle {
+  margin-left: 25px;
+  padding: 20px;
+  height: auto;
+  font: 11px roboto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.omens-timeline-middle .title a {
+  font: 900 15px roboto;
+  text-decoration: none;
+  color: var(--custom);
+  border-bottom: 1px solid var(--custom);
+}
+.omens-timeline-middle .title a:hover {
+  opacity: 70%;
+  transition: .5s ease;
+}
+.omens-timeline-middle .partner:before {
+  content: "ft. ";
+  font: 900 13px 'montserrat';
+  color: var(--custom);
+}
+.omens-timeline-middle .partner {
+  padding: 5px;
+  text-transform: lowercase;
+  font: 400 12px roboto;
+  color: #121212;
+}
+.omens-timeline-middle .blurb b {
+  color: var(--custom);
+}
+.omens-timeline-middle .blurb::-webkit-scrollbar {
+  width: 0px;
+}
+.omens-timeline-middle .blurb {
+  font: 400 12px/140% roboto;
+  width: 350px;
+  max-height: 80px;
+  overflow: auto;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  background: #ddd;
+  padding: 20px;
+  color: #121212;
+  border-radius: 5px;
+  text-align: justify;
+}
+.omens-timeline-divider {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-bottom: 3px dotted var(--custom);
+}
+.omens-development-1.omens-development-1-timeline {
+  background: #eee;
+}
+
+/* END TIMELINE 1 TEMPLATE */
+/* END DEVELOPMENT 1 TEMPLATES */
 /* START SOCIAL MEDIA TEMPLATES */
 /* START INSTAGRAM 1 TEMPLATE */
 
