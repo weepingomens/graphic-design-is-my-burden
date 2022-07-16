@@ -60,14 +60,7 @@ but i'm a sign, not a cop.
 #omens-main.user-groupid-15 { --main-accent:#ddd; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab); }
 
 
-.online-users a .group-staff, .online-history a .group-staff { color: #e3b550; }
-.online-users a .group-coder, .online-history a .group-coder { color: #df6885; }
-.online-users a .group-member, .online-history a .group-member { color: #94af83; }
-.online-users a .group-vampire, .online-history a .group-vampire { color: #E4394E; }
-.online-users a .group-werewolf, .online-history a .group-werewolf { color: #A3A948; }
-.online-users a .group-human, .online-history a .group-human { color: #55ba8e; }
-.online-users a .group-witch, .online-history a .group-witch { color: #9F6FEC; }
-.online-users a .group-pending, .online-history a .group-pending { color: #aaa; }
+
 
 html {
   overflow-x: auto;
@@ -3070,6 +3063,16 @@ display:none;
   right: 10px;
   top: -15px;
 }
+
+.online-users a .group-staff, .online-history a .group-staff { color: #e3b550; }
+.online-users a .group-coder, .online-history a .group-coder { color: #df6885; }
+.online-users a .group-member, .online-history a .group-member { color: #94af83; }
+.online-users a .group-vampire, .online-history a .group-vampire { color: #E4394E; }
+.online-users a .group-werewolf, .online-history a .group-werewolf { color: #A3A948; }
+.online-users a .group-human, .online-history a .group-human { color: #55ba8e; }
+.online-users a .group-witch, .online-history a .group-witch { color: #9F6FEC; }
+.online-users a .group-pending, .online-history a .group-pending { color: #aaa; }
+
 #omens-footer #members-stuff .online-history {
   border: 10px solid #eee;
   padding-right: 10px;
