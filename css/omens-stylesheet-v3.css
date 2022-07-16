@@ -1042,6 +1042,10 @@ img.attach {
   --ooc-gradient: linear-gradient(110deg, rgba(131, 175, 155, 1) 0%, #94af83 100%);
   --pending: #aaa;
   --pending-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
+  --rip: #6B6C72;
+  --rip-gradient: linear-gradient(306deg, rgba(101,112,131,1) 0%, rgba(107,108,114,1) 100%);
+  --npc: #51A1C4;
+  --npc-gradient:linear-gradient(306deg, rgba(81,161,196,1) 0%, rgba(81,129,196,1) 100%); 
   --main-accent: #ddd;
   --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
 }
@@ -1111,6 +1115,18 @@ img.attach {
   --main-accent: #e3b550;
   --main-gradient: linear-gradient(110deg, rgba(227, 181, 80, 1) 0%, rgba(227, 144, 80, 1) 100%);
 }
+
+/* deceased */
+.groupid-19, .user-groupid-19 { --group:#6B6C72; --group-gradient: linear-gradient(306deg, rgba(101,112,131,1) 0%, rgba(107,108,114,1) 100%); }
+#omens-main.user-groupid-19 { --main-accent:#6B6C72; --main-gradient: linear-gradient(306deg, rgba(101,112,131,1) 0%, rgba(107,108,114,1) 100%); }
+.online-users a .group-rip, .online-history a .group-rip { color:var(--rip); }
+.group-rip .omens-subboard { --main-gradient:var(--rip-gradient); }
+
+/* npc */
+.groupid-20, .user-groupid-20 { --group:#51A1C4; --group-gradient: linear-gradient(306deg, rgba(81,161,196,1) 0%, rgba(81,129,196,1) 100%); }
+#omens-main.user-groupid-20 { --main-accent:#51A1C4; --main-gradient: linear-gradient(306deg, rgba(81,161,196,1) 0%, rgba(81,129,196,1) 100%); }
+.online-users a .group-npc, .online-history a .group-npc { color:var(--npc); }
+.group-npc .omens-subboard { --main-gradient:var(--npc-gradient); }
 
 /* unregistered, validating, guest, archived member */
 .groupid-3, .user-groupid-3 {
