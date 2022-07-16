@@ -810,7 +810,7 @@ img.attach {
   color: #aaa;
 }
 
-/* USER CP HIDE/SHOW */
+/* START USER CP HIDE/SHOW */
 
 .user-groupid-3 #field_31 {
   display: none;
@@ -971,6 +971,11 @@ img.attach {
 .user-groupid-10 #field_9 {
   display: revert;
 }
+
+#field_70 { display: none!important; }
+.user-groupid-8 #field_70 { display: revert!important; }
+
+/* END USER CP HIDE/SHOW */
 
 .maintitle.loginpage {
   margin-top: -82px;
@@ -7288,6 +7293,94 @@ fieldset.search.active-topics legend {
   overflow-x: hidden;
 }
 
+#omens-profile #abilities-container.witch-profile {
+  display: grid;
+  grid-template-areas:
+  "prof-abilities-freeform"
+  "prof-abilities-spells"
+  "prof-abilities-threat";
+  height: 400px; 
+}
+
+#omens-profile #abilities-container.witch-profile #abilities-freeform { 
+  border: 35px solid #333;
+}
+
+#omens-profile #abilities-container .witch-spells {
+  grid-area: prof-abilities-spells;
+  background: #2a2a2a;
+  border-radius: 5px;
+  position: relative;
+  font: 500 10px/130% montserrat;
+  text-align: justify;
+  text-align-last: right;
+  overflow: hidden;
+  display: flex;
+  place-items: center;
+  place-content: space-between;
+  justify-content: flex-end;
+}
+
+#omens-profile #abilities-container .witch-spells .scroll { 
+  padding: 15px;
+  padding-right: 5px;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  align-items: center;
+}
+
+#omens-profile #abilities-container .witch-spells .scroll br { display: none; }
+
+#omens-profile #abilities-container.witch-profile .witch-spell-deco {
+  position: absolute;
+  bottom: -22px;
+  left: -18px;
+  color: #fff;
+  opacity: 2%;
+  font: italic 900 80px montserrat;
+  text-transform: uppercase;
+  letter-spacing: -5px;
+  pointer-events: none;
+}
+
+#omens-profile #abilities-container .witch-spells spell { 
+  font: 800 11px raleway;
+  text-transform: uppercase;
+  color: #777;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #333;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+#omens-profile #abilities-container .witch-spells spell:nth-child(odd) { 
+  background-color: var(--custom);
+  color: #222;
+  position: relative;
+  z-index: 1;
+}
+
+#omens-profile #abilities-container.witch-profile .witch-spell-deco.font-icon {
+  left: initial;
+  font-size: 75px;
+}
+
+#omens-profile #abilities-container .witch-spells .scroll::-webkit-scrollbar { 
+  height: 10px;
+  z-index: 1;
+}
+
+#omens-profile #abilities-container .witch-spells .scroll::-webkit-scrollbar-thumb {
+  background: var(--group);
+  background: var(--custom);
+}
+
+#omens-profile #abilities-container .witch-spells .scroll::-webkit-scrollbar-track {
+  background: #444;
+  border: 5px solid #333;
+}
 /* END MAIN PROFILE */
 /* START CUSTOM CODE STYLING */
 
@@ -13226,6 +13319,137 @@ top: 0px;
   text-decoration:none;
 }
 
+.omens-post-12-2 {
+  width: 550px;
+  margin: auto;
+  background: #191919;
+  background-image: url(https://i.ibb.co/j4zSdj5/light-spots2.png);
+   display: grid;
+  grid: min-content auto / auto min-content;
+  grid-template-areas:
+    "lyric-post post-image-1"
+    "lyric-post post-image-1";
+  place-items: start;
+  place-content: start;
+  position: relative;
+  padding: 25px;
+  border-radius:5px;
+}
+.omens-post-12-2 .post-image-1 {
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  outline: 5px solid #222;
+  outline-offset: 15px;
+  margin: 5px 15px 5px 0px;
+  background: var(--custom);
+}
+.omens-post-12-2 .post-image-1 img {
+width: 200px;
+height: 400px;
+mix-blend-mode: hard-light;
+filter: grayscale(100%);
+}
+.omens-post-12-2 .lyric-post {
+  grid-area: post-12-lyricpost;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.omens-post-12-2 .lyric-post .lyric-1 {
+  font: 800 19px/100% 'montserrat';
+  text-transform: uppercase;
+  color: var(--custom);
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  border-top: 3px solid #efefef;
+  padding-top: 8px; 
+  padding-bottom: 10px;
+}
+.omens-post-12-2 .lyric-post .post-body {
+  border: 15px solid #202020;
+  width: 250px;
+  height: 380px;
+  background: #202020;
+  font: 13px/150% roboto, arial, sans-serif;
+  text-align: justify;
+  color: #aaa;
+  overflow: auto;
+  z-index: 1;
+  padding-right: 10px;
+  padding-lefT: 10px;
+}
+.omens-post-12-2 .post-body::-webkit-scrollbar {
+  width: 3px;
+}
+
+.omens-post-12-2 .post-body::-webkit-scrollbar-thumb {
+  background: var(--custom);
+}
+
+.omens-post-12-2 .post-body::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+.omens-post-12-2 .post-body b {
+  color: var(--custom);
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.omens-post-12-2 .post-body b i,
+.omens-post-12-2 .post-body u i,
+.omens-post-12-2 .post-body span i {
+  color: revert;
+  font-weight: revert;
+}
+
+.omens-post-12-2 .post-body i {
+  font: 400 13px/18px roboto;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  color: #efefef;
+}
+
+.omens-post-12-2 .post-body c {
+  color: var(--custom);
+}
+
+.omens-post-12-2 .post-body u {
+  text-decoration: none;
+  background: var(--custom);
+  color: #222;
+  padding: 0px 3px;
+}
+.omens-post-12-2 .post-body tagged {
+  gap:10px;
+  font:300 15px/100% 'Montserrat';
+  color:#ddd;
+  margin-top: 10px;
+  text-align:center;
+  float: right;
+}
+.omens-post-12-2 .post-body tagged a {
+  padding:2px;
+  background:var(--custom);
+  color:#eee;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+.omens-post-12-2 .lyric-post .lyric-2 {
+  font: 300 17px 'montserrat';
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 10px;
+  border-bottom: 3px solid var(--custom);
+  padding-bottom: 5px;
+}
+
 /* END POST 12 TEMPLATE */
 /* START POST 13 TEMPLATE */
 
@@ -13368,6 +13592,115 @@ right: -20px;
 .omens-post-13 .post-body a {
   text-decoration: none;
   color: white;
+}
+
+.omens-post-13-2 {
+  width: 530px;
+  margin: auto;
+  background: #222;
+  padding: 50px;
+  display: grid;
+  place-items: center;
+  place-content: start;
+  position: relative;
+  border-radius: 5px;
+}
+.omens-post-13-2 .post-image-2 {
+  width: 500px;
+  height: 150px;
+  border: 10px solid #262626;
+  outline: 5px solid #333;
+  margin: 20px auto;
+  background: var(--custom);
+}
+.omens-post-13-2 .post-icon {
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin: 0 0 10px 25px;
+  background: #1c1c1c;
+  border: 10px solid #262626;
+  outline: 5px solid #333;
+}
+.omens-post-13-2 .post-icon img {
+  width: 100px;
+  height: 100px;
+}
+.omens-post-13-2 .post-body {
+  color: #aaa;
+  padding-top: 15px;
+  width: 100%;
+  text-align: justify;
+  font: 300 14px/140% "roboto";
+  letter-spacing: .5px;
+  border-left: 5px solid #333;
+  padding-left: 15px;
+}
+.omens-post-13-2 .post-body b {
+  font: 700 15px/18px roboto;
+  letter-spacing: 0;
+  color: var(--custom);
+}
+.omens-post-13-2 .post-body b i,
+.omens-post-13-2 .post-body b u,
+.omens-post-13-2 .post-body b i u,
+.omens-post-13-2 .post-body b u i,
+.omens-post-13-2 .post-body i u,
+.omens-post-13-2 .post-body u i {
+  color: revert;
+}
+
+.omens-post-13-2 .post-body i {
+  color: #eee;
+  font-weight: 300;
+}
+
+.omens-post-13-2 .post-body u {
+  color: #666;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--custom);
+}
+.omens-post-13-2 .post-body tagged:before {
+  content:"written for ";
+    font: 500 10px montserrat;
+  color: #555;
+  text-transform: uppercase;
+}
+.omens-post-13-2 .post-body tagged {
+  font: 500 11px/100% "montserrat";
+  color: #555;
+  float: right;
+}
+.omens-post-13-2 .post-body tagged a {
+  font: 700 10px montserrat;
+  text-transform: uppercase;
+  color: #555;
+  text-decoration: none;
+  margin: 15px;
+  transition: .5s;
+}
+.omens-post-13-2 .post-body tagged a:hover {
+  color: var(--custom);
+    text-shadow: 2px 0 30px #fff;
+}
+.omens-post-13-2 .lyric-1 {
+  font: 800 25px/100% playfair display;
+  text-transform: uppercase;
+  color: var(--custom);
+  text-align: center;
+  padding-bottom: 5px;
+}
+.omens-post-13-2 .lyric-2 {
+  width: 80%;
+  font: 700 10px roboto;
+  text-transform: lowercase;
+  color: #aaa;
+  background: #282828;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* END POST 13 TEMPLATE */
