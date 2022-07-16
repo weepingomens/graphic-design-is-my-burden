@@ -9019,6 +9019,17 @@ fieldset.search.active-topics legend {
   background-color: var(--custom);
 }
 /* END WANTED 1 TEMPLATE */
+/* START UNIVERSAL PHONE STYLING */
+
+.phone-icon-override { display:none; }
+.phone-background img,
+.phone-background-override img {
+  width:100%;
+  object-fit:cover;
+  image-rendering:-webkit-optimize-contrast;
+}
+
+/* END UNIVERSAL PHONE STYLING */
 /* START PHONE 1 TEMPLATE */
 
 .omens-phone1-phone {
@@ -9129,7 +9140,7 @@ fieldset.search.active-topics legend {
   position: sticky;
   top: 0px;
   border-radius: 10px 10px 10px 10px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .omens-phone1-phone-messages tagged a {
@@ -9164,6 +9175,7 @@ fieldset.search.active-topics legend {
   background: var(--custom);
   color: #111;
   position: relative;
+  z-index:1;
 }
 
 .omens-phone1-phone-messages msg br, .omens-phone1-phone-messages received br {
@@ -9378,6 +9390,7 @@ fieldset.search.active-topics legend {
   display: grid;
   text-align: center;
   font: 400 24px raleway;
+  place-items: center;
 }
 
 .omens-phone1-phonecall tagged:before {
@@ -9510,12 +9523,6 @@ fieldset.search.active-topics legend {
   opacity: 33%;
   pointer-events: none;
   z-index: 1;
-}
-.phone-background img,
-.phone-background-override img {
-  width:100%;
-  object-fit:cover;
-  image-rendering:-webkit-optimize-contrast;
 }
 
 .omens-phone-2 .phone-contain .phone-deco {
