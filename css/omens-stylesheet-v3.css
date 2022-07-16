@@ -716,6 +716,20 @@ body a {
   text-decoration: none;
   color: var(--main-accent);
 }
+
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #eee;
+  border: 5px solid #222;
+}
+
+body::-webkit-scrollbar-track {
+  background: #222;
+}
+
 #omens-main {
   width: 1250px;
   position: relative;
@@ -736,6 +750,9 @@ margin:auto;
 #omens-main.hideaccentyes #thread-post, #omens-main.hideaccentyes #omens-profile {
 --custom:var(--main-accent)!important;
 }
+
+/* START NAVTREE */
+
 #omens-navtree {
   grid-area: omens-navtree;
   height: calc((var(--vh, 1vh) * 100) - 34px);
@@ -810,6 +827,9 @@ z-index:999;
   color: #555 !important;
   animation: none;
 }
+
+/* START HEADER */
+
 #omens-header {
   overflow: hidden;
   display: flex;
@@ -1517,6 +1537,9 @@ will-change:transform;
   left: -448px;
   width: 560px;
 }
+
+/* START MAIN CONTENT */
+
 #omens-content {
   grid-area: omens-content;
   background: #eee;
@@ -1600,6 +1623,9 @@ will-change:transform;
   background: #222;
   color: #eee;
 }
+
+/* START CATEGORY HEADERS */
+
 .omens-category {
     display: grid;
     padding: 50px;
@@ -1669,6 +1695,9 @@ will-change:transform;
   background: url(https://files.jcink.net/uploads2/weepingomens/skin_stuff/8_tarot.webp);
   background-size: contain;
 }
+
+/* START CUSTOM BOARD STRUCTURE */
+
 #omens-beginning {
   display: grid;
   width: calc(100% - 20px);
@@ -2363,6 +2392,9 @@ font:700 22px/100% crimson text;
 #omens-residential.omens-cat- {
   display: none;
 }
+
+/* START SIDEBAR */
+
 #omens-sidebar {
   background: #111;
   z-index: 1;
@@ -2907,6 +2939,8 @@ display:none;
 .omens-sidebar-link { margin: 10px 0 10px 20px; }
 }
 
+/* START BOARD STATISTICS */
+
 #omens-footer {
   grid-area: omens-footer;
   z-index: 2;
@@ -3233,16 +3267,8 @@ display:none;
 #omens-footer #guest-cbox::-webkit-scrollbar-track {
   background: #222;
 }
-body::-webkit-scrollbar {
-  width: 17px;
-}
-body::-webkit-scrollbar-thumb {
-  background: #eee;
-  border: 5px solid #222;
-}
-body::-webkit-scrollbar-track {
-  background: #222;
-}
+
+/* START MEMBER LIST */
 
 #omens-body #omens-member-nav {
   background: #222;
