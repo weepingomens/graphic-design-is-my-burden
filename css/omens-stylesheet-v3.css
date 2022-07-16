@@ -27,8 +27,8 @@ but i'm a sign, not a cop.
 }
 
 /* human */
-.groupid-7, .user-groupid-7 { --group: var(--human); --group-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
-#omens-main.user-groupid-7 { --main-accent: var(--human); --main-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
+.groupid-7, .user-groupid-7 { --group:#55ba8e; --group-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
+#omens-main.user-groupid-7 { --main-accent:#55ba8e; --main-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
 
 /* vampire */
 .groupid-9, .user-groupid-9 { --group:#E4394E; --group-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%); }
