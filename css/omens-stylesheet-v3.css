@@ -1169,6 +1169,9 @@ img.attach {
   --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab) !important;
 }
 
+@import url('https://files.jcink.net/uploads2/weepingomens/css/cuppaccicons.css');
+@import url('https://files.jcink.net/uploads2/weepingomens/css/game_icons.css');
+
 @font-face {
   font-family: "Urban Jungle";
   src: url(https://files.jcink.net/uploads/derse/Urbanjungledemo_ymAm.otf) format("opentype");
@@ -5079,7 +5082,7 @@ fieldset.search.active-topics legend {
 }
 
 #thread-post.groupid-12 .user-name #groupdeco .ooc:before {
-  content: "coding gremlin";
+  content: "arsonist";
 }
 
 #thread-post.groupid-12 .user-name #groupdeco .ooc b {
@@ -9044,6 +9047,31 @@ fieldset.search.active-topics legend {
   position: relative;
 }
 
+.omens-phone1-phone .phone-time { flex-grow:1; }
+
+.omens-phone1-phone .phone-background { 
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  filter: grayscale(1) contrast(75%);
+  opacity: 10%;
+  pointer-events: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+.omens-phone1-phone .phone-background img { display:block; position:relative; }
+
+
+.omens-phone1-phonecall.phone-callscreen .phone-icon {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 50px; position:relative;
+}
+
+.omens-phone1-phonecall.phone-callscreen .phone-icon img { display:block;max-width:100%;margin:0; }
+
 .omens-phone1-phone:after {
   content: "";
   width: 5px;
@@ -9339,14 +9367,19 @@ fieldset.search.active-topics legend {
 
 .omens-phone1-phonecall.omens-phone-convo tagged:after {
   content: '';
-  position: absolute;
+  position: relative;
   width: 20px;
   height: 20px;
   background: var(--custom);
-  top: 223px;
-  left: 50px;
+  top: 180px;
+  left: 0;
   clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+}
 
+.omens-phone-dial .omens-phone-call .phone-icon {
+	width:150px;
+	height:150px;
+	    z-index: 1;
 }
 
 .omens-phone1-phonecall.omens-phone-convo speech br {
@@ -10868,8 +10901,8 @@ display:block;
 /* END PHONE 4 TEMPLATE */
 /* START UNIVERSAL POST STYLES */
 .post-image-1 img, .post-image-1-override img {
-  width:200px;
-  height:400px;
+  max-width:200px;
+  image-rendering: -webkit-optimize-contrast;
 } 
 /* END UNIVERSAL POST STYLES */
 /* START POST 1 TEMPLATE */
