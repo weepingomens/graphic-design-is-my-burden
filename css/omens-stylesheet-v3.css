@@ -2832,6 +2832,81 @@ display:none;
 .user-groupid-2 #first-sidebar { grid:min-content min-content min-content min-content auto/100%; }
 .omens-sidebar-group:nth-child(3) { display:none; }
 .user-groupid-2 #first-sidebar .omens-sidebar-group:nth-child(3) { display:flex; }
+
+/* first sidebar breakpoints, logged in */
+
+@media (max-height: 686px) and (min-width: 600px) {
+  #first-sidebar {
+    grid: min-content min-content auto/100% !important;
+  }
+  #first-sidebar .omens-sidebar-group:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-height: 515px) and (min-width: 600px) {
+  #first-sidebar {
+    grid: min-content auto/100% !important;
+  }
+  #first-sidebar .omens-sidebar-group:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-height: 365px) and (min-width: 600px) {
+  #first-sidebar {
+    grid: auto/100% !important;
+  }
+  #first-sidebar .omens-sidebar-group:nth-child(1) {
+    display: none;
+  }
+}
+
+/* first sidebar breakpoints, guest */
+
+@media (max-height: 460px) and (min-width: 600px) {
+ .user-groupid-2 #first-sidebar .omens-sidebar-group:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-height: 360px) and (min-width: 600px) {
+ .user-groupid-2 #first-sidebar .omens-sidebar-group:nth-child(2) {
+    display: none;
+  }
+}
+
+/* second sidebar breakpoints, logged in */
+
+@media (max-height: 770px) and (min-width: 600px) {
+  #second-sidebar .omens-sidebar-group:first-child {
+    display: none;
+  }
+}
+@media (max-height: 600px) and (min-width: 600px) {
+  #second-sidebar #current-user {
+    transform-origin: bottom;
+    transform: scale(0.9) translateY(85px);
+  }
+}
+@media (max-height: 500px) and (min-width: 600px) {
+  #second-sidebar #current-user {
+    display: none;
+  }
+}
+
+/* second sidebar breakpoints, guest */
+
+@media (max-height: 770px) and (min-width: 600px) {
+  .user-groupid-2 #second-sidebar .omens-sidebar-group:first-child {
+    display: revert;
+  }
+}
+
+@media (max-width:600px) {
+.omens-sidebar-link { margin: 10px 0 10px 20px; }
+}
+
 #omens-footer {
   grid-area: omens-footer;
   z-index: 2;
@@ -10046,80 +10121,6 @@ align-self:center;
 #omens-misc .login-register-shortcut.groupid-2 { margin-top:-1px; }
 
 .square-avi img { width:150px; height:150px; }
-
-/* first sidebar breakpoints, logged in */
-
-@media (max-height: 686px) and (min-width: 600px) {
-  #first-sidebar {
-    grid: min-content min-content auto/100% !important;
-  }
-  #first-sidebar .omens-sidebar-group:nth-child(4) {
-    display: none;
-  }
-}
-
-@media (max-height: 515px) and (min-width: 600px) {
-  #first-sidebar {
-    grid: min-content auto/100% !important;
-  }
-  #first-sidebar .omens-sidebar-group:nth-child(2) {
-    display: none;
-  }
-}
-
-@media (max-height: 365px) and (min-width: 600px) {
-  #first-sidebar {
-    grid: auto/100% !important;
-  }
-  #first-sidebar .omens-sidebar-group:nth-child(1) {
-    display: none;
-  }
-}
-
-/* first sidebar breakpoints, guest */
-
-@media (max-height: 460px) and (min-width: 600px) {
- .user-groupid-2 #first-sidebar .omens-sidebar-group:nth-child(3) {
-    display: none;
-  }
-}
-
-@media (max-height: 360px) and (min-width: 600px) {
- .user-groupid-2 #first-sidebar .omens-sidebar-group:nth-child(2) {
-    display: none;
-  }
-}
-
-/* second sidebar breakpoints, logged in */
-
-@media (max-height: 770px) and (min-width: 600px) {
-  #second-sidebar .omens-sidebar-group:first-child {
-    display: none;
-  }
-}
-@media (max-height: 600px) and (min-width: 600px) {
-  #second-sidebar #current-user {
-    transform-origin: bottom;
-    transform: scale(0.9) translateY(85px);
-  }
-}
-@media (max-height: 500px) and (min-width: 600px) {
-  #second-sidebar #current-user {
-    display: none;
-  }
-}
-
-/* second sidebar breakpoints, guest */
-
-@media (max-height: 770px) and (min-width: 600px) {
-  .user-groupid-2 #second-sidebar .omens-sidebar-group:first-child {
-    display: revert;
-  }
-}
-
-@media (max-width:600px) {
-.omens-sidebar-link { margin: 10px 0 10px 20px; }
-}
 
 /* user experience is my burden, aka light mode start */
 
