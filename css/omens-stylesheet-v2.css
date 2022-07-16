@@ -797,6 +797,7 @@ body a {
   -webkit-text-fill-color: transparent;
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 #omens-navtree .isadmin-0,
 #omens-navtree .ismod-0 {
@@ -921,9 +922,11 @@ body a {
   justify-content: center;
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
   -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
   padding-bottom: 3px;
   border-bottom: 3px solid var(--1f1);
   position: relative;
@@ -940,6 +943,7 @@ body a {
   -webkit-text-fill-color: transparent;
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 .omens-sidebar-group div {
   display: flex;
@@ -1918,6 +1922,7 @@ mix-blend-mode:unset;
   background: var(--main-accent);
   mix-blend-mode: overlay;
   -webkit-mask-image: url(https://raw.githubusercontent.com/weepingomens/webp/main/lisa-hat.webp);
+  mask-image: url(https://raw.githubusercontent.com/weepingomens/webp/main/lisa-hat.webp);
   opacity: 0.75;
 }
 #header-lisa {
@@ -2163,6 +2168,7 @@ mix-blend-mode:unset;
   text-transform: uppercase;
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   grid-area: claims-title;
 }
@@ -2196,6 +2202,7 @@ mix-blend-mode:unset;
 #omens-claims .highlighted-thread i {
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.5;
   transition: 0.25s;
@@ -3620,6 +3627,7 @@ body::-webkit-scrollbar-track {
   background: var(--main-gradient);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   font: 700 24px/100% montserrat;
 }
 .topic-container .pagination {
@@ -3755,7 +3763,6 @@ fieldset.search legend {
   font-variant: normal;
   font-weight: 400;
   line-height: 1;
-  speak: none;
   text-transform: none;
   font-size: 150px;
   top: -50px;
@@ -4122,7 +4129,6 @@ fieldset.search legend {
   font-variant: normal;
   font-weight: 400;
   line-height: 1;
-  speak: none;
   text-transform: none;
   font-size: 90px;
   bottom: -24px;
@@ -4785,7 +4791,6 @@ height:300px;
   font-variant: normal;
   font-weight: 400;
   line-height: 1;
-  speak: none;
   text-transform: none;
   font-size: 250px;
   -webkit-text-fill-color: transparent;
@@ -5747,7 +5752,6 @@ height:300px;
   font-variant: normal;
   font-weight: 400;
   line-height: 1;
-  speak: none;
   text-transform: none;
   font-size: 90px;
   bottom: -25px;

@@ -6,61 +6,7 @@ but i'm a sign, not a cop.
 
 - */
 
-/* START VARIABLES */
-
-:root {
-  --werewolf:#A3A948;
-  --vampire:#E4394E;
-  --vampire-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%);
-  --witch:#9F6FEC;
-  --witch-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%);
-  --human:#55ba8e;
-  --human-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%);
-  --staff:#e3b550;
-  --staff-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%);
-  --ooc:#94af83;
-  --ooc-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%);
-  --pending:#aaa;
-  --pending-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
-  --main-accent:#ddd;
-  --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
-}
-
-/* human */
-.groupid-7, .user-groupid-7 { --group:#55ba8e; --group-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
-#omens-main.user-groupid-7 { --main-accent:#55ba8e; --main-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
-
-/* vampire */
-.groupid-9, .user-groupid-9 { --group:#E4394E; --group-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%); }
-#omens-main.user-groupid-9 { --main-accent:#E4394E; --main-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%); }
-
-/* werewolf */
-.groupid-14, .user-groupid-14 { --group:#A3A948; --group-gradient: linear-gradient(110deg, rgba(163,169,72,1) 0%, rgba(124,169,72,1) 100%); }
-#omens-main.user-groupid-14 { --main-accent:#A3A948; --main-gradient: linear-gradient(110deg, rgba(163,169,72,1) 0%, rgba(124,169,72,1) 100%); }
-
-/* witch */
-.groupid-8, .user-groupid-8 { --group:#9F6FEC; --group-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%); }
-#omens-main.user-groupid-8 { --main-accent:#9F6FEC; --main-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%); }
-
-/* ooc member */
-.groupid-10, .user-groupid-10 { --group:#94af83; --group-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%); }
-#omens-main.user-groupid-10 { --main-accent:#94af83; --main-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%) }
-
-/* admin member */
-.groupid-4, .user-groupid-4, .groupid-12, .user-groupid-12, .groupid-16, .user-groupid-16, .groupid-6, .user-groupid-6 { --group:#e3b550; --group-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%); }
-#omens-main.user-groupid-4, #omens-main.user-groupid-12, #omens-main.user-groupid-16, #omens-main.user-groupid-6 { --main-accent:#e3b550; --main-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%); }
-
-/* unregistered, validating, guest, archived member */
-.groupid-3, .user-groupid-3 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
-.groupid-1, .user-groupid-1 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
-.groupid-2, .user-groupid-2 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
-.groupid-15, .user-groupid-15 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
-#omens-main.user-groupid-2 { --main-accent:#ddd!important; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab)!important; }
-#omens-main.user-groupid-3 { --main-accent:#ddd!important; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab)!important; }
-#omens-main.user-groupid-15 { --main-accent:#ddd; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab); }
-
-
-
+/* START JCINK STYLING */
 
 html {
   overflow-x: auto;
@@ -71,15 +17,6 @@ form {
   display:inline;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color: #222;
-  margin: 0;
-  padding: 0;
-  background-color: #e1e1e1;
-  text-align: center;
-}
 table,
 td,
 tr {
@@ -145,9 +82,7 @@ a:visited {
   margin-top: -18px;
   justify-content: center;
 }
-#ucpcontent .maintitle {
 
-}
 #ucpmenu p {
   padding: 5px;
   margin: 0;
@@ -619,6 +554,75 @@ img.attach {
   text-transform: uppercase;
   margin: -1px 0;
 }
+
+/* START CUSTOM STYLING */
+
+/* START VARIABLES */
+
+:root {
+  --werewolf:#A3A948;
+  --vampire:#E4394E;
+  --vampire-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%);
+  --witch:#9F6FEC;
+  --witch-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%);
+  --human:#55ba8e;
+  --human-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%);
+  --staff:#e3b550;
+  --staff-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%);
+  --ooc:#94af83;
+  --ooc-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%);
+  --pending:#aaa;
+  --pending-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
+  --main-accent:#ddd;
+  --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  text-align: center;
+  background-image: url(https://i.ibb.co/p0fSzvL/image.png);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #aaa;
+  font: 400 12px roboto, sans-serif;
+  width: calc(100vw - 17px);
+}
+
+/* human */
+.groupid-7, .user-groupid-7 { --group:#55ba8e; --group-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
+#omens-main.user-groupid-7 { --main-accent:#55ba8e; --main-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
+
+/* vampire */
+.groupid-9, .user-groupid-9 { --group:#E4394E; --group-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%); }
+#omens-main.user-groupid-9 { --main-accent:#E4394E; --main-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%); }
+
+/* werewolf */
+.groupid-14, .user-groupid-14 { --group:#A3A948; --group-gradient: linear-gradient(110deg, rgba(163,169,72,1) 0%, rgba(124,169,72,1) 100%); }
+#omens-main.user-groupid-14 { --main-accent:#A3A948; --main-gradient: linear-gradient(110deg, rgba(163,169,72,1) 0%, rgba(124,169,72,1) 100%); }
+
+/* witch */
+.groupid-8, .user-groupid-8 { --group:#9F6FEC; --group-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%); }
+#omens-main.user-groupid-8 { --main-accent:#9F6FEC; --main-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%); }
+
+/* ooc member */
+.groupid-10, .user-groupid-10 { --group:#94af83; --group-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%); }
+#omens-main.user-groupid-10 { --main-accent:#94af83; --main-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%) }
+
+/* admin member */
+.groupid-4, .user-groupid-4, .groupid-12, .user-groupid-12, .groupid-16, .user-groupid-16, .groupid-6, .user-groupid-6 { --group:#e3b550; --group-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%); }
+#omens-main.user-groupid-4, #omens-main.user-groupid-12, #omens-main.user-groupid-16, #omens-main.user-groupid-6 { --main-accent:#e3b550; --main-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%); }
+
+/* unregistered, validating, guest, archived member */
+.groupid-3, .user-groupid-3 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
+.groupid-1, .user-groupid-1 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
+.groupid-2, .user-groupid-2 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
+.groupid-15, .user-groupid-15 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
+#omens-main.user-groupid-2 { --main-accent:#ddd!important; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab)!important; }
+#omens-main.user-groupid-3 { --main-accent:#ddd!important; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab)!important; }
+#omens-main.user-groupid-15 { --main-accent:#ddd; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab); }
+
 @font-face {
   font-family: "Urban Jungle";
   src: url(https://files.jcink.net/uploads/derse/Urbanjungledemo_ymAm.otf)
@@ -802,6 +806,7 @@ z-index:999;
   -webkit-text-fill-color: transparent;
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 #omens-navtree .buttons .discord-link { display:none; }
 #omens-navtree .buttons .discord-link.user-groupid-2 { display:initial; }
@@ -1476,6 +1481,7 @@ will-change:transform;
   background: var(--main-accent);
   mix-blend-mode: overlay;
   -webkit-mask-image: url(https://raw.githubusercontent.com/weepingomens/webp/main/lisa-hat.webp);
+  mask-image: url(https://raw.githubusercontent.com/weepingomens/webp/main/lisa-hat.webp);
   opacity: 0.75;
 }
 
@@ -1724,6 +1730,7 @@ border-radius:5px 0px 0px 5px;
   text-transform: uppercase;
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   grid-area: claims-title;
 }
@@ -1757,6 +1764,7 @@ border-radius:5px 0px 0px 5px;
 #omens-claims .highlighted-thread i {
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.5;
   transition: 0.25s;
@@ -2482,9 +2490,11 @@ display:none;
   justify-content: center;
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
   -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
   padding-bottom: 3px;
   border-bottom: 3px solid #1f1f1f;
   position: relative;
@@ -2501,6 +2511,7 @@ display:none;
   -webkit-text-fill-color: transparent;
   background: var(--main-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 .omens-sidebar-group div {
   display: flex;
@@ -3671,6 +3682,7 @@ margin:0px;
   background: var(--main-gradient);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   font: 700 24px/100% montserrat;
 }
 .topic-container .pagination {
@@ -3807,7 +3819,6 @@ width:930px;
   font-variant: normal;
   font-weight: 400;
   line-height: 1;
-  speak: none;
   text-transform: none;
   font-size: 150px;
   top: -50px;
@@ -4265,7 +4276,6 @@ text-align:right;
     font-variant: normal;
     font-weight: 400;
     line-height: 1;
-    speak: none;
     text-transform: none;
     font-size: 90px;
     bottom: -25px;
@@ -4539,7 +4549,7 @@ max-width: 12ch;
   font: 900 12px roboto;
   text-transform: uppercase;
   background: 0 0;
-  -webkitbackdrop-filter: blur(0) grayscale(100%) brightness(90%);
+  -webkit-backdrop-filter: blur(0) grayscale(100%) brightness(90%);
   backdrop-filter: blur(0) grayscale(100%) brightness(90%);
   color: #eee;
   padding: 10px 15px;
@@ -4947,7 +4957,6 @@ display:flex;
   font-variant: normal;
   font-weight: 400;
   line-height: 1;
-  speak: none;
   text-transform: none;
   font-size: 250px;
   -webkit-text-fill-color: transparent;
@@ -5000,7 +5009,7 @@ display:flex;
 }
 #omens-profile #abilities-container .abilities-proper h5 {
   margin: 0;
-  font: 700 30px/100% #Crimson Text;
+  font: 700 30px/100% 'Crimson Text';
   color: var(--group);
   color: var(--custom);
   letter-spacing: -1px;
@@ -6044,7 +6053,6 @@ text-align:right;
   font-variant: normal;
   font-weight: 400;
   line-height: 1;
-  speak: none;
   text-transform: none;
   font-size: 90px;
   bottom: -25px;
@@ -6388,7 +6396,7 @@ justify-content:center;
 .titlemedium a:link {
   color: #eee;
 }
-) #post-preview.tableborder {
+#post-preview.tableborder {
   background: #222;
   padding: 25px;
   width: 880px;
@@ -6531,6 +6539,7 @@ background-color:var(--main-accent);
   background: var(--main-gradient);
   color: #eee;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .omens-claims-content h2 span {
@@ -10337,4 +10346,4 @@ body.light { background-image:url(https://i.ibb.co/F4Z6CNZ/image.png); }
 .light .pformstrip { color:#222 }
 .light .checkbox, .light .codebuttons, .light .forminput, .light .radiobutton, .light .textinput { background:#ddd; color:#555 }
 .light .omens-sidebar-dropdown .forminput { background:var(--main-gradient); color:#111 }
-.light #omens-main.user-groupid-2, .light #omens-main.user-groupid-3 { --main-accent:#8693ab!important; --main-gradient: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%)!important;
+.light #omens-main.user-groupid-2, .light #omens-main.user-groupid-3 { --main-accent:#8693ab!important; --main-gradient: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%)!important; }
