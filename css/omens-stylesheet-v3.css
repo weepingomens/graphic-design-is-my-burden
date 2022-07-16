@@ -1022,6 +1022,7 @@ img.attach {
 .copyright a {
   color: #222;
 }
+
 /* END JCINK STYLING */
 /* START CUSTOM STYLING */
 
@@ -1493,7 +1494,7 @@ body::-webkit-scrollbar-track {
   position: relative;
   z-index: 1;
   -webkit-text-stroke: 2px #aaa;
-  color:#aaa;
+  color: #aaa;
 }
 
 .omens-logo-text a {
@@ -4924,10 +4925,7 @@ fieldset.search.active-topics legend {
   clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
 }
 
-.square-avi img {
-  width: 150px;
-  height: 150px;
-}
+
 
 #thread-post .user-name:after {
   content: "";
