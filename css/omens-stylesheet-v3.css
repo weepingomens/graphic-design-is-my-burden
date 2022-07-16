@@ -6,31 +6,29 @@ but i'm a sign, not a cop.
 
 - */
 
-html {
-  overflow-x: auto;
-  scroll-behavior: smooth;
-} 
-
-form {
-  display:inline;
-}
-
-/* START MEMBER GROUP COLORING & MEMBER GROUP ICONS */
+/* START VARIABLES */
 
 :root {
   --werewolf:#A3A948;
   --vampire:#E4394E;
+  --vampire-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%);
   --witch:#9F6FEC;
+  --witch-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%);
   --human:#55ba8e;
-  --staff-member:#e3b550;
-  --ooc-member:#e2cab8;
+  --human-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%);
+  --staff:#e3b550;
+  --staff-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%);
+  --ooc:#94af83;
+  --ooc-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%);
   --pending:#aaa;
-  --main-accent:#ddd; --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
+  --pending-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
+  --main-accent:#ddd;
+  --main-gradient: linear-gradient(110deg, #eef2f3, #8e9eab);
 }
 
 /* human */
-.groupid-7, .user-groupid-7 { --group:#55ba8e; --group-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
-#omens-main.user-groupid-7 { --main-accent:#55ba8e; --main-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
+.groupid-7, .user-groupid-7 { --group: var(--human); --group-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
+#omens-main.user-groupid-7 { --main-accent: var(--human); --main-gradient: linear-gradient(110deg, rgba(85,186,142,1) 0%, rgba(85,163,186,1) 100%); }
 
 /* vampire */
 .groupid-9, .user-groupid-9 { --group:#E4394E; --group-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%); }
@@ -45,13 +43,12 @@ form {
 #omens-main.user-groupid-8 { --main-accent:#9F6FEC; --main-gradient: linear-gradient(110deg, rgba(159,111,236,1) 0%, rgba(111,120,236,1) 100%); }
 
 /* ooc member */
-.groupid-10, .user-groupid-10 { --group:rgba(148,175,131,1); --group-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, rgba(148,175,131,1) 100%); }
-#omens-main.user-groupid-10 { --main-accent:rgba(148,175,131,1); --main-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, rgba(148,175,131,1) 100%) }
+.groupid-10, .user-groupid-10 { --group:#94af83; --group-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%); }
+#omens-main.user-groupid-10 { --main-accent:#94af83; --main-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%) }
 
 /* admin member */
 .groupid-4, .user-groupid-4, .groupid-12, .user-groupid-12, .groupid-16, .user-groupid-16, .groupid-6, .user-groupid-6 { --group:#e3b550; --group-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%); }
 #omens-main.user-groupid-4, #omens-main.user-groupid-12, #omens-main.user-groupid-16, #omens-main.user-groupid-6 { --main-accent:#e3b550; --main-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%); }
-
 
 /* unregistered, validating, guest, archived member */
 .groupid-3, .user-groupid-3 { --group:#aaa; --group-gradient: linear-gradient(110deg, #ff416c, #ff4b2b);  }
@@ -65,12 +62,21 @@ form {
 
 .online-users a .group-staff, .online-history a .group-staff { color: #e3b550; }
 .online-users a .group-coder, .online-history a .group-coder { color: #df6885; }
-.online-users a .group-member, .online-history a .group-member { color: rgba(148,175,131,1); }
+.online-users a .group-member, .online-history a .group-member { color: #94af83; }
 .online-users a .group-vampire, .online-history a .group-vampire { color: #E4394E; }
 .online-users a .group-werewolf, .online-history a .group-werewolf { color: #A3A948; }
 .online-users a .group-human, .online-history a .group-human { color: #55ba8e; }
 .online-users a .group-witch, .online-history a .group-witch { color: #9F6FEC; }
 .online-users a .group-pending, .online-history a .group-pending { color: #aaa; }
+
+html {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+} 
+
+form {
+  display:inline;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -3352,7 +3358,7 @@ width: 100%;
   --main-gradient: linear-gradient(110deg, rgba(228,57,78,1) 0%, rgba(220,36,108,1) 100%);
 }
 .group-member .omens-subboard {
-  --main-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, rgba(148,175,131,1) 100%);
+  --main-gradient: linear-gradient(110deg, rgba(131,175,155,1) 0%, #94af83 100%);
 }
 .group-staff .omens-subboard {
   --main-gradient: linear-gradient(110deg, rgba(227,181,80,1) 0%, rgba(227,144,80,1) 100%);
