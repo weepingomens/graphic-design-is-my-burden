@@ -8134,6 +8134,335 @@ order:-1;
 }
 
 /* END DEVELOPMENT 1 TEMPLATES */
+/* START RELATIONSHIP TRACKER 1 TEMPLATE */
+
+.weepingomensrel {
+  margin: 50px auto;
+  background: #eee;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 5px;
+      justify-content: center;
+  border-radius: 10px;
+  width: 630px;
+  --accent2: #999;
+  }
+  .weepingomensrelboxtop {
+    border-bottom: 5px solid var(--custom);
+      background: #333;
+      width: calc(100% - 100px);
+      padding: 50px;
+      display: flex;
+      flex-flow: row wrap;
+      place-items: center;
+      place-content: start;
+      column-gap: 10px;
+      row-gap: 5px;
+      border-radius: 5px 5px 0px 0px;
+  }
+  .weepingomensrelboxtop b {
+    font: 300 40px/100% raleway;
+      color: #eee;
+      text-transform: uppercase;
+      text-align: left;
+  }
+  .weepingomensrelboxtop span {
+    font: 700 10px/100% roboto;
+      text-transform: uppercase;
+      color: #eee;
+      padding: 10px;
+      background: #222;
+      border-radius: 5px;
+      text-align: justify;
+  }
+  .weepingomensrelbox {
+    max-width: 270px;
+    height: 290px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+  margin: 10px;
+  }
+  .weepingomensrelbox .top {
+      overflow: hidden;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+    z-index: 5;
+  }
+  .weepingomensrelbox .top:before {
+    content: "trust";
+    position: absolute;
+    top: 5px;
+    font-family: montserrat;
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff;
+    opacity: 20%;
+    letter-spacing: 10px;
+  }
+  .weepingomensrelbox .top div {
+      position: relative;
+    opacity: 85%;
+  }
+  .weepingomensrelbox .top div span {
+    display: block;
+    width: 0%;
+    border-radius: 15px;
+    height: 6px;
+    background: linear-gradient(to left, var(--accent1), var(--accent2));
+  }
+  .weepingomensrelbox .icon {
+    height: 80px;
+    width: 80px;
+    padding: 35px;
+    background: radial-gradient(
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(237, 237, 237, 0) 95%
+    );
+    border-radius: 100%;
+    margin: -25px;
+    position: absolute;
+  }
+  .weepingomensrelbox .icon img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    transform: rotate(10deg);
+  }
+  .weepingomensrelbox .name {
+    padding: 20px 20px 20px 100px;
+    text-align: right;
+    font: bold 10px montserrat;
+    line-height: 10px;
+    color: #eeeeee;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(33, 33, 33, 0.15);
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1;
+  }
+  .weepingomensrelbox .name a {
+    text-decoration: none;
+    font: bold 17px montserrat;
+    line-height: 15px;
+    color: #eeeeee;
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+  .weepingomensrelbox .blurb {
+      padding: 50px;
+    background-color: #333;
+    border: solid 1px #333;
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+  }
+  .weepingomensrelbox .blurb div {
+    height: 140px;
+    width: 230px;
+    overflow: auto;
+  padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font: 12px roboto;
+    line-height: 17px;
+    text-align: justify;
+    letter-spacing: 0.25px;
+    color: #afafaf;
+    background: #333;
+    position: relative;
+    top: -50px;
+    right: 45px;
+  }
+  .weepingomensrelbox .blurb div a {
+    text-decoration: none;
+    font-weight: 700 !important;
+    background: linear-gradient(to top left, var(--accent1), var(--accent2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .weepingomensrelbox .blurb div::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+    border: none;
+    background: transparent;
+  }
+  .weepingomensrelbox .blurb div::-webkit-scrollbar-thumb {
+    border: solid 1px #333;
+    border-radius: 5px;
+    background: #aaa;
+  }
+  .weepingomensrelboxfoot {
+  border-top: 5px solid var(--custom);
+      width: calc(100% - 50px);
+      background: #333;
+      overflow: hidden;
+      padding: 10px 25px;
+      text-align: center;
+      border-radius: 0px 0px 5px 5px;
+  }
+  .weepingomensrelboxfoot img {
+  width: 75px;
+      height: 75px;
+      margin: -15px 0px;
+      border-radius: 100%;
+      grid-area: dev-icon;
+      padding: 10px;
+      border: 4px solid #444;
+  }
+  
+  
+  /* relationship template v2 */
+  
+  
+  #omens-rel-tracker {
+    margin: auto;
+    width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  #omens-rel-tracker .tracker-top {
+    width: 500px;
+    height: 75px;
+    background: #333;
+    overflow: hidden;
+    border-bottom: 3px solid var(--custom);
+  }
+  #omens-rel-tracker .tracker-top span {
+    font: 900 55px/60% "poppins";
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff;
+    opacity: 5%;
+  }
+  #omens-rel-tracker .tracker-in {
+    margin: auto;
+    width: 400px;
+    padding: 50px;
+    background: #292929;
+      display: flex;
+    flex-flow: column;
+    gap: 50px;
+  }
+  #omens-rel-tracker .tracker-char {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #omens-rel-tracker .tracker-char .char-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: -15px;
+  }
+  #omens-rel-tracker .tracker-char .char-img img {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin-left: -19px;
+    margin-top: 1px;
+  }
+  #omens-rel-tracker .tracker-char .char-img:after {
+    content: "";
+    display: block;
+    width: 370px;
+    height: 150px;
+    border-top: 1px solid var(--custom);
+    margin-top: -130px;
+    margin-left: 50px;
+  }
+  #omens-rel-tracker .tracker-char .char-img:before {
+    content: "";
+    display: block;
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: -10px;
+    border: 1px solid var(--custom);
+    transform: rotate(-45deg);
+  }
+  #omens-rel-tracker .tracker-char .char-name {
+    width: 380px;
+    font: 900 11px/100% "montserrat";
+    font-style: italic;
+    margin-top: -140px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    color: #e9e9e9;
+    text-align: right;
+  }
+  #omens-rel-tracker .tracker-char .char-quote {
+    width: 300px;
+    margin-top: -120px;
+    margin-left: 140px;
+    color: #b5b5b5;
+    padding-top: 15px;
+    padding-left: 25px;
+    text-align: justify;
+    font-family: roboto;
+    font-size: 12px;
+    line-height: 190%;
+  }
+  
+  #omens-rel-tracker .tracker-char .rel-tags {
+    width: 100%;
+    height: 30px;
+    margin-top: -10px;
+    margin-left: 130px;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    gap: 10px;
+  }
+  #omens-rel-tracker .tracker-char .rel-tags span {
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-family: roboto;
+    padding: 5px;
+    background-color: var(--custom);
+    border-radius: 3px;
+    color: #eee;
+    font-weight: 700;
+  }
+  
+  #omens-rel-tracker .tracker-char .rel-bars {
+    padding-top: 20px;
+  }
+  #omens-rel-tracker .tracker-char .rel-bar1 {
+    width: 100%;
+  }
+  #omens-rel-tracker .tracker-char .rel-bar1 i {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: #aaa;
+  }
+  #omens-rel-tracker .tracker-char .rel-bar2 {
+    display: inline-block;
+    width: 280px;
+    border: 1px solid var(--custom);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #omens-rel-tracker .tracker-char .rel-bar2-inside {
+      width: 100%;
+    height: 5px;
+    background-color: #d7d7d7;
+    border-radius: 5px;
+  }
+
+/* END RELATIONSHIP TRACKER 1 TEMPLATE */
 /* START SOCIAL MEDIA TEMPLATES */
 /* START INSTAGRAM 1 TEMPLATE */
 
