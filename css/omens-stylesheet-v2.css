@@ -6182,6 +6182,7 @@ height:300px;
   background: var(--main-gradient);
   color: #eee;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .omens-claims-content h2 span {
@@ -6343,6 +6344,7 @@ height:300px;
   background-image: var(--main-gradient);
   color: #eee;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: right;
   border-bottom: 5px solid #333;
