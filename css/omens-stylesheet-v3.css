@@ -4276,6 +4276,16 @@ header input[type="radio"]:checked+label {
   overflow: hidden;
 }
 
+#omens-footer #discord-widget {
+  filter: grayscale(1);
+  transition: .25s;
+}
+
+#omens-footer #discord-widget:hover {
+  filter: grayscale(0);
+  transition: .25s;
+}
+
 #omens-footer #guest-cbox {
   grid-area: footer-cbox;
   width: 330px;
