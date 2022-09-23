@@ -12159,11 +12159,11 @@ blockquote #eventCountdown .countdown_row.countdown_descr {
 }
 
 .post-image-2, .post-image-2-override {
-  max-height: 150px;
+  max-width: 500px;
 }
 
 .post-image-2 img, .post-image-2-override img {
-  max-height: 100%;
+  max-width: 100%;
 }
 
 /* END UNIVERSAL POST STYLES */
