@@ -4310,15 +4310,15 @@ header input[type="radio"]:checked+label {
 
 /* START MEMBER LIST */
 
-#omens-body #omens-member-nav {
+#omens-body .omens-member-nav {
   background: #222;
 }
 
-#omens-memberlist-contain {
+.omens-memberlist-contain {
   display: grid;
 }
 
-#omens-memberlist-controls {
+.omens-memberlist-controls {
   padding: 20px;
   background: #222;
   font: 700 12px roboto;
@@ -4330,24 +4330,24 @@ header input[type="radio"]:checked+label {
   color: #aaa;
 }
 
-#omens-memberlist-controls .pagination {
+.omens-memberlist-controls .pagination {
   width: 100%;
   display: flex;
   place-content: center;
   margin-top: 20px;
 }
 
-#omens-memberlist-controls .forminput {
+.omens-memberlist-controls .forminput {
   font: 700 12px roboto;
   text-transform: uppercase;
   padding: 5px;
 }
 
-#omens-memberlist-controls input[type="submit"] {
+.omens-memberlist-controls input[type="submit"] {
   padding: 5px 10px;
 }
 
-#omens-memberlist {
+.omens-memberlist {
   display: grid;
   padding: 50px;
   gap: 25px;
@@ -4357,7 +4357,7 @@ header input[type="radio"]:checked+label {
   min-height: calc(100vh - 249px);
 }
 
-#omens-member {
+.omens-member {
   position: relative;
   width: 100%;
   height: 300px;
@@ -4368,7 +4368,7 @@ header input[type="radio"]:checked+label {
   transform: rotate(5deg);
 }
 
-#omens-member .avi {
+.omens-member .avi {
   background: url(https://i.ibb.co/Q8KKZZ5/3226932-pixiv.png), var(--group);
   width: 75px;
   height: 75px;
@@ -4382,7 +4382,7 @@ header input[type="radio"]:checked+label {
   border-radius: 100%;
 }
 
-#omens-member .info {
+.omens-member .info {
   font: 700 11px roboto;
   z-index: 2;
   position: relative;
@@ -4396,7 +4396,7 @@ header input[type="radio"]:checked+label {
   text-transform: lowercase;
 }
 
-#omens-member .name {
+.omens-member .name {
   position: absolute;
   bottom: 55px;
   font: 700 16px montserrat;
@@ -4410,11 +4410,11 @@ header input[type="radio"]:checked+label {
   text-overflow: ellipsis;
 }
 
-#omens-member .name a {
+.omens-member .name a {
   color: var(--group);
 }
 
-#omens-member .online {
+.omens-member .online {
   position: absolute;
   bottom: 40px;
   z-index: 1;
@@ -4423,7 +4423,7 @@ header input[type="radio"]:checked+label {
   text-transform: UPPERCASE;
 }
 
-#omens-member .avi:after {
+.omens-member .avi:after {
   content: "";
   -webkit-font-smoothing: antialiased;
   position: absolute;
@@ -4436,75 +4436,75 @@ header input[type="radio"]:checked+label {
   -webkit-text-stroke: 2px #eee;
 }
 
-#omens-member.groupid-14 .avi:after {
+.omens-member.groupid-14 .avi:after {
   content: "";
   font-family: RPGAwesome;
   color: var(--member-group);
 
 }
 
-#omens-member.groupid-9 .avi:after {
+.omens-member.groupid-9 .avi:after {
   content: "";
   font-family: RPGAwesome;
   color: var(--member-group);
 
 }
 
-#omens-member.groupid-8 .avi:after {
+.omens-member.groupid-8 .avi:after {
   content: "";
   font-family: RPGAwesome;
   color: var(--member-group);
 }
 
-#omens-member.groupid-7 .avi:after {
+.omens-member.groupid-7 .avi:after {
   content: "";
   font-family: RPGAwesome;
   color: var(--member-group);
 
 }
 
-#omens-member.groupid-4 .avi:after, #omens-member.groupid-12 .avi:after, #omens-member.groupid-6 .avi:after, #omens-member.groupid-16 .avi:after {
+.omens-member.groupid-4 .avi:after, .omens-member.groupid-12 .avi:after, .omens-member.groupid-6 .avi:after, .omens-member.groupid-16 .avi:after {
   content: "";
   font-family: RPGAwesome;
   color: var(--member-group);
 
 }
 
-#omens-member.groupid-10 .avi:after {
+.omens-member.groupid-10 .avi:after {
   content: "";
   font-family: RPGAwesome;
   color: var(--member-group);
 
 }
 
-#omens-member.groupid-3 .avi:after, #omens-memberlist.groupid-15 .avi:after {
+.omens-member.groupid-3 .avi:after, .omens-memberlist.groupid-15 .avi:after {
   content: "";
   font-family: RPGAwesome;
   color: var(--member-group);
 
 }
 
-#omens-member .recent-button {
+.omens-member .recent-button {
   font-size: 30px;
   position: absolute;
   z-index: 1;
 }
 
-#omens-member .recent-button a {
+.omens-member .recent-button a {
   color: var(--group);
 }
 
-#omens-member #recent-posts {
+.omens-member #recent-posts {
   bottom: 100px;
   left: 40px;
 }
 
-#omens-member #recent-threads {
+.omens-member #recent-threads {
   bottom: 100px;
   right: 40px;
 }
 
-#omens-member:after {
+.omens-member:after {
   content: "";
   position: absolute;
   background: url(https://i.ibb.co/0Ydf2XM/i-am-indecisive-and-forgetful.png);
