@@ -4360,7 +4360,7 @@ header input[type="radio"]:checked+label {
 .omens-member {
   position: relative;
   width: 270px;
-  height: 300px;
+  height: 304px; /* needs to be wonky due to how background-image renders */
   display: flex;
   flex-flow: column nowrap;
   place-items: center;
