@@ -4365,6 +4365,7 @@ header input[type="radio"]:checked+label {
   flex-flow: column nowrap;
   place-items: center;
   place-content: center;
+  margin:0 50px;
 }
 
 .omens-member .avi {
