@@ -4358,15 +4358,14 @@ header input[type="radio"]:checked+label {
 }
 
 .omens-member {
-/*  position: relative;
-  width: 100%;
+  position: relative;
+  width: 300px;
   height: 300px;
   display: flex;
   flex-flow: column nowrap;
   place-items: center;
   place-content: center;
   transform: rotate(5deg);
-  */
 }
 
 .omens-member .avi {
