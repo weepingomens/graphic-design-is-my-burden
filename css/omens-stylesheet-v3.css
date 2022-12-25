@@ -12232,6 +12232,8 @@ blockquote #eventCountdown .countdown_row.countdown_descr {
   display: flex;
   place-content: center;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 0 25px;
 }
 
 .omens-post-1 .post-body tagged a {
@@ -14846,6 +14848,56 @@ position: absolute;
 #thread-post .threat-level.sanity { display: none; }
 #thread-post.event-thread .threat-level.sanity { display: flex; }
 
+.omens-post-8 .post-body .stat-container { padding:unset; border-left:0; border-right:0; }
+
+#thread-post .threat-level:before { width: calc(100% - 10px); }
+
+.mod-request .post-body a.link { display: block;text-align:center; }
+.mod-request .post-body a.link:before { content:'RELEVANT POST'; 	font: 400 15px/17px eczar,serif;
+	text-transform: uppercase; }
+
+#omens-profile #misc-container.event-profile {
+    grid: min-content min-content 1fr 1fr auto min-content/min-content auto min-content;
+    grid-template-areas:
+        "misc-fc misc-tropes misc-tropes"
+        "misc-fc misc-event misc-event"
+        "misc-fc misc-freeform misc-sources"
+        "misc-fc misc-freeform misc-limits"
+        "misc-fc misc-freeform misc-status"
+        "misc-links misc-links misc-links";
+}
+
+#omens-profile #misc-container.event-profile #event-stats {
+	grid-area: misc-event;
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	font: 500 11px montserrat;
+}
+
+#omens-profile #misc-container.event-profile #event-stats b {
+	font: 800 11px raleway;
+}
+
+#omens-profile #misc-container.event-profile #event-stats div {
+    background: #1a1a1a;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#omens-profile #misc-container.event-profile #event-stats div:first-child {
+	background:var(--custom);
+}
+
+#omens-profile #misc-container.event-profile #event-stats div a {
+	font: 800 11px raleway;
+	color: #1a1a1a;
+}
+
+#omens-profile #misc-container.event-profile #event-stats .sanity-level {
+	font: 800 11px raleway;
+	color: #1a1a1a;
+}
 /* END DICE ROLL AND STATS SETUP */
 /* START LIGHT MODE STYLING */
 
