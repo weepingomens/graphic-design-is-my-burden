@@ -12166,6 +12166,8 @@ blockquote #eventCountdown .countdown_row.countdown_descr {
   max-width: inherit;
 }
 
+.omens-post-template .post-body b i, .omens-post-template .post-body span i { color:inherit!important; }
+
 /* END UNIVERSAL POST STYLES */
 /* START POST 1 TEMPLATE */
 
