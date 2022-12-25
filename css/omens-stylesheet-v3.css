@@ -12163,7 +12163,7 @@ blockquote #eventCountdown .countdown_row.countdown_descr {
 }
 
 .post-image-2 img, .post-image-2-override img {
-  max-width: 100%;
+  max-width: inherit;
 }
 
 /* END UNIVERSAL POST STYLES */
