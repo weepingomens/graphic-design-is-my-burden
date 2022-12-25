@@ -14700,6 +14700,153 @@ blockquote #eventCountdown .countdown_row.countdown_descr {
 
 /* END POST 16 TEMPLATE */
 /* END ALL POST TEMPLATES */
+/* START DICE ROLL AND STATS SETUP */
+
+#thread-post.event-thread .miniprof .info h1:not(.event-field),
+#thread-post.event-thread .miniprof .info h2:not(.event-field) { display: none; }
+
+span.dice-roll {
+   text-align: center;
+   display: block;
+   margin: 0!important;
+   border: 0!important;
+   font: 500 30px/100% eczar;
+}
+
+span.dice-roll b {
+ display:none; 
+}
+
+span.dice-roll:before {
+   content:"ROLL:";
+   font: 500 30px/100% eczar!important;
+   color: #aaa!important;
+   text-transform: uppercase;
+}
+
+#thread-post.event-thread .threat-level {
+ display:none;
+}
+
+#thread-post.event-thread .threat-level.sanity {
+ display:flex;
+}
+
+#thread-post .threat-level.sanity:after {
+ content:"sanity level";
+}
+
+#thread-post.event-thread #romantic-status .status-deco {
+ bottom: -10px;
+ right: -10px;
+ opacity: 0.15;
+ transform: rotate(-15deg);
+}
+
+#thread-post .event-field { display: none!important; }
+#thread-post.event-thread .event-field { display: flex!important; }
+
+#thread-post.event-thread h2.event-field { display: block!important; }
+
+#thread-post .stat-container br {
+ display:none;
+}
+
+#thread-post .stat-container { 
+ border-top: 2px solid #333;
+ padding-top: 25px;
+ margin-top: 25px;
+}
+
+#thread-post .stat-points {
+ display: block;
+ font: 400 15px/17px eczar,serif;
+ text-transform: uppercase;
+ color: #555!important;
+}
+
+#thread-post .stat-points b {
+ font: 400 15px/17px eczar,serif!important;
+ color: #555!important;
+}
+
+#thread-post .stat-points em {
+ font-style: unset;
+ color: #aaa;
+}
+
+#thread-post .stat-points:before {
+ color:var(--custom)!important;
+}
+
+#thread-post .stat-points.health:before {
+ content:'current HP: ';
+}
+
+#thread-post .stat-points.endurance:before {
+ content:'current endurance: ';
+}
+
+#thread-post .stat-points.willpower:before {
+ content:'current willpower: ';
+}
+
+#thread-post span.edit { display:none; }
+#thread-post.event-thread span.edit {
+display: block;
+   font: 400 10px eczar;
+   text-transform: uppercase;
+   color: #818181;
+   text-align: center;
+}
+
+#thread-post.event-thread span.edit b {
+     font: 400 10px eczar;
+ color:var(--custom);
+}
+
+#thread-post.event-thread .mod-request b {
+font: 400 15px/17px eczar,serif;
+}
+
+#thread-post .stat-points.boons,
+#thread-post .stat-points.consequences {
+ font:400 15px/17px eczar;
+ color:unset!important;
+ text-transform: unset;
+}
+
+#thread-post .stat-points.boons b,
+#thread-post .stat-points.consequences b {
+ color: var(--custom)!important;
+}
+
+#thread-post.event-thread .mod-request {
+ position: relative;
+ overflow:hidden;
+}
+
+#thread-post.event-thread .mod-request .deco {
+position: absolute;
+   font-size: 250px;
+   bottom: 110px;
+   right: -18px;
+   opacity: 2%;
+   pointer-events: none;
+   transform:rotate(-15deg);
+}
+
+#thread-post.event-thread .mod-request .deco:before {
+   font-family: game-icons !important;
+   font-style: normal;
+   font-weight: normal !important;
+   vertical-align: top;
+}
+
+#thread-post .threat-level.sanity { display: none; }
+#thread-post.event-thread .threat-level.sanity { display: flex; }
+
+/* END DICE ROLL AND STATS SETUP */
 /* START LIGHT MODE STYLING */
 
 body.light {
