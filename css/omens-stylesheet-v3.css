@@ -15241,6 +15241,68 @@ position: absolute;
 	color: #1a1a1a;
 }
 /* END DICE ROLL AND STATS SETUP */
+
+/* START AUTO-CENSUS */
+
+#CharacterBreakdown {
+  grid-area: footer-census;
+      display: grid;
+      grid: min-content min-content/min-content min-content;
+      height: 205px;
+  }
+  
+  #CharacterBreakdown div {
+      width: 75px;
+      height: 75px;
+      margin: 5px;
+      border: 2px solid #414141;
+      border-radius: 100%;
+      display: flex;
+      place-items: center;
+      place-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      font: 900 10px roboto;
+      text-transform: uppercase;
+      text-shadow: -1px -1px 0 #2f2f2f, 1px -1px 0 #2f2f2f, -1px 1px 0 #2f2f2f, 1px 1px 0 #2f2f2f;
+      z-index: 2;
+  }
+  
+  #CharacterBreakdown div:nth-child(even) {
+      top: 30px;
+  }
+  
+  #CharacterBreakdown div:before {
+      color: var(--main-accent);
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px var(--main-accent);
+      opacity: 0.21;
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      transform: rotate(8deg);
+      font-size: 70px;
+      font-family: RPGAwesome;
+      font-weight: normal;
+  }
+  
+  #CharacterBreakdown div:nth-child(1):before {
+      content: "";
+  }
+  
+  #CharacterBreakdown div:nth-child(2):before {
+      content: "";
+  }
+  
+  #CharacterBreakdown div:nth-child(3):before {
+      content: "";
+  }
+  
+  #CharacterBreakdown div:nth-child(4):before {
+      content: "";
+  }
+/* END AUTO-CENSUS */
 /* START LIGHT MODE STYLING */
 
 body.light {
