@@ -4360,12 +4360,13 @@ header input[type="radio"]:checked+label {
 .omens-member {
   position: relative;
   width: 270px;
-  height: 304px; /* needs to be wonky due to how background-image renders */
+  height: 304px;
+  /* needs to be wonky due to how background-image renders */
   display: flex;
   flex-flow: column nowrap;
   place-items: center;
   place-content: center;
-  margin:0 25px;
+  margin: 0 25px;
 }
 
 .omens-member .avi {
@@ -7476,343 +7477,344 @@ fieldset.search.active-topics legend {
 }
 
 #tracking-container {
-	position:absolute;
-	top:0;
-	opacity:0;
-	z-index:0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: 0;
   transition: 0.33s;
 }
+
 #omens-profile #omens-prof-tabs-tracking:checked~#info-container #tracking-container {
   opacity: 1;
   transition: 0.33s;
   transition-delay: 0.33s;
   z-index: 2;
   transform: scale(1);
-    top: 0;
+  top: 0;
 }
 
 #omens-profile #omens-prof-tabs-tracking {
-position: absolute;
-    top: 162px;
-    left: 710px;
+  position: absolute;
+  top: 162px;
+  left: 710px;
 }
 
 /* you know what they say about something that looks stupid but works? */
 #omens-profile #omens-prof-tabs-tracking.no-current-threads.no-alt-threads.no-complete-threads.no-comm-threads {
-display:none; 
+  display: none;
 }
 
 #omens-profile #tracking-container {
-    display: grid;
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "active-threads active-threads comm-threads"
-        "active-threads active-threads comm-threads"
-        "au-threads completed-threads completed-threads"
-        "fizz-credit fizz-credit fizz-credit";
-    width: 100%;
-    gap: 10px;
-    height: 400px;
+  display: grid;
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "active-threads active-threads comm-threads"
+    "active-threads active-threads comm-threads"
+    "au-threads completed-threads completed-threads"
+    "fizz-credit fizz-credit fizz-credit";
+  width: 100%;
+  gap: 10px;
+  height: 400px;
 }
 
 #omens-profile #tracking-container.no-alt-threads {
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "active-threads active-threads comm-threads"
-        "active-threads active-threads comm-threads"
-        "completed-threads completed-threads completed-threads"
-        "fizz-credit fizz-credit fizz-credit";
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "active-threads active-threads comm-threads"
+    "active-threads active-threads comm-threads"
+    "completed-threads completed-threads completed-threads"
+    "fizz-credit fizz-credit fizz-credit";
 }
 
 #omens-profile #tracking-container.no-comm-threads {
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "active-threads active-threads au-threads"
-        "active-threads active-threads au-threads"
-        "completed-threads completed-threads completed-threads"
-        "fizz-credit fizz-credit fizz-credit";
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "active-threads active-threads au-threads"
+    "active-threads active-threads au-threads"
+    "completed-threads completed-threads completed-threads"
+    "fizz-credit fizz-credit fizz-credit";
 }
 
 #omens-profile #tracking-container.no-complete-threads {
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "active-threads active-threads comm-threads"
-        "active-threads active-threads comm-threads"
-        "active-threads active-threads au-threads"
-        "fizz-credit fizz-credit fizz-credit";
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "active-threads active-threads comm-threads"
+    "active-threads active-threads comm-threads"
+    "active-threads active-threads au-threads"
+    "fizz-credit fizz-credit fizz-credit";
 }
 
 #omens-profile #tracking-container.no-complete-threads.no-comm-threads {
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "au-threads active-threads active-threads"
-        "au-threads active-threads active-threads"
-        "au-threads active-threads active-threads"
-        "fizz-credit fizz-credit fizz-credit";
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "au-threads active-threads active-threads"
+    "au-threads active-threads active-threads"
+    "au-threads active-threads active-threads"
+    "fizz-credit fizz-credit fizz-credit";
 }
 
 #omens-profile #tracking-container.no-complete-threads.no-alt-threads.no-comm-threads {
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "active-threads active-threads active-threads"
-        "active-threads active-threads active-threads"
-        "active-threads active-threads active-threads"
-        "fizz-credit fizz-credit fizz-credit";
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "active-threads active-threads active-threads"
+    "active-threads active-threads active-threads"
+    "active-threads active-threads active-threads"
+    "fizz-credit fizz-credit fizz-credit";
 }
 
 #omens-profile #tracking-container.no-complete-threads.no-comm-threads.no-current-threads {
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "active-threads active-threads active-threads"
-        "active-threads active-threads active-threads"
-        "active-threads active-threads active-threads"
-        "fizz-credit fizz-credit fizz-credit";
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "active-threads active-threads active-threads"
+    "active-threads active-threads active-threads"
+    "active-threads active-threads active-threads"
+    "fizz-credit fizz-credit fizz-credit";
 }
 
 #omens-profile #tracking-container.no-alt-threads.no-comm-threads {
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "active-threads active-threads active-threads"
-        "active-threads active-threads active-threads"
-        "completed-threads completed-threads completed-threads"
-        "fizz-credit fizz-credit fizz-credit";
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "active-threads active-threads active-threads"
+    "active-threads active-threads active-threads"
+    "completed-threads completed-threads completed-threads"
+    "fizz-credit fizz-credit fizz-credit";
 }
 
 #omens-profile #tracking-container.no-alt-threads.no-complete-threads {
-    grid: 1fr 1fr 36% min-content / 33% auto 33%;
-    grid-template-areas:
-        "active-threads active-threads comm-threads"
-        "active-threads active-threads comm-threads"
-        "active-threads active-threads comm-threads"
-        "fizz-credit fizz-credit fizz-credit";
+  grid: 1fr 1fr 36% min-content / 33% auto 33%;
+  grid-template-areas:
+    "active-threads active-threads comm-threads"
+    "active-threads active-threads comm-threads"
+    "active-threads active-threads comm-threads"
+    "fizz-credit fizz-credit fizz-credit";
 }
 
 #omens-profile #tracking-container.no-alt-threads #altwrap,
 #omens-profile #tracking-container.no-comm-threads #commwrap,
 #omens-profile #tracking-container.no-complete-threads #historywrap {
-	display:none;
+  display: none;
 }
 
 #omens-profile #tracking-container #trackerwrap,
 #omens-profile #tracking-container #commwrap,
 #omens-profile #tracking-container #historywrap,
 #omens-profile #tracking-container #altwrap {
-	overflow: auto;
+  overflow: auto;
 }
 
 #omens-profile #tracking-container #trackerwrap {
-	grid-area:active-threads;
-    align-content: flex-start;
-	position:relative;
+  grid-area: active-threads;
+  align-content: flex-start;
+  position: relative;
 }
 
 #omens-profile #tracking-container hr {
-	display:none;
+  display: none;
 }
 
 #omens-profile #tracking-container .tracker-item a {
-font: 800 16px/100% raleway;
-    text-transform: uppercase;
-    color: #aaa;
-	transition:.25s;
+  font: 800 16px/100% raleway;
+  text-transform: uppercase;
+  color: #aaa;
+  transition: .25s;
 }
 
 #omens-profile #tracking-container .tracker-item a:hover {
-	color:#ccc;
-	transition:.25s;
+  color: #ccc;
+  transition: .25s;
 }
 
 
 #omens-profile #tracking-container #fizztrackercredits {
-    grid-area: fizz-credit;
-    font: 900 10px roboto;
-    text-transform: uppercase;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: #555;
+  grid-area: fizz-credit;
+  font: 900 10px roboto;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #555;
 }
 
 #omens-profile #tracking-container #fizztrackercredits a {
-	color:#888;
-	transition:.25s;
+  color: #888;
+  transition: .25s;
 }
 
 #omens-profile #tracking-container #fizztrackercredits a:hover {
-	color:#aaa;
-	transition:.25s;
+  color: #aaa;
+  transition: .25s;
 }
 
 #omens-profile #tracking-container #trackerwrap {
-    padding-right:10px;
-    border:25px solid #333;
-    background: #333;
-    border-radius: 5px;
-    overflow: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  padding-right: 10px;
+  border: 25px solid #333;
+  background: #333;
+  border-radius: 5px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #omens-profile #tracking-container .tracker-item {
-border-bottom: 2px solid #3f3f3f;
-    margin: 5px 0;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  border-bottom: 2px solid #3f3f3f;
+  margin: 5px 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 #omens-profile #tracking-container .tracker-item:first-child {
-   margin-top:0;
+  margin-top: 0;
 }
 
 #omens-profile #tracking-container .tracker-desc {
-    font: 600 10px roboto;
-    text-transform: uppercase;
-    color: #666;
-    margin-bottom: 5px;
-    letter-spacing: .5px;
-	position:relative;
-	z-index:2;
-    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+  font: 600 10px roboto;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 5px;
+  letter-spacing: .5px;
+  position: relative;
+  z-index: 2;
+  text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
 }
 
 #omens-profile #tracking-container .status.myturn {
-    position: absolute;
-    font-size: 50px;
-    right: 0;
-    color: var(--custom);
-    filter: invert(1);
-    opacity: 25%;
-    bottom: -11px;
-    pointer-events: none;
-    z-index: 0;
+  position: absolute;
+  font-size: 50px;
+  right: 0;
+  color: var(--custom);
+  filter: invert(1);
+  opacity: 25%;
+  bottom: -11px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 #omens-profile #tracking-container #trackerwrap::-webkit-scrollbar,
 #omens-profile #tracking-container #commwrap::-webkit-scrollbar,
 #omens-profile #tracking-container #altwrap::-webkit-scrollbar,
 #omens-profile #tracking-container #historywrap::-webkit-scrollbar {
-    width: 17px;
+  width: 17px;
 }
 
 #omens-profile #tracking-container #trackerwrap::-webkit-scrollbar-thumb,
 #omens-profile #tracking-container #commwrap::-webkit-scrollbar-thumb,
 #omens-profile #tracking-container #altwrap::-webkit-scrollbar-thumb,
 #omens-profile #tracking-container #historywrap::-webkit-scrollbar-thumb {
-    background: var(--group);
-    background: var(--custom);
-    border: 5px solid #333;
-    border-width: 0 5px 0 5px;
+  background: var(--group);
+  background: var(--custom);
+  border: 5px solid #333;
+  border-width: 0 5px 0 5px;
 }
 
 #omens-profile #tracking-container #historywrap::-webkit-scrollbar-thumb {
-    border: 5px solid #1a1a1a;
-border-width: 0 5px 0 5px;
+  border: 5px solid #1a1a1a;
+  border-width: 0 5px 0 5px;
 }
 
 #omens-profile #tracking-container #trackerwrap::-webkit-scrollbar-track,
 #omens-profile #tracking-container #commwrap::-webkit-scrollbar-track,
 #omens-profile #tracking-container #altwrap::-webkit-scrollbar-track,
 #omens-profile #tracking-container #historywrap::-webkit-scrollbar-track {
-    background: #444;
-    border: 5px solid #333;
+  background: #444;
+  border: 5px solid #333;
 }
 
 #omens-profile #tracking-container #historywrap::-webkit-scrollbar-track {
-    background: #222;
-    border: 5px solid #1a1a1a;
+  background: #222;
+  border: 5px solid #1a1a1a;
 }
 
 
 #omens-profile #tracking-container #commwrap {
-    grid-area: comm-threads;
-    background: #333;
-    border: 25px solid #333;
-    border-radius: 5px;
-    padding-right:10px;
+  grid-area: comm-threads;
+  background: #333;
+  border: 25px solid #333;
+  border-radius: 5px;
+  padding-right: 10px;
 }
 
 #omens-profile #tracking-container #commwrap a,
 #omens-profile #tracking-container #altwrap a {
-    font: 700 10px montserrat;
-    transition:.25s;
+  font: 700 10px montserrat;
+  transition: .25s;
 }
 
 #omens-profile #tracking-container #commwrap a:hover,
 #omens-profile #tracking-container #altwrap a:hover {
-    color:#ccc;
-	transition:.25s;
+  color: #ccc;
+  transition: .25s;
 }
 
 #omens-profile #tracking-container #commwrap .tracker-desc,
 #omens-profile #tracking-container #altwrap .tracker-desc {
-    font: 600 10px roboto;
-    text-transform: uppercase;
-    color: #666;
-    margin-bottom: 5px;
-    letter-spacing: .5px;
-	position:relative;
-	z-index:2;
+  font: 600 10px roboto;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 5px;
+  letter-spacing: .5px;
+  position: relative;
+  z-index: 2;
 }
 
 #omens-profile #tracking-container #commwrap .tracker-lastpost b {
-	display:none;
+  display: none;
 }
 
 
 #omens-profile #tracking-container #altwrap {
-	grid-area:au-threads;
-    background: #333;
-    border: 25px solid #333;
-    border-radius: 5px;
-    padding-right:10px;
+  grid-area: au-threads;
+  background: #333;
+  border: 25px solid #333;
+  border-radius: 5px;
+  padding-right: 10px;
 }
 
 #omens-profile #tracking-container #altwrap .tracker-location,
 #omens-profile #tracking-container #altwrap .tracker-lastpost {
-display:none;
+  display: none;
 }
 
-#omens-profile #tracking-container .tracker-item .status.myturn + a {
-color: var(--custom);
-transition:.25s;
+#omens-profile #tracking-container .tracker-item .status.myturn+a {
+  color: var(--custom);
+  transition: .25s;
 }
 
-#omens-profile #tracking-container .tracker-item .status.myturn + a:hover {
-color: #ccc;
-transition:.25s;
+#omens-profile #tracking-container .tracker-item .status.myturn+a:hover {
+  color: #ccc;
+  transition: .25s;
 }
 
 #omens-profile #tracking-container #historywrap {
-	grid-area:completed-threads;
-    background: #1a1a1a;
-    border: 25px solid #1a1a1a;
-    border-radius: 5px;
+  grid-area: completed-threads;
+  background: #1a1a1a;
+  border: 25px solid #1a1a1a;
+  border-radius: 5px;
 }
 
 #omens-profile #tracking-container #historywrap .tracker-item {
-    border-bottom: 2px solid #222;
+  border-bottom: 2px solid #222;
 }
 
-#omens-profile #tracking-container #historywrap .tracker-item .tracker-desc { 
-   text-shadow: none;
+#omens-profile #tracking-container #historywrap .tracker-item .tracker-desc {
+  text-shadow: none;
 }
 
 #omens-profile #tracking-container #historywrap .tracker-item a {
-    font: 700 10px montserrat;
-    color: #8d8d8d;
-    transition: .25s;
+  font: 700 10px montserrat;
+  color: #8d8d8d;
+  transition: .25s;
 }
 
 #omens-profile #tracking-container #historywrap .tracker-item a:hover {
-    color: #aaa;
-    transition: .25s;
+  color: #aaa;
+  transition: .25s;
 }
 
 #omens-profile #tracking-container #historywrap .tracker-desc {
-    color: #444;
+  color: #444;
 }
 
 /* END MAIN PROFILE */
@@ -12506,7 +12508,9 @@ blockquote #eventCountdown .countdown_row.countdown_descr {
   max-width: inherit;
 }
 
-.omens-post-template .post-body b i, .omens-post-template .post-body span i { color:inherit!important; }
+.omens-post-template .post-body b i, .omens-post-template .post-body span i {
+  color: inherit !important;
+}
 
 /* END UNIVERSAL POST STYLES */
 /* START POST 1 TEMPLATE */
@@ -15047,261 +15051,293 @@ blockquote #eventCountdown .countdown_row.countdown_descr {
 /* START DICE ROLL AND STATS SETUP */
 
 #thread-post.event-thread .miniprof .info h1:not(.event-field),
-#thread-post.event-thread .miniprof .info h2:not(.event-field) { display: none; }
+#thread-post.event-thread .miniprof .info h2:not(.event-field) {
+  display: none;
+}
 
 span.dice-roll {
-   text-align: center;
-   display: block;
-   margin: 0!important;
-   border: 0!important;
-   font: 500 30px/100% eczar;
+  text-align: center;
+  display: block;
+  margin: 0 !important;
+  border: 0 !important;
+  font: 500 30px/100% eczar;
 }
 
 span.dice-roll b {
- display:none; 
+  display: none;
 }
 
 span.dice-roll:before {
-   content:"ROLL:";
-   font: 500 30px/100% eczar!important;
-   color: #aaa!important;
-   text-transform: uppercase;
+  content: "ROLL:";
+  font: 500 30px/100% eczar !important;
+  color: #aaa !important;
+  text-transform: uppercase;
 }
 
 #thread-post.event-thread .threat-level {
- display:none;
+  display: none;
 }
 
 #thread-post.event-thread .threat-level.sanity {
- display:flex;
+  display: flex;
 }
 
 #thread-post .threat-level.sanity:after {
- content:"sanity level";
+  content: "sanity level";
 }
 
 #thread-post.event-thread #romantic-status .status-deco {
- bottom: -10px;
- right: -10px;
- opacity: 0.15;
- transform: rotate(-15deg);
+  bottom: -10px;
+  right: -10px;
+  opacity: 0.15;
+  transform: rotate(-15deg);
 }
 
-#thread-post .event-field { display: none!important; }
-#thread-post.event-thread .event-field { display: flex!important; }
+#thread-post .event-field {
+  display: none !important;
+}
 
-#thread-post.event-thread h2.event-field { display: block!important; }
+#thread-post.event-thread .event-field {
+  display: flex !important;
+}
+
+#thread-post.event-thread h2.event-field {
+  display: block !important;
+}
 
 #thread-post .stat-container br {
- display:none;
+  display: none;
 }
 
-#thread-post .stat-container { 
- border-top: 2px solid #333;
- padding-top: 25px;
- margin-top: 25px;
+#thread-post .stat-container {
+  border-top: 2px solid #333;
+  padding-top: 25px;
+  margin-top: 25px;
 }
 
 #thread-post .stat-points {
- display: block;
- font: 400 15px/17px eczar,serif;
- text-transform: uppercase;
- color: #555!important;
+  display: block;
+  font: 400 15px/17px eczar, serif;
+  text-transform: uppercase;
+  color: #555 !important;
 }
 
 #thread-post .stat-points b {
- font: 400 15px/17px eczar,serif!important;
- color: #555!important;
+  font: 400 15px/17px eczar, serif !important;
+  color: #555 !important;
 }
 
 #thread-post .stat-points em {
- font-style: unset;
- color: #aaa;
+  font-style: unset;
+  color: #aaa;
 }
 
 #thread-post .stat-points:before {
- color:var(--custom)!important;
+  color: var(--custom) !important;
 }
 
 #thread-post .stat-points.health:before {
- content:'current HP: ';
+  content: 'current HP: ';
 }
 
 #thread-post .stat-points.endurance:before {
- content:'current endurance: ';
+  content: 'current endurance: ';
 }
 
 #thread-post .stat-points.willpower:before {
- content:'current willpower: ';
+  content: 'current willpower: ';
 }
 
-#thread-post span.edit { display:none; }
+#thread-post span.edit {
+  display: none;
+}
+
 #thread-post.event-thread span.edit {
-display: block;
-   font: 400 10px eczar;
-   text-transform: uppercase;
-   color: #818181;
-   text-align: center;
+  display: block;
+  font: 400 10px eczar;
+  text-transform: uppercase;
+  color: #818181;
+  text-align: center;
 }
 
 #thread-post.event-thread span.edit b {
-     font: 400 10px eczar;
- color:var(--custom);
+  font: 400 10px eczar;
+  color: var(--custom);
 }
 
 #thread-post.event-thread .mod-request b {
-font: 400 15px/17px eczar,serif;
+  font: 400 15px/17px eczar, serif;
 }
 
 #thread-post .stat-points.boons,
 #thread-post .stat-points.consequences {
- font:400 15px/17px eczar;
- color:unset!important;
- text-transform: unset;
+  font: 400 15px/17px eczar;
+  color: unset !important;
+  text-transform: unset;
 }
 
 #thread-post .stat-points.boons b,
 #thread-post .stat-points.consequences b {
- color: var(--custom)!important;
+  color: var(--custom) !important;
 }
 
 #thread-post.event-thread .mod-request {
- position: relative;
- overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 #thread-post.event-thread .mod-request .deco {
-position: absolute;
-   font-size: 250px;
-   bottom: 110px;
-   right: -18px;
-   opacity: 2%;
-   pointer-events: none;
-   transform:rotate(-15deg);
+  position: absolute;
+  font-size: 250px;
+  bottom: 110px;
+  right: -18px;
+  opacity: 2%;
+  pointer-events: none;
+  transform: rotate(-15deg);
 }
 
 #thread-post.event-thread .mod-request .deco:before {
-   font-family: game-icons !important;
-   font-style: normal;
-   font-weight: normal !important;
-   vertical-align: top;
+  font-family: game-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  vertical-align: top;
 }
 
-#thread-post .threat-level.sanity { display: none; }
-#thread-post.event-thread .threat-level.sanity { display: flex; }
+#thread-post .threat-level.sanity {
+  display: none;
+}
 
-.omens-post-8 .post-body .stat-container { padding:unset; border-left:0; border-right:0; }
+#thread-post.event-thread .threat-level.sanity {
+  display: flex;
+}
 
-#thread-post .threat-level:before { width: calc(100% - 10px); }
+.omens-post-8 .post-body .stat-container {
+  padding: unset;
+  border-left: 0;
+  border-right: 0;
+}
 
-.mod-request .post-body a.link { display: block;text-align:center; }
-.mod-request .post-body a.link:before { content:'RELEVANT POST'; 	font: 400 15px/17px eczar,serif;
-	text-transform: uppercase; }
+#thread-post .threat-level:before {
+  width: calc(100% - 10px);
+}
+
+.mod-request .post-body a.link {
+  display: block;
+  text-align: center;
+}
+
+.mod-request .post-body a.link:before {
+  content: 'RELEVANT POST';
+  font: 400 15px/17px eczar, serif;
+  text-transform: uppercase;
+}
 
 #omens-profile #misc-container.event-profile {
-    grid: min-content min-content 1fr 1fr auto min-content/min-content auto min-content;
-    grid-template-areas:
-        "misc-fc misc-tropes misc-tropes"
-        "misc-fc misc-event misc-event"
-        "misc-fc misc-freeform misc-sources"
-        "misc-fc misc-freeform misc-limits"
-        "misc-fc misc-freeform misc-status"
-        "misc-links misc-links misc-links";
+  grid: min-content min-content 1fr 1fr auto min-content/min-content auto min-content;
+  grid-template-areas:
+    "misc-fc misc-tropes misc-tropes"
+    "misc-fc misc-event misc-event"
+    "misc-fc misc-freeform misc-sources"
+    "misc-fc misc-freeform misc-limits"
+    "misc-fc misc-freeform misc-status"
+    "misc-links misc-links misc-links";
 }
 
 #omens-profile #misc-container.event-profile #event-stats {
-	grid-area: misc-event;
-	display: flex;
-	justify-content: center;
-	gap: 5px;
-	font: 500 11px montserrat;
+  grid-area: misc-event;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font: 500 11px montserrat;
 }
 
 #omens-profile #misc-container.event-profile #event-stats b {
-	font: 800 11px raleway;
+  font: 800 11px raleway;
 }
 
 #omens-profile #misc-container.event-profile #event-stats div {
-    background: #1a1a1a;
-    padding: 5px;
-    border-radius: 3px;
+  background: #1a1a1a;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 #omens-profile #misc-container.event-profile #event-stats div:first-child {
-	background:var(--custom);
+  background: var(--custom);
 }
 
 #omens-profile #misc-container.event-profile #event-stats div a {
-	font: 800 11px raleway;
-	color: #1a1a1a;
+  font: 800 11px raleway;
+  color: #1a1a1a;
 }
 
 #omens-profile #misc-container.event-profile #event-stats .sanity-level {
-	font: 800 11px raleway;
-	color: #1a1a1a;
+  font: 800 11px raleway;
+  color: #1a1a1a;
 }
+
 /* END DICE ROLL AND STATS SETUP */
 
 /* START AUTO-CENSUS */
 
 #CharacterBreakdown {
   grid-area: footer-census;
-      display: grid;
-      grid: min-content min-content/min-content min-content;
-      height: 205px;
-  }
-  
-  #CharacterBreakdown div {
-      width: 75px;
-      height: 75px;
-      margin: 5px;
-      border: 2px solid #414141;
-      border-radius: 100%;
-      display: flex;
-      place-items: center;
-      place-content: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      font: 900 10px roboto;
-      text-transform: uppercase;
-      text-shadow: -1px -1px 0 #2f2f2f, 1px -1px 0 #2f2f2f, -1px 1px 0 #2f2f2f, 1px 1px 0 #2f2f2f;
-      z-index: 2;
-  }
-  
-  #CharacterBreakdown div:nth-child(even) {
-      top: 30px;
-  }
-  
-  #CharacterBreakdown div:before {
-      color: var(--main-accent);
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px var(--main-accent);
-      opacity: 0.21;
-      position: absolute;
-      bottom: -5px;
-      right: -5px;
-      transform: rotate(8deg);
-      font-size: 70px;
-      font-family: RPGAwesome;
-      font-weight: normal;
-  }
-  
-  #CharacterBreakdown div:nth-child(1):before {
-      content: "";
-  }
-  
-  #CharacterBreakdown div:nth-child(2):before {
-      content: "";
-  }
-  
-  #CharacterBreakdown div:nth-child(3):before {
-      content: "";
-  }
-  
-  #CharacterBreakdown div:nth-child(4):before {
-      content: "";
-  }
+  display: grid;
+  grid: min-content min-content/min-content min-content;
+  height: 205px;
+}
+
+#CharacterBreakdown div {
+  width: 75px;
+  height: 75px;
+  margin: 5px;
+  border: 2px solid #414141;
+  border-radius: 100%;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font: 900 10px roboto;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #2f2f2f, 1px -1px 0 #2f2f2f, -1px 1px 0 #2f2f2f, 1px 1px 0 #2f2f2f;
+  z-index: 2;
+}
+
+#CharacterBreakdown div:nth-child(even) {
+  top: 30px;
+}
+
+#CharacterBreakdown div:before {
+  color: var(--main-accent);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--main-accent);
+  opacity: 0.21;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  transform: rotate(8deg);
+  font-size: 70px;
+  font-family: RPGAwesome;
+  font-weight: normal;
+}
+
+#CharacterBreakdown div:nth-child(1):before {
+  content: "";
+}
+
+#CharacterBreakdown div:nth-child(2):before {
+  content: "";
+}
+
+#CharacterBreakdown div:nth-child(3):before {
+  content: "";
+}
+
+#CharacterBreakdown div:nth-child(4):before {
+  content: "";
+}
+
 /* END AUTO-CENSUS */
 /* START LIGHT MODE STYLING */
 
@@ -16076,10 +16112,10 @@ body.light {
 
 .light #omens-profile #tracking-container #commwrap,
 .light #omens-profile #tracking-container #trackerwrap,
-.light #omens-profile #tracking-container #altwrap { 
-    background: #eaeaea;
-    border-color: #eaeaea;
-    color: #333;
+.light #omens-profile #tracking-container #altwrap {
+  background: #eaeaea;
+  border-color: #eaeaea;
+  color: #333;
 }
 
 .light #omens-profile #tracking-container #trackerwrap::-webkit-scrollbar-thumb,
@@ -16088,25 +16124,25 @@ body.light {
 .light #omens-profile #tracking-container #trackerwrap::-webkit-scrollbar-track,
 .light #omens-profile #tracking-container #commwrap::-webkit-scrollbar-track,
 .light #omens-profile #tracking-container #altwrap::-webkit-scrollbar-track {
-    border-color: #eaeaea;
+  border-color: #eaeaea;
 }
 
 .light #omens-profile #tracking-container .tracker-desc {
-	text-shadow:-1px -1px 0 #eaeaea, 1px -1px 0 #eaeaea, -1px 1px 0 #eaeaea, 1px 1px 0 #eaeaea;
+  text-shadow: -1px -1px 0 #eaeaea, 1px -1px 0 #eaeaea, -1px 1px 0 #eaeaea, 1px 1px 0 #eaeaea;
 }
 
 .light #omens-profile #tracking-container .tracker-desc {
-color:#686868;
+  color: #686868;
 }
 
 .light #omens-profile #tracking-container .tracker-item a {
-color:#333;
+  color: #333;
 }
 
 .light #omens-profile #tracking-container .tracker-item a:hover {
-color:#aaa;
+  color: #aaa;
 }
 
 .light #omens-profile #tracking-container .tracker-item {
-    border-color: #d9d9d9;
+  border-color: #d9d9d9;
 }
