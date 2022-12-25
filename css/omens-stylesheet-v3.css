@@ -16011,3 +16011,40 @@ body.light {
   --main-accent: #8693ab !important;
   --main-gradient: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%) !important;
 }
+
+.light #omens-profile #tracking-container #commwrap,
+.light #omens-profile #tracking-container #trackerwrap,
+.light #omens-profile #tracking-container #altwrap { 
+    background: #eaeaea;
+    border-color: #eaeaea;
+    color: #333;
+}
+
+.light #omens-profile #tracking-container #trackerwrap::-webkit-scrollbar-thumb,
+.light #omens-profile #tracking-container #commwrap::-webkit-scrollbar-thumb,
+.light #omens-profile #tracking-container #altwrap::-webkit-scrollbar-thumb,
+.light #omens-profile #tracking-container #trackerwrap::-webkit-scrollbar-track,
+.light #omens-profile #tracking-container #commwrap::-webkit-scrollbar-track,
+.light #omens-profile #tracking-container #altwrap::-webkit-scrollbar-track {
+    border-color: #eaeaea;
+}
+
+.light #omens-profile #tracking-container .tracker-desc {
+	text-shadow:-1px -1px 0 #eaeaea, 1px -1px 0 #eaeaea, -1px 1px 0 #eaeaea, 1px 1px 0 #eaeaea;
+}
+
+.light #omens-profile #tracking-container .tracker-desc {
+color:#686868;
+}
+
+.light #omens-profile #tracking-container .tracker-item a {
+color:#333;
+}
+
+.light #omens-profile #tracking-container .tracker-item a:hover {
+color:#aaa;
+}
+
+.light #omens-profile #tracking-container .tracker-item {
+    border-color: #d9d9d9;
+}
