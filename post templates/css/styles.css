@@ -12,26 +12,23 @@ body { color:red; }
     overflow:hidden;
 }
 
-.post-template-18 .post-lyrics:after {
-    content: "";
+.post-template-18 .post-lyrics .post-image-2 img {
+    display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
     width: 100%;
     height: 100%;
-    background: url(https://i.ibb.co/RT4VmKf/19.png);
-    filter: grayscale(100%) contrast(150%);
-    /* opacity: 0.01; */
     filter: blur(3px) grayscale(1);
-    transform: scale(150%);
-    opacity: 20%;
+    transform: scale(1.5) scaleX(-1);
+    opacity: 25%;
     mix-blend-mode: exclusion;
 }
 
 .post-template-18 .lyric-1,
 .post-template-18 .lyric-2,
 .post-template-18 .post-icon img,
-.post-template-18 .post-image-2 {
+.post-template-18 .post-images .post-image-2 {
     position:relative;
     z-index:1;
 }
@@ -94,13 +91,13 @@ body { color:red; }
    z-index:1;
 }
 
-.post-template-18 .post-image-2 {
+.post-template-18 .post-images .post-image-2 {
     width: calc(500px - 30px);
     height: 150px;
     overflow: hidden;
 }
 
-.post-template-18 .post-image-2 img {
+.post-template-18 .post-images .post-image-2 img {
     height:150px;
 }
 
