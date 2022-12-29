@@ -1,15 +1,145 @@
-body { color:red; }
+body {
+    color: red;
+}
 
-.post-template-18 { 
-    background:#222;
-    margin:25px;
+.post-template-19 {
+    background: #222;
+    margin: 50px;
+}
+
+.post-template-19 .post-image-2 {
+    position: relative;
+    overflow: hidden;
+    background: var(--custom);
+    max-width: 100%;
+    height: 100px;
+}
+
+.post-template-19 .post-image-2 img {
+    display: block;
+    mix-blend-mode: multiply;
+    filter: contrast(150%) grayscale(100%) blur(2px);
+    opacity: 33%;
+    transform: scale(1.2);
+}
+
+.post-template-19 .post-image-2 .lyric-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 700 10px montserrat, sans-serif;
+    color: #eee;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.post-template-19 .post-icon-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 25px 25px 10px;
+}
+
+.post-template-19 .post-icon img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: #333;
+    padding: 5px;
+    border: 3px solid #3f3f3f;
+    filter: grayscale(1);
+    transition: .25s;
+}
+
+.post-template-19 .post-body {
+    border-left: 3px solid #3f3f3f;
+    border-right: 3px solid #3f3f3f;
+    margin: 25px;
+    padding: 0 25px;
+    font: 400 13px/18px roboto, arial, sans-serif;
+    color: #ccc;
+    text-align: justify;
+}
+
+.post-template-19 .post-body b {
+    font: 700 14px/18px montserrat, sans-serif;
+    color: var(--custom);
+}
+
+.post-template-19 .post-body i {
+    color: #fff;
+    letter-spacing: .25px;
+}
+
+.post-template-19 .post-body span {
+    color: var(--custom);
+    font-weight: 600;
+}
+
+.post-template-19 .post-body u {
+    text-decoration: none;
+    border-bottom: 2px solid var(--custom);
+    color: #fff;
+}
+
+.post-template-19 .lyric-2 {
+    display: flex;
+    font: 700 10px montserrat, sans-serif;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 0 15px 25px;
+    color: #ccc;
+}
+
+.post-template-19 .lyric-2:before,
+.post-template-19 .lyric-2:after {
+    content: '';
+    flex-grow: 1;
+    height: 3px;
+    background: #333;
+    margin: 0 10px;
+}
+
+.post-template-19 tagged {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(100% + 56px);
+    background: rgb(34, 34, 34);
+    margin: 0 -28px -25px -28px;
+    padding: 10px 0;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-template-19 tagged a {
+    padding: 10px;
+    font: 700 10px/100% montserrat, sans-serif;
+    text-transform: uppercase;
+    background: #1c1c1c;
+    color: #aaa;
+    transition:.33s;
+}
+
+.post-template-19 tagged a:hover {
+    color:var(--custom);
+    transition:.33s;
+}
+
+.post-template-18 {
+    background: #222;
+    margin: 25px;
 }
 
 .post-template-18 .post-lyrics {
-    background:var(--custom);
-    padding:50px;
-    position:relative;
-    overflow:hidden;
+    background: var(--custom);
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .post-template-18 .post-lyrics .post-image-2 img {
@@ -29,43 +159,44 @@ body { color:red; }
 .post-template-18 .lyric-2,
 .post-template-18 .post-icon img,
 .post-template-18 .post-images .post-image-2 {
-    position:relative;
-    z-index:1;
+    position: relative;
+    z-index: 1;
 }
 
 .post-template-18 .lyric-1 {
-    font:700 40px poppins,sans-serif;
-    text-transform:lowercase;
-    color:#222;
-    text-align:left;
+    font: 700 40px poppins, sans-serif;
+    text-transform: lowercase;
+    color: #222;
+    text-align: left;
 }
 
 .post-template-18 .lyric-2 {
-    font:700 10px montserrat,sans-serif;
-    text-transform:uppercase;
-    display:flex;
-    align-items:center;
-    color:#eee;
+    font: 700 10px montserrat, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #eee;
 }
 
 .post-template-18 .lyric-2:before {
-    content:'';
-    flex-grow:1;
-    height:2px;
-    background:#eee;
-    opacity:10%;
-    margin-right:10px;
+    content: '';
+    flex-grow: 1;
+    height: 2px;
+    background: #eee;
+    opacity: 10%;
+    margin-right: 10px;
 }
 
 
 .post-template-18 .post-icon {
-    display:flex;
-    background:#131313;
-    padding:35px;
-    position:relative;
-    width:min-content;
-    overflow:hidden;
+    display: flex;
+    background: #131313;
+    padding: 35px;
+    position: relative;
+    width: min-content;
+    overflow: hidden;
 }
+
 /*
 .post-template-18 .post-icon:after {
     content: "";
@@ -81,14 +212,14 @@ body { color:red; }
 }
 */
 .post-template-18 .post-icon img {
-    display:block;
+    display: block;
     width: 50px;
     height: 50px;
-   border:10px solid var(--custom);
-   background:#eee;
-   padding:5px;
-   position:relative;
-   z-index:1;
+    border: 10px solid var(--custom);
+    background: #eee;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 .post-template-18 .post-images .post-image-2 {
@@ -98,15 +229,15 @@ body { color:red; }
 }
 
 .post-template-18 .post-images .post-image-2 img {
-    height:150px;
+    height: 150px;
 }
 
 .post-template-18 .post-images {
-    display:flex;
-    background:#111;
-    justify-content:center;
-    position:relative;
-    overflow:hidden;
+    display: flex;
+    background: #111;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .post-template-18 .post-images:after {
@@ -124,63 +255,64 @@ body { color:red; }
 
 
 .post-template-18 .post-body {
-    background:#222;
-    font:400 13px/18px roboto, arial, sans-serif;
-    padding:25px;
-    text-align:justify;
+    background: #222;
+    font: 400 13px/18px roboto, arial, sans-serif;
+    padding: 25px;
+    text-align: justify;
     color: #ccc;
-    border-left:5px solid #2f2f2f;
-    position:relative;
-    overflow:hidden;
+    border-left: 5px solid #2f2f2f;
+    position: relative;
+    overflow: hidden;
 }
 
 .post-template-18 .post-body b {
-    font:500 14px/18px poppins, arial, sans-serif;
-    color:var(--custom);
+    font: 500 14px/18px poppins, arial, sans-serif;
+    color: var(--custom);
 }
 
 .post-template-18 .post-body i {
-    color:#fff;
+    color: #fff;
 }
 
 .post-template-18 .post-body span {
-    color:var(--custom);
-    font-family:poppins;
+    color: var(--custom);
+    font-family: poppins;
 }
 
 .post-template-18 .post-body u {
-    text-decoration:none;
-    max-height:18px;
-    background:var(--custom);
-    padding:1px 5px;
-    border-radius:3px;
-    color:#222;
-    font-weight:500;
+    text-decoration: none;
+    max-height: 18px;
+    background: var(--custom);
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: #222;
+    font-weight: 500;
 }
 
 .post-template-18 .post-body tagged {
-    display:flex;
-    flex-flow:row wrap;
-    gap:5px;
-    justify-content:flex-end;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    justify-content: flex-end;
     position: absolute;
     bottom: -10px;
-    right:-1px;
+    right: -1px;
 }
+
 .post-template-18 .post-body tagged a {
-    font:700 20px poppins;
-    text-transform:uppercase;
-    color:#eee;
-    opacity:10%;
-    transition:.25s;
+    font: 700 20px poppins;
+    text-transform: uppercase;
+    color: #eee;
+    opacity: 10%;
+    transition: .25s;
 }
 
 .post-template-18 .post-body tagged a:hover {
-    opacity:33%;
-    transition:.25s;
+    opacity: 33%;
+    transition: .25s;
 }
 
 .post-template-18 .post-body-contain {
-    background:#1a1a1a;
-    padding:25px;
+    background: #1a1a1a;
+    padding: 25px;
 }
