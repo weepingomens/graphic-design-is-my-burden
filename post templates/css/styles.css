@@ -99,8 +99,8 @@ body {
 .post-template-19 .lyric-2:after {
     content: '';
     flex-grow: 1;
-    height: 3px;
-    background: #333;
+    height: 2px;
+    background: #3f3f3f;
     margin: 0 10px;
 }
 
@@ -122,12 +122,12 @@ body {
     text-transform: uppercase;
     background: #1c1c1c;
     color: #aaa;
-    transition:.33s;
+    transition: .33s;
 }
 
 .post-template-19 tagged a:hover {
-    color:var(--custom);
-    transition:.33s;
+    color: var(--custom);
+    transition: .33s;
 }
 
 .post-template-18 {
