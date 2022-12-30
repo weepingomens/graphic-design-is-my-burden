@@ -16241,6 +16241,11 @@ body.light {
   background: #ddd
 }
 
+.light .omens-post-17,
+.light .omens-post-17 .lyric-2,
+.light .omens-post-17 .post-body tagged { background-color: #eaeaea;
+    border-color: #ddd; }
+
 .light #ucpmenu {
   background: #fff
 }
@@ -16309,3 +16314,4 @@ body.light {
 .light #omens-profile #tracking-container .tracker-item {
   border-color: #d9d9d9;
 }
+
