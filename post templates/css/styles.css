@@ -1,19 +1,19 @@
 .post-template-20 {
-    margin:25px;
-    display:flex;
-    flex-flow:row nowrap;
-    background:#222;
-    border-radius:5px;
+    margin: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    background: #222;
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .post-template-20 .post-images {
-    position:relative;
-    background:var(--custom);
-    flex-shrink:0;
-    border-radius:5px 0px 0px 5px;
-    border-right:10px solid rgb(21, 21, 21);
-    z-index:1;
+    position: relative;
+    background: var(--custom);
+    flex-shrink: 0;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 10px solid rgb(21, 21, 21);
+    z-index: 1;
     display: flex;
     justify-content: flex-start;
     align-content: flex-start;
@@ -21,79 +21,80 @@
 }
 
 .post-template-20 .post-images .post-image-1 {
-    position:absolute;
-    top:0;
-    height:100%;
-    width:100%;
-    overflow:hidden;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
+
 .post-template-20 .post-images .post-image-1 img {
-    display:block;
+    display: block;
     height: 100%;
     max-width: inherit;
-    filter:grayscale(100%) contrast(150%);
+    filter: grayscale(100%) contrast(150%);
     mix-blend-mode: multiply;
-    opacity:10%;
+    opacity: 10%;
 }
 
 .post-template-20 .post-images .post-icon {
-    display:block;
-    position:sticky;
-    top:25px;
-    margin:25px;
-    z-index:1;
+    display: block;
+    position: sticky;
+    top: 25px;
+    margin: 25px;
+    z-index: 1;
 }
 
 .post-template-20 .post-images .post-icon img {
-    width:50px;
-    height:50px;
-    border:10px solid rgb(21, 21, 21);
-    border-radius:100%;
+    width: 50px;
+    height: 50px;
+    border: 10px solid rgb(21, 21, 21);
+    border-radius: 100%;
 }
 
 .post-template-20 .post-body {
-    margin:50px;
+    margin: 50px;
     color: #ccc;
-    text-align:justify;
+    text-align: justify;
     font: 400 13px/18px roboto, arial, sans-serif;
-    position:relative;
+    position: relative;
 }
 
 .post-template-20 .post-body .post-icon {
-    float:right;
-    background:#2f2f2f;
-    padding:5px;
-    border:2px solid #3f3f3f;
-    border-radius:5px;
-    margin-left:10px;
+    float: right;
+    background: #2f2f2f;
+    padding: 5px;
+    border: 2px solid #3f3f3f;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 .post-template-20 .post-body .post-icon img {
-    display:block;
-    width:50px;
-    height:50px;
-    filter:grayscale(100%);
-    border-radius:3px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%);
+    border-radius: 3px;
 }
 
 .post-template-20 .post-body b {
-    font:700 15px/18px roboto,sans-serif;
-    color:var(--custom);
+    font: 700 15px/18px roboto, sans-serif;
+    color: var(--custom);
 }
 
 .post-template-20 .post-body i {
-    font-weight:500;
+    font-weight: 500;
 }
 
 .post-template-20 .post-body span {
-    font-weight:500;
-    color:var(--custom);
+    font-weight: 500;
+    color: var(--custom);
 }
 
 .post-template-20 .post-body u {
-    border-bottom:2px solid var(--custom);
+    border-bottom: 2px solid var(--custom);
     text-decoration: none;
-    color:#eee;
+    color: #eee;
 }
 
 .post-template-20 .post-body:after {
@@ -110,46 +111,46 @@
 }
 
 .post-template-20 .post-body tagged {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
-    gap:10px;
-    margin:10px 0;
+    gap: 10px;
+    margin: 10px 0;
 }
 
 .post-template-20 .post-body tagged a {
-    font:800 10px montserrat,sans-serif;
-    color:#444;
+    font: 800 10px montserrat, sans-serif;
+    color: #444;
     text-transform: uppercase;
-    transition:.25s;
+    transition: .25s;
 }
 
 .post-template-20 .post-body tagged a:hover {
-    color:var(--custom);
-    transition:.25s;
+    color: var(--custom);
+    transition: .25s;
 }
 
 
 .post-template-20 .lyric-2 {
-    font:800 30px/100% montserrat,sans-serif;
-    color:var(--custom);
-    position:relative;
-    z-index:1;
+    font: 800 30px/100% montserrat, sans-serif;
+    color: var(--custom);
+    position: relative;
+    z-index: 1;
     text-transform: uppercase;
-    float:right;
-    width:75%;
-    text-align:right;
-    border-radius:5px;
+    float: right;
+    width: 75%;
+    text-align: right;
+    border-radius: 5px;
 }
 
 .post-template-20 .lyric-1 {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    text-transform:uppercase;
-    font:800 10px montserrat,sans-serif;
-    color:#222;
-    padding:5px;
-    border-radius:5px;
-    margin:10px;
+    text-transform: uppercase;
+    font: 800 10px montserrat, sans-serif;
+    color: #222;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
 }
 
 .post-template-19 {
