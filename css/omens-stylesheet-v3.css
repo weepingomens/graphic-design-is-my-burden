@@ -16729,6 +16729,13 @@ body.light {
 .light .omens-post-19 .lyric-2:before, .light .omens-post-19 .lyric-2:after { background:#ccc; }
 .light .omens-post-19 .post-body i, .light .omens-post-19 .post-body u { color:#333; }
 
+.light .omens-post-20 .post-images { border-color:#e3e3e3; }
+.light .omens-post-20 { background:#f0f0f0; }
+.light .omens-post-20 .post-body { color:#222; }
+.light .omens-post-20 .post-body i,
+.light .omens-post-20 .post-body u { color:#222; border-color:#ddd; }
+.light .omens-post-20 .post-body:after { opacity: 4%; }
+
 .light #ucpmenu {
   background: #fff
 }
