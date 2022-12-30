@@ -16424,6 +16424,12 @@ body.light {
 .light .omens-post-17 .post-body tagged { background-color: #eaeaea;
     border-color: #ddd; }
 
+.light .omens-post-18 .post-body { color:#111; background:#eaeaea; border-color: #ccc; }
+.light .omens-post-18 .post-body i { color:#111; }
+.light .omens-post-18 .post-body-contain { background:#dbdbdb; }
+.light .omens-post-18 .post-body tagged a { color:#111; opacity:10%; }
+.light .omens-post-18 .post-body tagged a:hover { opacity:50%; }
+
 .light #ucpmenu {
   background: #fff
 }
