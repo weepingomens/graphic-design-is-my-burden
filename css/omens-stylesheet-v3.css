@@ -16563,6 +16563,14 @@ body.light {
 .light .omens-post-18 .post-body tagged a { color:#111; opacity:10%; }
 .light .omens-post-18 .post-body tagged a:hover { opacity:50%; }
 
+.light .omens-post-19 { background:#f0f0f0; }
+.light .omens-post-19 .post-body { color:#222; border-color:#ccc; }
+.light .omens-post-19 tagged { background:#f0f0f0; }
+.light .omens-post-19 tagged a { background:#ddd; }
+.light .omens-post-19 .post-icon img { border-color:#ccc; background:#f0f0f0; }
+.light .omens-post-19 .lyric-2:before, .light .omens-post-19 .lyric-2:after { background:#ccc; }
+.light .omens-post-19 .post-body i, .light .omens-post-19 .post-body u { color:#333; }
+
 .light #ucpmenu {
   background: #fff
 }
